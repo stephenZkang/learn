@@ -6,7 +6,7 @@
 
 2、执行git status，出现如下红色，提示要用git add命令将要上传的文件加入进来。
 
-![img](https://images2017.cnblogs.com/blog/1170065/201709/1170065-20170928142014747-393539189.png)
+ ![img](https://images2017.cnblogs.com/blog/1170065/201709/1170065-20170928142014747-393539189.png)
 
 3、执行git add .，没有回显，再次执行git status，出现如下绿色，表明添加成功。
 
