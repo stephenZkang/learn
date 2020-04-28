@@ -86,6 +86,11 @@ git push -u origin master
 
 6、登录Github就会看到对应的代码
 
+7、更新代码
+```shell
+git pull
+```
+
 ### **github图片显示慢**
 将下面的内容复制到本地host文件（C:\Windows\System32\drivers\etc）
 192.30.253.112 github.com
