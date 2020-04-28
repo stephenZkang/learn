@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="30 second">
+
+    <property name="log.dir" value="target/logs" />
+    <property name="encoding" value="UTF-8" />
+    <property name="plain" value="%msg%n" />
+    <property name="std" value="%d{HH:mm:ss.SSS}[%thread][%-5level] %msg" />
+    <property name="normal" value="%d{yyyy-MM-dd:HH:mm:ss.SSS}[%thread][%-5level]"/>
+    <!-- 控制台打印 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${plain}</pattern>
+            <charset>${encoding}</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.dir}/file.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/file.%d{yyyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${std}</pattern>
+            <charset>${encoding}</charset>
+        </encoder>
+    </appender>
+
+    <logger name="root">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="com.superred">
+        <level value="DEBUG"/>
+    </logger>
+
+    <!-- Logger 根目录 -->
+    <root>
+        <appender-ref ref="stdout" />
+        <appender-ref ref="file" />
+    </root>
+</configuration>
