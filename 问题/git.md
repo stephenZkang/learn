@@ -116,6 +116,7 @@ git pull
 54.231.120.3 github-cloud.s3.amazonaws.com
 
 54.231.120.3 s3-1-w.amazonaws.com
-
+# 图片不能显示
+199.232.4.133 raw.githubusercontent.com
 
 复制完cmd执行 ipconfig /flushdns
