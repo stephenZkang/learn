@@ -1,6 +1,6 @@
 1. #   Activiti流程引擎配置
 
-   ![image-20191202154143329](https://github.com/stephenZkang/learn/tree/master/img/image-20191202154143329.png)
+   ![image-20191202154143329](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191202154143329.png)
 
    - ###### 流程引擎配置类（ProcessEngineConfiguration）
 
@@ -8,19 +8,19 @@
 
        - activiti.cfg.xml
 
-         ![](https://github.com/stephenZkang/learn/tree/master/img/image-20191202154500248.png)
+         ![](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191202154500248.png)
 
      - 提供多个静态方法创建配置对象
 
        - 静态方法创建配置对象
 
-         ![image-20191202154611520](https://github.com/stephenZkang/learn/tree/master/img/image-20191202154611520.png)
+         ![image-20191202154611520](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191202154611520.png)
 
      - 实现几个基于不同场景的子类，配置方式非常灵活
 
        - 多个子类适应不同的场景
 
-         ![image-20191202154837056](https://github.com/stephenZkang/learn/tree/master/img/image-20191202154837056.png)
+         ![image-20191202154837056](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191202154837056.png)
 
          - ProcessEngineConfiguration	--	抽象类 - 定义了大量的常量
            - ProcessEngineConfigurationImpl	--	抽象类 - 定义了初始化工作
@@ -35,7 +35,7 @@
 
      - 配置JDBC属性，使用mybatis提供的连接池
 
-       ![image-20191203102927233](https://github.com/stephenZkang/learn/tree/master/img/image-20191203102927233.png)
+       ![image-20191203102927233](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203102927233.png)
 
      - 配置DataSource
 
@@ -43,17 +43,17 @@
 
        - Druid数据库配置
 
-         ![image-20191203103319959](https://github.com/stephenZkang/learn/tree/master/img/image-20191203103319959.png)
+         ![image-20191203103319959](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203103319959.png)
 
-         ![image-20191203103340127](https://github.com/stephenZkang/learn/tree/master/img/image-20191203103340127.png)
+         ![image-20191203103340127](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203103340127.png)
 
      - 配置databaseType
 
-       ![image-20191203103636928](https://github.com/stephenZkang/learn/tree/master/img/image-20191203103636928.png)
+       ![image-20191203103636928](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203103636928.png)
 
      - 数据库更新策略
 
-       ![image-20191203103557000](https://github.com/stephenZkang/learn/tree/master/img/image-20191203103557000.png)
+       ![image-20191203103557000](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203103557000.png)
 
        
 
@@ -63,7 +63,7 @@
 
        - 日志组件
 
-         ![image-20191203141031359](https://github.com/stephenZkang/learn/tree/master/img/image-20191203141031359.png)
+         ![image-20191203141031359](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203141031359.png)
 
          logback性能10倍于Log4j，Log4j的作者又开发的logback
 
@@ -107,7 +107,7 @@
 
          - 原理
 
-           ![image-20191203164312478](https://github.com/stephenZkang/learn/tree/master/img/image-20191203164312478.png)
+           ![image-20191203164312478](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203164312478.png)
 
        - 监听器的配置方式
 
@@ -118,11 +118,11 @@
            - typedEventListeners:监听指定事件类型的通知
 
            - activiti:eventListener：只监听特定流程定义的事件
-        ![image-20191203170242316](https://github.com/stephenZkang/learn/tree/master/img/image-20191203170242316.png)
+        ![image-20191203170242316](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203170242316.png)
      
            - 相关API
 
-             ![image-20191203170412107](https://github.com/stephenZkang/learn/tree/master/img/image-20191203170412107.png)
+             ![image-20191203170412107](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191203170412107.png)
 
          - 
 
@@ -134,13 +134,13 @@
      
          - 命令模式
      
-           ![image-20191204162415520](https://github.com/stephenZkang/learn/tree/master/img/image-20191204162415520.png)
+           ![image-20191204162415520](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191204162415520.png)
      
-           ![image-20191204162455970](https://github.com/stephenZkang/learn/tree/master/img/image-20191204162455970.png)
+           ![image-20191204162455970](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191204162455970.png)
      
          - 责任链模式
      
-           ![image-20191204162555057](https://github.com/stephenZkang/learn/tree/master/img/image-20191204162555057.png)
+           ![image-20191204162555057](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191204162555057.png)
      
        - 拦截器配置方式
      
@@ -170,13 +170,13 @@
      
          - 如何配置
      
-           ![image-20191204165547105](https://github.com/stephenZkang/learn/tree/master/img/image-20191204165547105.png)
+           ![image-20191204165547105](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191204165547105.png)
      
        - 流程定义定时启动流程
      
          - 定时开始事件
      
-           ![image-20191204165721649](https://github.com/stephenZkang/learn/tree/master/img/image-20191204165721649.png)
+           ![image-20191204165721649](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191204165721649.png)
      
      - Actviti与Spring集成
      
@@ -204,7 +204,7 @@
    
 2. 流程引擎及服务
 
-   ![image-20191205145032122](https://github.com/stephenZkang/learn/tree/master/img/image-20191205145032122.png)
+   ![image-20191205145032122](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191205145032122.png)
 
    - 流程存储服务
 
@@ -246,11 +246,11 @@
 
          - 触发信号捕获事件signalEventReceived
 
-           ![image-20191205170711683](https://github.com/stephenZkang/learn/tree/master/img/image-20191205170711683.png)
+           ![image-20191205170711683](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191205170711683.png)
 
          - 触发消息捕获事件messageEventReceived
 
-           ​	![image-20191205171444734](https://github.com/stephenZkang/learn/tree/master/img/image-20191205171444734.png)
+           ​	![image-20191205171444734](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191205171444734.png)
 
      - TaskService
 
@@ -275,7 +275,7 @@
 
        - 用户与用户组的关系（Membership）
 
-         ![image-20191209165838709](https://github.com/stephenZkang/learn/tree/master/img/image-20191209165838709.png)
+         ![image-20191209165838709](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191209165838709.png)
 
      - FormService
 
@@ -287,7 +287,7 @@
 
        - 管理流程实例结束后的历史数据 
 
-         ![image-20191209173227034](https://github.com/stephenZkang/learn/tree/master/img/image-20191209173227034.png)
+         ![image-20191209173227034](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191209173227034.png)
 
        - 构建历史数据的查询对象
 
@@ -306,7 +306,7 @@
 
          - Job任务查询
 
-           ![image-20191210162012269](https://github.com/stephenZkang/learn/tree/master/img/image-20191210162012269.png)
+           ![image-20191210162012269](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191210162012269.png)
 
        - 数据库相关通用操作
 
@@ -322,7 +322,7 @@
 
        - ActivitiException
 
-         ![image-20191210171205796](https://github.com/stephenZkang/learn/tree/master/img/image-20191210171205796.png)
+         ![image-20191210171205796](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191210171205796.png)
 
      - 
 
@@ -332,7 +332,7 @@
 
 3. 数据库模型设计
 
-   ![image-20191211142616233](https://github.com/stephenZkang/learn/tree/master/img/image-20191211142616233.png)
+   ![image-20191211142616233](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211142616233.png)
 
    - Mysql建表语句
 
@@ -348,94 +348,94 @@
 
    - 通用数据库
 
-     ![image-20191211143230646](https://github.com/stephenZkang/learn/tree/master/img/image-20191211143230646.png)
+     ![image-20191211143230646](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211143230646.png)
 
-     - ![image-20191211143308616](https://github.com/stephenZkang/learn/tree/master/img/image-20191211143308616.png)
-     - ![image-20191211143322984](https://github.com/stephenZkang/learn/tree/master/img/image-20191211143322984.png)
+     - ![image-20191211143308616](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211143308616.png)
+     - ![image-20191211143322984](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211143322984.png)
 
    - 流程定义存储表
 
-     ![image-20191211144334386](https://github.com/stephenZkang/learn/tree/master/img/image-20191211144334386.png)
+     ![image-20191211144334386](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211144334386.png)
 
      - 流程部署表
 
-       ![image-20191211144354122](https://github.com/stephenZkang/learn/tree/master/img/image-20191211144354122.png)
+       ![image-20191211144354122](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211144354122.png)
 
      - 流程定义表
 
-       ![image-20191211144420128](https://github.com/stephenZkang/learn/tree/master/img/image-20191211144420128.png)
+       ![image-20191211144420128](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211144420128.png)
 
    - 身份数据表
 
-     ![image-20191211145030130](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145030130.png)
+     ![image-20191211145030130](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145030130.png)
 
      - 用户信息表
 
-       ![image-20191211145055018](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145055018.png)
+       ![image-20191211145055018](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145055018.png)
 
      - 用户扩展信息表
 
-       ![image-20191211145111617](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145111617.png)
+       ![image-20191211145111617](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145111617.png)
 
      - 用户组表
 
-       ![image-20191211145149913](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145149913.png)
+       ![image-20191211145149913](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145149913.png)
 
      - 用户组关系表
 
-       ![image-20191211145210298](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145210298.png)
+       ![image-20191211145210298](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145210298.png)
 
    - 运行时流程数据表
 
-     ![image-20191211145711809](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145711809.png)
+     ![image-20191211145711809](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145711809.png)
 
      - 流程实例执行表
 
-        ![image-20191211145823897](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145823897.png)
+        ![image-20191211145823897](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145823897.png)
 
-       ![image-20191211145859395](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145859395.png)
+       ![image-20191211145859395](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145859395.png)
 
      - 用户任务表
 
-       ![image-20191211145937091](https://github.com/stephenZkang/learn/tree/master/img/image-20191211145937091.png)
+       ![image-20191211145937091](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211145937091.png)
 
-       ![image-20191211150006707](https://github.com/stephenZkang/learn/tree/master/img/image-20191211150006707.png)
+       ![image-20191211150006707](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211150006707.png)
 
      - 变量信息表
 
-       ![image-20191211150033026](https://github.com/stephenZkang/learn/tree/master/img/image-20191211150033026.png)
+       ![image-20191211150033026](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211150033026.png)
 
      - 参与者信息表
 
-       ![image-20191211150120649](https://github.com/stephenZkang/learn/tree/master/img/image-20191211150120649.png)
+       ![image-20191211150120649](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211150120649.png)
 
      - 事件订阅信息表
 
-       ![image-20191211150144466](https://github.com/stephenZkang/learn/tree/master/img/image-20191211150144466.png)
+       ![image-20191211150144466](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211150144466.png)
 
      - 作业信息表
 
-       ![image-20191211150200490](https://github.com/stephenZkang/learn/tree/master/img/image-20191211150200490.png)
+       ![image-20191211150200490](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211150200490.png)
 
-       ![image-20191211150256027](https://github.com/stephenZkang/learn/tree/master/img/image-20191211150256027.png)
+       ![image-20191211150256027](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211150256027.png)
 
      - 
 
    - 历史流程数据表
 
-     ![image-20191211154745754](https://github.com/stephenZkang/learn/tree/master/img/image-20191211154745754.png)
+     ![image-20191211154745754](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211154745754.png)
 
      - 历史流程实例表
 
-       ![image-20191211154951172](https://github.com/stephenZkang/learn/tree/master/img/image-20191211154951172.png)
+       ![image-20191211154951172](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211154951172.png)
 
-       ![image-20191211155125075](https://github.com/stephenZkang/learn/tree/master/img/image-20191211155125075.png)
+       ![image-20191211155125075](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211155125075.png)
 
      - 事件日志表
 
-       ![image-20191211155200828](https://github.com/stephenZkang/learn/tree/master/img/image-20191211155200828.png)
+       ![image-20191211155200828](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211155200828.png)
 
-       ![image-20191211155319332](https://github.com/stephenZkang/learn/tree/master/img/image-20191211155319332.png)
+       ![image-20191211155319332](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211155319332.png)
 
        
 
@@ -449,13 +449,13 @@
 
      - 以XML为载体，以符号可视化业务
 
-       ![image-20191211160902048](https://github.com/stephenZkang/learn/tree/master/img/image-20191211160902048.png)
+       ![image-20191211160902048](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211160902048.png)
 
    - BPMN2.0元素
 
-     ![image-20191211160929532](https://github.com/stephenZkang/learn/tree/master/img/image-20191211160929532.png)
+     ![image-20191211160929532](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211160929532.png)
 
-     ![image-20191211161004101](https://github.com/stephenZkang/learn/tree/master/img/image-20191211161004101.png)
+     ![image-20191211161004101](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211161004101.png)
 
      - 流对象（Flow Object）
 
@@ -486,17 +486,17 @@
 
                - 周期执行（timeCycle）
 
-                 ![image-20191211162202494](https://github.com/stephenZkang/learn/tree/master/img/image-20191211162202494.png)
+                 ![image-20191211162202494](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211162202494.png)
 
                - 定时事件举例
 
                  - 定时开始事件
 
-                   ![image-20191211162347182](https://github.com/stephenZkang/learn/tree/master/img/image-20191211162347182.png)
+                   ![image-20191211162347182](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211162347182.png)
 
                  - 定时边界事件
 
-                   ![image-20191211162421708](https://github.com/stephenZkang/learn/tree/master/img/image-20191211162421708.png)
+                   ![image-20191211162421708](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211162421708.png)
 
                  - 
 
@@ -504,27 +504,27 @@
 
                - 错误事件定义
 
-                 ![image-20191218094842899](https://github.com/stephenZkang/learn/tree/master/img/image-20191218094842899.png)
+                 ![image-20191218094842899](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218094842899.png)
 
                - 错误边界事件
              
-                 ![image-20191218095831043](https://github.com/stephenZkang/learn/tree/master/img/image-20191218095831043.png)
+                 ![image-20191218095831043](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218095831043.png)
              
              - 信号事件
              
                - 信号开始事件
              
-                 ![image-20191218100727725](https://github.com/stephenZkang/learn/tree/master/img/image-20191218100727725.png)
+                 ![image-20191218100727725](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218100727725.png)
              
                - 信号中间事件
              
-                 ![image-20191218100821399](https://github.com/stephenZkang/learn/tree/master/img/image-20191218100821399.png)
+                 ![image-20191218100821399](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218100821399.png)
              
              - 消息事件
              
                - 消息事件定义
              
-                 ![image-20191218100910849](https://github.com/stephenZkang/learn/tree/master/img/image-20191218100910849.png)
+                 ![image-20191218100910849](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218100910849.png)
              
                - 
              
@@ -532,17 +532,17 @@
 
        - 顺序流和网关（Gateways）【Exclusive Gateway...】
 
-         ![image-20191211161319155](https://github.com/stephenZkang/learn/tree/master/img/image-20191211161319155.png)
+         ![image-20191211161319155](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191211161319155.png)
          
          - 顺序流
          
            - 条件顺序流
          
-             ![image-20191218111946003](https://github.com/stephenZkang/learn/tree/master/img/image-20191218111946003.png)
+             ![image-20191218111946003](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218111946003.png)
          
            - 默认顺序流
          
-             ![image-20191218111958027](https://github.com/stephenZkang/learn/tree/master/img/image-20191218111958027.png)
+             ![image-20191218111958027](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218111958027.png)
          
            - 
          
@@ -552,25 +552,25 @@
          
              - 单一网关顺序流实例
          
-               ![image-20191218112247611](https://github.com/stephenZkang/learn/tree/master/img/image-20191218112247611.png)
+               ![image-20191218112247611](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218112247611.png)
          
              - 单一网关顺序流定义
          
-               ![image-20191218112354304](https://github.com/stephenZkang/learn/tree/master/img/image-20191218112354304.png)
+               ![image-20191218112354304](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218112354304.png)
          
            - 并行网关(Parallel Gateway)
          
-             ![image-20191218112704542](https://github.com/stephenZkang/learn/tree/master/img/image-20191218112704542.png)
+             ![image-20191218112704542](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218112704542.png)
          
              - 并行网关流程定义
          
-               ![image-20191218112732699](https://github.com/stephenZkang/learn/tree/master/img/image-20191218112732699.png)
+               ![image-20191218112732699](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218112732699.png)
          
              - 
          
            - 包容性网关(Inclusive Gateway)
          
-             ![image-20191218142212001](https://github.com/stephenZkang/learn/tree/master/img/image-20191218142212001.png)
+             ![image-20191218142212001](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218142212001.png)
          
              - 
          
@@ -580,28 +580,28 @@
 
      - 流程任务
 
-       ![image-20191218101559313](https://github.com/stephenZkang/learn/tree/master/img/image-20191218101559313.png)
+       ![image-20191218101559313](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218101559313.png)
        
        - 核心流程任务
        
          - 用户任务（User Task）
        
-           ![image-20191218101714933](https://github.com/stephenZkang/learn/tree/master/img/image-20191218101714933.png)
+           ![image-20191218101714933](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218101714933.png)
        
-           ![image-20191218101741001](https://github.com/stephenZkang/learn/tree/master/img/image-20191218101741001.png)
+           ![image-20191218101741001](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218101741001.png)
        
            - 用户任务候选人/组配置
-             ![image-20191218101830218](https://github.com/stephenZkang/learn/tree/master/img/image-20191218101830218.png)
+             ![image-20191218101830218](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218101830218.png)
        
            - 用户任务代理人配置
        
-             ![image-20191218101930282](https://github.com/stephenZkang/learn/tree/master/img/image-20191218101930282.png)
+             ![image-20191218101930282](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218101930282.png)
        
            - 通过任务监听器自定义配置
        
-             ![image-20191218102005720](https://github.com/stephenZkang/learn/tree/master/img/image-20191218102005720.png)
+             ![image-20191218102005720](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218102005720.png)
        
-             ![image-20191218102031936](https://github.com/stephenZkang/learn/tree/master/img/image-20191218102031936.png)
+             ![image-20191218102031936](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218102031936.png)
        
            - 
        
@@ -611,67 +611,67 @@
        
            - Groovy脚本（依赖groovy-all.jar）
        
-             ![image-20191218103804918](https://github.com/stephenZkang/learn/tree/master/img/image-20191218103804918.png)
+             ![image-20191218103804918](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218103804918.png)
        
            - Javascript脚本
        
-             ![image-20191218103616844](https://github.com/stephenZkang/learn/tree/master/img/image-20191218103616844.png)
+             ![image-20191218103616844](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218103616844.png)
        
            - 脚本任务设置返回值
        
-             ![image-20191218103905768](https://github.com/stephenZkang/learn/tree/master/img/image-20191218103905768.png)
+             ![image-20191218103905768](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218103905768.png)
        
            - 
        
          - 服务任务（Java Service Task）
        
-           ![image-20191218105117962](https://github.com/stephenZkang/learn/tree/master/img/image-20191218105117962.png)
+           ![image-20191218105117962](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218105117962.png)
        
            - 执行Java程序的方法
        
              - 执行实现JavaDelegate或ActivityBehavior的类
        
-               ![image-20191218105324363](https://github.com/stephenZkang/learn/tree/master/img/image-20191218105324363.png)
+               ![image-20191218105324363](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218105324363.png)
        
                - JavaDelegate注入属性
        
-                 ![image-20191218110130599](https://github.com/stephenZkang/learn/tree/master/img/image-20191218110130599.png)
+                 ![image-20191218110130599](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218110130599.png)
        
              - 执行一个JavaDelegate对象表达式，通常Spring配置Bean
        
-               ![image-20191218111017450](https://github.com/stephenZkang/learn/tree/master/img/image-20191218111017450.png)
+               ![image-20191218111017450](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218111017450.png)
        
              - 执行调用方法表达式和值表达式
        
-               ![image-20191218111552902](https://github.com/stephenZkang/learn/tree/master/img/image-20191218111552902.png)
+               ![image-20191218111552902](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218111552902.png)
        
              - JavaDelegate抛出错误事件
        
-               ![image-20191218111631132](https://github.com/stephenZkang/learn/tree/master/img/image-20191218111631132.png)
+               ![image-20191218111631132](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218111631132.png)
        
              - 
          
        - 子流程
        
-          <img src="https://github.com/stephenZkang/learn/tree/master/img/image-20191218142428969.png" alt="image-20191218142428969" style="zoom:80%;" />
+          <img src="https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218142428969.png" alt="image-20191218142428969" style="zoom:80%;" />
        
          - 子流程（Sub-Process）
        
-           ![image-20191218142724652](https://github.com/stephenZkang/learn/tree/master/img/image-20191218142724652.png)
+           ![image-20191218142724652](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218142724652.png)
        
            
        
          - 事件子流程（Event Sub-Process）
        
-           ![image-20191218165539211](https://github.com/stephenZkang/learn/tree/master/img/image-20191218165539211.png)
+           ![image-20191218165539211](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218165539211.png)
        
          - 事务子流程（Transaction Sub-Process）
        
-           ![image-20191218165845032](https://github.com/stephenZkang/learn/tree/master/img/image-20191218165845032.png)
+           ![image-20191218165845032](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218165845032.png)
        
          - 调用式子流程（Call Activity）
        
-           ![image-20191218170257792](https://github.com/stephenZkang/learn/tree/master/img/image-20191218170257792.png)
+           ![image-20191218170257792](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191218170257792.png)
 
    - 
 
@@ -688,7 +688,7 @@
 
      - 获取源码指令
 
-       ![image-20191220161522557](https://github.com/stephenZkang/learn/tree/master/img/image-20191220161522557.png)
+       ![image-20191220161522557](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20191220161522557.png)
 
      - 
 
