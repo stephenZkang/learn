@@ -88,18 +88,29 @@ git push -u origin master
 
 ### **github图片显示慢**
 将下面的内容复制到本地host文件（C:\Windows\System32\drivers\etc）
-
 192.30.253.112 github.com
+
 192.30.253.112 www.github.com
+
 151.101.64.133 assets-cdn.github.com
+
 151.101.184.133 github.map.fastly.net
+
 151.101.40.133 avatars0.githubusercontent.com
+
 151.101.40.133 avatars1.githubusercontent.com
+
 151.101.40.133 avatars2.githubusercontent.com
+
 151.101.0.133 camo.githubusercontent.com
+
 34.230.182.100 collector.githubapp.com
+
 151.101.185.194 github.global.ssl.fastly.net
+
 54.231.120.3 github-cloud.s3.amazonaws.com
+
 54.231.120.3 s3-1-w.amazonaws.com
+
 
 复制完cmd执行 ipconfig /flushdns
