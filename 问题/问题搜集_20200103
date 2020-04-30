@@ -27,5 +27,6 @@
    6. NIO底层select、poll、epoll实现的区别？
    7. Java NIO的几个核心组成部分是什么？作用分别是什么？
    8. Redis、Netty、Tomcat的线程模型与NIO的联系是什么
-4. 
+4. 使用策略模式优化if else
+   参考ciphermagic 的 http://www.ciphermagic.cn/spring-boot-without-if-else.html
 
