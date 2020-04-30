@@ -27,7 +27,7 @@
 
   - 点击左下角的齿轮选择设置(或者通过快捷键:Ctrl+,直接打开)：
 
-    <img src="D:\nodejs\images\image-20200203094914129.png" alt="image-20200203094914129" style="zoom:50%;" />
+    <img src="https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203094914129.png" alt="image-20200203094914129" style="zoom:50%;" />
 
   - 在设置的输入框搜索：Shell:windows；找到：Terminal>Integrated>Shell:windows，这一项点击在settings.json中编辑。
 
@@ -40,13 +40,13 @@
   - 为了加快安装效率需要将nodejs的默认镜像库修改为国内的淘宝镜像库(npm.taobao.org)。
     在VSCode中通过命令工具进入nodejs安装目录；
 
-    <img src="D:\nodejs\images\image-20200203095221335.png" alt="image-20200203095221335" style="zoom:50%;" />
+    <img src="https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203095221335.png" alt="image-20200203095221335" style="zoom:50%;" />
 
   - 输入命令：npm config set registry [https://registry.npm.taobao.org](https://links.jianshu.com/go?to=https%3A%2F%2Fregistry.npm.taobao.org) 修改镜像库地址；
 
   - 通过命令：npm install -g vue-cli 安装vue-cli,安装完成之后通过命令:vue --version 查看版本号，检查vue-cli是否安装正常
 
-    ![image-20200203095456649](D:\nodejs\images\image-20200203095456649.png)
+    ![image-20200203095456649](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203095456649.png)
 
   - 
 
@@ -54,7 +54,7 @@
 
 - 进入存放项目的文件夹，我这里把项目放在d盘的nodejs文件夹下的html-project，则输入命令cd /d/nodejs/html-project
 
-  <img src="D:\nodejs\images\image-20200203095806012.png" alt="image-20200203095806012" style="zoom:50%;" />
+  <img src="https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203095806012.png" alt="image-20200203095806012" style="zoom:50%;" />
 
 - 运行命令：vue init webpack observer 这里的observer是项目名称可以自己定义
 
@@ -75,23 +75,23 @@
 
   - 在项目存放目录运行命令：code . 打开项目，我这里的目录是：/d/nodejs/html-project/observer ;运行完成后VSCode会新开一个窗口，就是刚刚构建的项目。
 
-    <img src="D:\nodejs\images\image-20200203100335205.png" alt="image-20200203100335205" style="zoom:50%;" />
+    <img src="https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203100335205.png" alt="image-20200203100335205" style="zoom:50%;" />
 
   - 在项目窗口通过(刚刚的新窗口)快捷键：Ctrl+~ 打开gitbash终端。
 
   - 这里用VUX UI库举例(官网地址:[https://vux.li/](https://links.jianshu.com/go?to=https%3A%2F%2Fvux.li%2F))，运行命令：npm install vux --save 安装vux UI库。
 
-    <img src="D:\nodejs\images\image-20200203100602158.png" alt="image-20200203100602158" style="zoom:50%;" />
+    <img src="https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203100602158.png" alt="image-20200203100602158" style="zoom:50%;" />
 
   - 运行命令：npm run dev 启动项目
 
-    ![image-20200203100730962](D:\nodejs\images\image-20200203100730962.png)
+    ![image-20200203100730962](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203100730962.png)
 
   - 打开浏览区输入访问地址：http://localhost:8080，可以访问则说明项目构建成功。
 
     - - 
 
-    ![image-20200203100845382](D:\nodejs\images\image-20200203100845382.png)
+    ![image-20200203100845382](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200203100845382.png)
 
   - https://element.eleme.cn/#/zh-CN基于vue的组件
 
@@ -590,11 +590,11 @@
 
 - 遇到的问题
 
-  ![image-20200217100652535](D:\nodejs\images\image-20200217100652535.png)
+  ![image-20200217100652535](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200217100652535.png)
 
   解决方法
 
-  ![image-20200217102241136](D:\nodejs\images\image-20200217102241136.png)
+  ![image-20200217102241136](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200217102241136.png)
 
 - 前端路由
 
@@ -645,7 +645,7 @@
 
   先在项目目录执行 `npm run build`，控制台输出如下内容表明执行完毕：
 
-  ![image-20200217101656494](D:\nodejs\images\image-20200217101656494.png)
+  ![image-20200217101656494](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200217101656494.png)
 
   这时在项目的 dist 文件夹下生成了 static 文件夹和 index.html 文件，把这两个文件，拷贝到我们后端项目的 wj\src\main\resources\static 文件夹下，一定要注意这个位置，这时后端配置的静态文件的 path，虽然看起来很诡异，但一般都不作修改。
 
@@ -835,7 +835,7 @@
 
 - 前端架构图
 
-  ![image-20200305122408309](D:\nodejs\images\image-20200305122408309.png)
+  ![image-20200305122408309](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200305122408309.png)
 
 - Promise的基本用法
 
@@ -885,7 +885,7 @@
 
   很明显用了单一状态管理库vuex，dispatch派发了一个异步动作，路径惯例为前端接口（与前端代码交互，向后端发送请求，通常为二道贩子，存在于你的js模块下）。
 
-  ![image-20200310174006855](D:\nodejs\images\image-20200310174006855.png)
+  ![image-20200310174006855](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/image-20200310174006855.png)
 
 
 ## 6、vue引入xss防止xss攻击
