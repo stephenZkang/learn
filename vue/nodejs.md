@@ -1006,7 +1006,7 @@
 
 ## 9、Vue中自定义模块组件传参问题
 
-​	![20171223165335121](D:\workIdea\learn\img\node\20171223165335121.png)
+​	![20171223165335121](https://raw.githubusercontent.com/stephenZkang/learn/master/img/node/20171223165335121.png)
 
 1. 父组件向子组件传参
 
