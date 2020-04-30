@@ -1,3 +1,5 @@
+[TOC]
+
 # node js 中主要包含两方面
 
 ## 1、vue 相关的页面
@@ -994,10 +996,135 @@
 
    ```js
    var inputBytes = window.Hex.utf8StrToBytes(content)
-   var key = window.Hex.decode('12ad6c5d4d7755f692bc5e4a1614ecff')
+   var key = window.Hex.decode('113d6c5d4d7755f692bc5e4a1614ecff')
    var sm4 = new window.SM4()
    var cipher = sm4.encrypt_ecb(key, inputBytes)
    return window.Hex.encode(cipher, 0, cipher.length)
    ```
 
 3. 
+
+## 9、Vue中自定义模块组件传参问题
+
+​	![20171223165335121](D:\workIdea\learn\img\node\20171223165335121.png)
+
+1. 父组件向子组件传参
+
+   子组件中定义prop属性，父组件引用子组件是:属性名=“参数”
+
+   **父组件app向子组件prop-event传递参数address**
+
+   **父组件**
+
+   ```html
+   <prop-event-value :address="address" @update="val => address = val" key="4"/>
+   <script>
+   import propEventValue from './components/prop-event-value.vue'
+   export default {
+     name: 'app',
+     components: {
+       propEventValue
+     },
+     data() {
+       return {
+         address: ''
+       }
+     }
+   }
+   </script>
+   ```
+
+   **子组件**
+
+   ```html
+   <template>
+       <div>
+           <p>prop-event</p>
+           <label for="address">地址</label>
+           <input type="text" id="address" v-model="tempAddress">
+       </div>
+   </template>
+   
+   <script>
+     export default {
+       name: 'prop-event',
+       props: [
+           address: {
+             type: Boolean,
+             default: false
+           }
+       ],
+       data() {
+         return {
+           tempAddress: this.address
+         }
+       },
+       watch: {
+         tempAddress(newVal) {
+           this.$emit('update', newVal)
+         }
+       }
+     }
+   </script>
+   ```
+
+   
+
+2. 子组件通过事件向父组件发送消息
+
+   **子组件将获取的值传给父组件的方法saveData**
+
+   **父组件**
+
+   ```html
+   <prop-event-value @saveData="saveData" key="4"/>
+   <script>
+   import propEventValue from './components/prop-event-value.vue'
+   export default {
+     name: 'app',
+     components: {
+       propEventValue
+     },
+     data() {
+       return {
+         address: ''
+       }
+     },
+     methods() {
+         saveData(data){
+             
+         }
+     }
+   }
+   </script>
+   ```
+
+   **子组件**
+
+   ```html
+   <template>
+       <div>
+           <p>prop-event</p>
+           <label for="address">地址</label>
+           <input type="text" id="address" v-model="tempAddress">
+       </div>
+   </template>
+   
+   <script>
+     export default {
+       name: 'prop-event',
+       data() {
+         return {
+           tempAddress: this.address
+         }
+       },
+       watch: {
+         tempAddress(newVal) {
+           this.$emit('saveData', newVal)
+         }
+       }
+     }
+   </script>
+   ```
+
+   
