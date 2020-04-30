@@ -1,6 +1,6 @@
 # Table of Contents
 
-* 1 [vue 相关的页面(#vue 相关的页面)
+* 1 [vue相关的页面(#vue相关的页面)
   * 1.1 [变更日志](#变更日志)
   * 1.2 [Features](#features)
 * 2 [环境依赖](#环境依赖)
@@ -19,7 +19,7 @@
 
 # node js 中主要包含两方面
 
-## 1、vue 相关的页面
+## 1、vue相关的页面
 
 ​	使用vuex，参考：https://cn.vuejs.org/  https://vuex.vuejs.org/
 ​	其中表格未使用Vue实现，使用的是一个基于JQuery的插件bootraptable
