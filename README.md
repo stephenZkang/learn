@@ -5,6 +5,7 @@
  
     github如何使用，以及图片加载过慢的问题解决
     单点登录 oauth2 jwt概念
+    策略模式优化if else思路
 
 【leetcode】目录下Leetcode 刷题总结以及代码
 
