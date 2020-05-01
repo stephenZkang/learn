@@ -1,4 +1,4 @@
-package com.qiaok.example.practice1;
+package com.leetcode.qiaok.practice1;
 
 import java.util.*;
 
@@ -19,7 +19,7 @@ import java.util.*;
  *   5     4       <---
  *
  */
-public class RightSideViewTest {
+public class RightSideView {
 
     /**
      * 方法一：深度优先搜索
@@ -123,7 +123,7 @@ public class RightSideViewTest {
     }
 
     public static void main(String[] args) {
-        RightSideViewTest test = new RightSideViewTest();
+        RightSideView test = new RightSideView();
         TreeNode nums = new TreeNode(1);
         List<Integer> rightView = test.rightSideView(nums);
         System.out.println("res:"+rightView.toString());

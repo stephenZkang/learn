@@ -1,7 +1,4 @@
-package com.qiaok.example.practice1;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.leetcode.qiaok.practice1;
 
 /**
  *1248. 统计「优美子数组」
@@ -36,7 +33,7 @@ import java.util.List;
  * 1 <= k <= nums.length
  *
  */
-public class NiceArrayTest {
+public class BeautifulArray {
 
     /**
      *  双指针，数组可以分成三个部分：
@@ -267,7 +264,7 @@ public class NiceArrayTest {
     }
 
     public static void main(String[] args) {
-        NiceArrayTest test = new NiceArrayTest();
+        BeautifulArray test = new BeautifulArray();
         int[] nums = { 1, 2, 3, 1, 1, 2, 33 };
         int k = 3;
         int res = test.numberOfSubarrays(nums,k);
