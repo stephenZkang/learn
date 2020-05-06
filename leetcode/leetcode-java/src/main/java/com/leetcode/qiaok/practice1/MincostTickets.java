@@ -53,9 +53,11 @@ import java.util.Set;
  */
 public class MincostTickets {
 
-    int[] costs;
+    int[] days,costs;
     Integer[] memo;
     Set<Integer> dayset;
+    int[] durations = new int[]{1, 7, 30};
+
 
     /**
      * 记忆化搜索（日期变量型）
@@ -93,12 +95,50 @@ public class MincostTickets {
         return memo[i];
     }
 
+    /**
+     * 记忆化搜索（窗口变量型）
+     *  
+     * 时间复杂度：O(N)，其中 NN 是出行日期的数量，我们需要计算 NN 个解，
+     * 而计算每个解的过程中最多将指针挪动 3030 步，计算量为 O(30 * N)=O(N)O(30∗N)=O(N)。
+     * 空间复杂度：O(N)，我们需要长度为 O(N)O(N) 的数组来存储所有的解
+     *
+     * @param days
+     * @param costs
+     * @return
+     */
+    public int mincostTickets1(int[] days, int[] costs) {
+        this.days = days;
+        this.costs = costs;
+        memo = new Integer[days.length];
+        return dp1(0);
+    }
+
+    public int dp1(int i) {
+        if (i >= days.length) {
+            return 0;
+        }
+        if (memo[i] != null) {
+            return memo[i];
+        }
+        memo[i] = Integer.MAX_VALUE;
+        int j = i;
+        for (int k = 0; k < 3; ++k) {
+            while (j < days.length && days[j] < days[i] + durations[k]) {
+                j++;
+            }
+            memo[i] = Math.min(memo[i], dp1(j) + costs[k]);
+        }
+        return memo[i];
+    }
+
+
+
     public static void main(String[] args) {
         MincostTickets test = new MincostTickets();
         int[] days = { 1,4,6,7,8,20 };
         int[] costs = { 2,7,15 };
         long start = System.currentTimeMillis();
-        int len = test.mincostTickets(days,costs);
+        int len = test.mincostTickets1(days,costs);
         System.out.println("耗时="+(System.currentTimeMillis()-start)+"毫秒");
         System.out.println(len);
     }
