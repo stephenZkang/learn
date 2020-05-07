@@ -32,6 +32,9 @@ package com.leetcode.qiaok.practice1;
  * 1 <= nums[i] <= 10^5
  * 1 <= k <= nums.length
  *
+ * @since 2020-04-20
+ * @author qiaok
+ *
  */
 public class BeautifulArray {
 
