@@ -9,6 +9,10 @@
 
 【leetcode】目录下Leetcode 刷题总结以及代码
 
+【并发】目录下学习并发的总结
+
+【数据库】目录下使用数据库的一些总结
+
 【activiti】目录下学习activiti练习的代码
 
 【vue】目录下学习vue admin的总结以及代码
