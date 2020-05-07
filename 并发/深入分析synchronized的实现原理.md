@@ -195,7 +195,7 @@ Constant pool:
 
 对于轻量级锁，其性能提升的依据是“对于绝大部分的锁，在整个生命周期内都是不会存在竞争的”，如果打破这个依据则除了互斥的开销外，还有额外的CAS操作，因此在有多线程竞争的情况下，轻量级锁比重量级锁更慢；
 
-![image-20200507104137983](D:\workIdea\learn\img\image-20200507104137983.png)
+![image-20200507104137983](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200507104137983.png)
 
 ##### 偏向锁
 
@@ -220,7 +220,7 @@ Constant pool:
 1. 暂停拥有偏向锁的线程，判断锁对象石是否还处于被锁定状态；
 2. 撤销偏向苏，恢复到无锁状态（01）或者轻量级锁的状态；
 
-![image-20200507104112385](D:\workIdea\learn\img\image-20200507104112385.png)
+![image-20200507104112385](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200507104112385.png)
 
 ##### 重量级锁
 
