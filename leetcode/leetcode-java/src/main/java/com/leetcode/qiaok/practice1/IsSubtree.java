@@ -45,8 +45,8 @@ public class IsSubtree {
     /**
      * 双层递归
      *
-     * 时间复杂度：O(log n)
-     * 空间复杂度：O(log n)
+     * 时间复杂度：O(m*n)
+     * 空间复杂度：O(n)
      */
     public boolean isSubtree(TreeNode s, TreeNode t) {
         if(s == null){
