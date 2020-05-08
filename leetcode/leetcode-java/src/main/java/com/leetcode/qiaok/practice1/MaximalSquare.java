@@ -10,6 +10,8 @@ package com.leetcode.qiaok.practice1;
  *              1 1 1 1 1
  *              1 0 0 1 0
  *          输出: 4
+ * @since 2020-05-08
+ * @author qiaok
  */
 public class MaximalSquare {
 
