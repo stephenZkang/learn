@@ -51,7 +51,7 @@ import java.util.Set;
  * @since 2020-05-06
  * @author qiaok
  */
-public class MincostTickets {
+public class MinCostTickets {
 
     int[] days,costs;
     Integer[] memo;
@@ -134,7 +134,7 @@ public class MincostTickets {
 
 
     public static void main(String[] args) {
-        MincostTickets test = new MincostTickets();
+        MinCostTickets test = new MinCostTickets();
         int[] days = { 1,4,6,7,8,20 };
         int[] costs = { 2,7,15 };
         long start = System.currentTimeMillis();
