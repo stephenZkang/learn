@@ -4,7 +4,7 @@
 
 ##### **199.[二叉树的右视图](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/RightSideView.java)- 【深度优先搜索||广度优先搜索】 - 【1】 - 【RightSideView 】**
 
-##### **33.[搜索旋转排序数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SearchRotateArray.java) - 【二分查找】 - 【4】 - 【SearchRotateArray】**
+##### **33.[搜索旋转排序数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SearchRotateArray.java) - 【二分查找】 - 【5】 - 【SearchRotateArray】**
 
 ##### **21.[合并两个有序链表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MergeTwoOrderLinkedList.java) - 【迭代||递归】-【1】 - 【MergeTwoOrderLinkedList】**
 
@@ -14,7 +14,7 @@
 
 ##### **572.[另一个树的子树](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsSubtree.java) - 【双层递归||深度优先】-【1】 - 【IsSubTree】**
 
-##### **221.[最大正方形](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MaximalSquare.java) - 【动态规划】-【2】 - 【MaximalSquare】**
+##### **221.[最大正方形](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MaximalSquare.java) - 【动态规划】-【3】 - 【MaximalSquare】**
 
 ##### 202.[快乐数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/HappyNumber.java)- 【快慢指针法||用 HashSet 检测循环】-【1】 - 【HappyNumber 】
 
