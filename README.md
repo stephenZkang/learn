@@ -42,7 +42,9 @@
 
 7. [面试问题_20200103](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98_20200103.md)
 
-   
+8. 中间件开发指南 - 莫那鲁道对中间件开发的一份指导
+
+    
 
 
 
