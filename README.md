@@ -22,7 +22,7 @@
 
 1. [学习的初心](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/1.%20%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%88%9D%E5%BF%83.md)
 2. [简单的测试](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/2.%20%E7%AE%80%E5%8D%95%E7%9A%84%E6%B5%8B%E8%AF%95.md)
-3. 学习路径
+3. [学习路径](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/3.%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84.md)
 
 #### **【问题】目录下为阅读中遇到的一些问题搜集**
 
