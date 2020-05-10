@@ -34,7 +34,7 @@
 
 4. [http协议相关](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/http%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3.md) - 总结了OSI分层的概念以及对http长连接的误解
 
-5. [策略模式优化]([https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96.md](https://github.com/stephenZkang/learn/blob/master/问题/策略模式优化.md))
+5. [策略模式优化](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96.md)
 
 6. [单点登录](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95.md)  [oauth2](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95.md#oauth2)  [jwt概念](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95.md#jwt)
 
