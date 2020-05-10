@@ -42,6 +42,24 @@ package com.leetcode.qiaok.practice1;
  */
 public class IsSubtree {
 
+    public static void main(String[] args) {
+        IsSubtree test = new IsSubtree();
+        TreeNode s = new TreeNode(3);
+        s.left = new TreeNode(4);
+        s.left.left = new TreeNode(1);
+        s.left.right = new TreeNode(2);
+        s.right = new TreeNode(5);
+        System.out.println("s:"+s.toString());
+
+        TreeNode t = new TreeNode(4);
+        t.left = new TreeNode(1);
+        t.right = new TreeNode(2);
+        System.out.println("t:"+t.toString());
+
+        boolean res = test.isSubtree1(s,t);
+        System.out.println("res:"+res);
+    }
+
     /**
      * 双层递归
      *
@@ -109,29 +127,5 @@ public class IsSubtree {
         }
     }
 
-    public static void main(String[] args) {
-        IsSubtree test = new IsSubtree();
-        TreeNode s = new TreeNode(3);
-        s.left = new TreeNode(4);
-        s.left.left = new TreeNode(1);
-        s.left.right = new TreeNode(2);
-        s.right = new TreeNode(5);
-        System.out.println("s:"+s.toString());
-
-        TreeNode t = new TreeNode(4);
-        t.left = new TreeNode(1);
-        t.right = new TreeNode(2);
-        System.out.println("t:"+t.toString());
-
-        boolean res = test.isSubtree1(s,t);
-        System.out.println("res:"+res);
-    }
-}
-
-class TreeNode {
-   int val;
-   TreeNode left;
-   TreeNode right;
-   TreeNode(int x) { val = x; }
 
 }
