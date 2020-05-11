@@ -22,4 +22,4 @@
 
 ##### **236. [二叉树的最近公共祖先](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LowestCommonAncestor.java)- 【递归】-【1】 - 【LowestCommonAncestor】**
 
-##### **50. Pow(x, n)- 【递归|迭代】-【1】 - 【MyPow】**
+##### **50. [Pow(x, n)](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MyPow.java) - 【递归|迭代】-【1】 - 【MyPow】**
