@@ -66,11 +66,11 @@
 
    IDEA配置gradle，File - Settings - Build,Execution,Deployment - Gradle
 
-   ![image-20200512155621140](D:\workIdea\learn\img\image-20200512155621140.png)
+   ![image-20200512155621140](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512155621140.png)
 
 4. 环境配置完成，如下图
 
-   ![image-20200512155717438](D:\workIdea\learn\img\image-20200512155717438.png)
+   ![image-20200512155717438](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512155717438.png)
 
 #### 源码分析
 
@@ -112,25 +112,25 @@
 
 - **PaginationInterceptor**实现了Mybatis的拦截器**Interceptor**，继承了处理器**AbstractSqlParserHandler**
 
-  ![image-20200512162749464](D:\workIdea\learn\img\image-20200512162749464.png)
+  ![image-20200512162749464](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512162749464.png)
 
-  ![image-20200512163721622](D:\workIdea\learn\img\image-20200512163721622.png)
+  ![image-20200512163721622](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512163721622.png)
 
   **【1】红色部分确定数据库类型。通过手动设置dbType或者连接数据库url协议来判断**
 
-  ![image-20200512163825624](D:\workIdea\learn\img\image-20200512163825624.png)
+  ![image-20200512163825624](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512163825624.png)
 
   **【2】通过方言处理分页SQL**
 
-  ![image-20200512164033380](D:\workIdea\learn\img\image-20200512164033380.png)
+  ![image-20200512164033380](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512164033380.png)
 
   H2数据库的方言
 
   **【3】根据数据库类型获取方言，方言要与数据库类型关联**
 
-  ![image-20200512164844180](D:\workIdea\learn\img\image-20200512164844180.png)
+  ![image-20200512164844180](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512164844180.png)
 
-  ![image-20200512164819214](D:\workIdea\learn\img\image-20200512164819214.png)
+  ![image-20200512164819214](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200512164819214.png)
 
   结论，**扩展其他厂家的数据库**，如下：
 

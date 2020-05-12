@@ -27,6 +27,8 @@
 
 #### **【数据库】目录下为使用数据库的一些总结**
 
+1. [mybatis-plus源码解析及应用](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/mybatis-plus%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
+
 #### **【趣唠Linux操作系统】目录下为学习Linux内核的一些总结**
 
 1. [学习的初心](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/1.%20%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%88%9D%E5%BF%83.md)
