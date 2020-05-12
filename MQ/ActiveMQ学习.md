@@ -6,7 +6,7 @@ ActiveMQ 是一个 MOM，具体来说是一个实现了 JMS 规范的系统间�
 
 JMS 叫做 Java 消息服务（Java Message Service）,是 Java 平台上有关面向 MOM 的技术规范，旨在通过提供标准的产生、发送、接收和处理消息的 API 简化企业应用的开发，类似于 JDBC 和关系型数据库通信方式的抽象。
 
-![img](D:\workIdea\learn\img\clip_image002.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image002.jpg)
 
 官网地址：http://activemq.apache.org/
 
@@ -32,23 +32,23 @@ v.
 
 路由规则：消息域使用queue作为Destination，消息可以被同步或异步的发送和接收，每个消息只会给一个 Consumer 传送一次。Consumer 可以使用 MessageConsumer.receive() 同步地接收消息，也可以通过使用MessageConsumer.setMessageListener() 注册一个 MessageListener 实现异步接收。多个 Consumer 可以注册到同一个 queue 上，但一个消息只能被一个 Consumer 所接收，然后由该 Consumer 来确认消息。并且在这种情况下，Provider 对所有注册的 Consumer 以轮询的方式发送消息。
 
-![img](D:\workIdea\learn\img\clip_image004.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image004.jpg)
 
 #### ii.   Pub/Sub（发布/订阅）
 
 路由规则：消息域使用 topic 作为 Destination，发布者向 topic 发送消息，订阅者注册接收来自 topic 的消息。发送到 topic 的任何消息都将自动传递给所有订阅者。接收方式（同步和异步）与 P2P 域相同。除非显式指定，否则 topic 不会为订阅者保留消息。当然，这可以通过持久化（Durable）订阅来实现消息的保存。这种情况下，当订阅者与 Provider 断开时，Provider 会为它存储消息。当持久化订阅者重新连接时，将会受到所有的断连期间未消费的消息。
 
-![img](D:\workIdea\learn\img\clip_image006.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image006.jpg)
 
 ### c、ActiveMQ存储
 
 ActiveMQ 在 queue 中存储 Message 时，采用先进先出顺序（FIFO）存储。同一时间一个消息被分派给单个消费者，且只有当 Message 被消费并确认时，它才能从存储中删除。
 
-![img](D:\workIdea\learn\img\clip_image008.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image008.jpg)
 
 对于持久化订阅者来说，每个消费者获得 Message 的副本。为了节省存储空间，Provider 仅存储消息的一个副本。持久化订阅者维护了指向下一个 Message 的指针，并将其副本分派给消费者。以这种方式实现消息存储，因为每个持久化订阅者可能以不同的速率消费 Message，或者它们可能不是全部同时运行。此外，因每个 Message 可能存在多个消费者，所以在它被成功地传递给所有持久化订阅者之前，不能从存储中删除。
 
-![img](D:\workIdea\learn\img\clip_image010.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image010.jpg)
 
 ### d、ActiveMQ存储方式
 
@@ -60,25 +60,25 @@ ActiveMQ 5.3 版本起的默认存储方式。KahaDB存储是一个基于文件�
 
 要启用 KahaDB 存储，需要在 activemq.xml 中进行以下配置：
 
-![img](D:\workIdea\learn\img\clip_image012.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image012.jpg)
 
 #### ii.   AMQ
 
 与 KahaDB 存储一样，AMQ存储使用户能够快速启动和运行，因为它不依赖于第三方数据库。AMQ 消息存储库是可靠持久性和高性能索引的事务日志组合，当消息吞吐量是应用程序的主要需求时，该存储是最佳选择。但因为它为每个索引使用两个分开的文件，并且每个 Destination 都有一个索引，所以当你打算在代理中使用数千个队列的时候，不应该使用它。
 
-![img](D:\workIdea\learn\img\clip_image014.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image014.jpg)
 
 #### iii.  JDBC
 
 选择关系型数据库，通常的原因是企业已经具备了管理关系型数据的专长，但是它在性能上绝对不优于上述消息存储实现。
 
-![img](D:\workIdea\learn\img\clip_image016.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image016.jpg)
 
 #### iv.  内存存储
 
 内存消息存储器将所有持久消息保存在内存中。在仅存储有限数量 Message 的情况下，内存消息存储会很有用，因为 Message 通常会被快速消耗。在 activema.xml 中将 broker 元素上的 persistent 属性设置为 false 即可。
 
-![img](D:\workIdea\learn\img\clip_image018.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image018.jpg)
 
 #### v.    
 
@@ -94,17 +94,17 @@ http://activemq.apache.org/components/classic/download/
 
 ### b、解压zip文件，目录如下
 
-![img](D:\workIdea\learn\img\clip_image020.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image020.jpg)
 
 ### c、命令行cd到安装目录，启动ActiveMQ
 
 启动失败，如下图，发现端口5672被占用，关闭RabbitMQ
 
-![img](D:\workIdea\learn\img\clip_image022.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image022.jpg)
 
 cd到{安装目录}/bin，执行activemq start,启动成功
 
-![img](D:\workIdea\learn\img\clip_image024.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image024.jpg)
 
 ### d、登录管理页面
 
@@ -112,29 +112,29 @@ cd到{安装目录}/bin，执行activemq start,启动成功
 
 使用默认账号登录：admin/ admin
 
-![img](D:\workIdea\learn\img\clip_image026.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image026.jpg)
 
 ### e、测试ActiveMQ的例子
 
 发送消息-Sender
 
-![img](D:\workIdea\learn\img\clip_image028.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image028.jpg)
 
 管理页面查看
 
-![img](D:\workIdea\learn\img\clip_image030.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image030.jpg)
 
 开启一个接受端
 
-![img](D:\workIdea\learn\img\clip_image032.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image032.jpg)
 
 查看管理端
 
-![img](D:\workIdea\learn\img\clip_image034.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image034.jpg)
 
 发送消息，查看接受端是否接受
 
-![img](D:\workIdea\learn\img\clip_image036.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image036.jpg)
 
 f、 
 
@@ -158,7 +158,7 @@ f、
 
 Broker 连接配置如下：
 
-![img](D:\workIdea\learn\img\clip_image038.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image038.jpg)
 
 但是，这种部署模式有一些限制，
 
@@ -170,7 +170,7 @@ Broker 连接配置如下：
 
 把正在运行的单例配置成无共享主从，或者配置新的从节点时，你都要停止当前服务，修改配置后再重启才能生效
 
-![img](D:\workIdea\learn\img\clip_image039.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image039.png)
 
 在可以接受一些故障停机时间的情况下，可以使用该模式。
 
@@ -178,7 +178,7 @@ Broker 连接配置如下：
 
 从节点配置：
 
-![img](D:\workIdea\learn\img\clip_image041.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image041.jpg)
 
 此外，可以配置 shutdownOnMasterFailure 项，表示主节点失效后安全关闭，保证没有消息丢失，允许管理员维护一个新的从节点。
 
@@ -200,7 +200,7 @@ Broker 连接配置如下：
 
 它会获取一个表上的排它锁，以确保没有其他 ActiveMQ 代理可以同时访问数据库。其他未获得锁的代理则处于轮询状态，就会被当做是从节点，不会开启传输也不会接受连接。
 
-![img](D:\workIdea\learn\img\clip_image043.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image043.jpg)
 
 （2）基于文件系统
 
@@ -208,7 +208,7 @@ Broker 连接配置如下：
 
 需要获取分布式共享文件锁，linux 系统下推荐用 GFS2。
 
-![img](D:\workIdea\learn\img\clip_image045.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image045.jpg)
 
  
 
@@ -248,27 +248,27 @@ d、
 
 导入jar包，jar包在{安装目录}/下
 
-![img](D:\workIdea\learn\img\clip_image046.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image046.png)
 
 查看运行界面监听的地址
 
-![img](D:\workIdea\learn\img\clip_image048.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image048.jpg)
 
 i.    建立Sender发送消息，从管理界面查看：
 
-![img](D:\workIdea\learn\img\clip_image050.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image050.jpg)
 
 队列TEST.FOO中一个消息
 
-![img](D:\workIdea\learn\img\clip_image052.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image052.jpg)
 
 ii.   建立接受者接受消息
 
-![img](D:\workIdea\learn\img\clip_image054.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image054.jpg)
 
 第二列正在接受的消息
 
-![img](D:\workIdea\learn\img\clip_image056.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image056.jpg)
 
 iii.   
 
@@ -292,17 +292,17 @@ iii.
 
 ### d、配置文件
 
-![img](D:\workIdea\learn\img\clip_image058.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image058.jpg)
 
 ![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image060.jpg)
 
 ### e、测试发送消息
 
-![img](D:\workIdea\learn\img\clip_image062.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image062.jpg)
 
 ## 8、ActiveMQ目录
 
-![img](D:\workIdea\learn\img\clip_image064.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/clip_image064.jpg)
 
 a、bin-启动目录
 
