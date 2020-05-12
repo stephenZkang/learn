@@ -68,11 +68,11 @@ https://www.rabbitmq.com/download.html
 
 ### c、安装后为RabbitMQ服务
 
-![img](D:\workIdea\learn\img\rclip_image002.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image002.jpg)
 
 ### d、开始菜单里出现如下选项：
 
-![img](D:\workIdea\learn\img\rclip_image003.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image003.png)
 
 启动、停止、重新安装等。
 
@@ -94,13 +94,13 @@ rabbitmq-plugins enable rabbitmq_management
 
 在浏览器中输入地址查看：http://127.0.0.1:15672/
 
-![img](D:\workIdea\learn\img\rclip_image005.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image005.jpg)
 
 使用默认账号登录：guest/ guest
 
 ### g、添加admin用户
 
-![img](D:\workIdea\learn\img\rclip_image007.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image007.jpg)
 
 ### h、用户角色
 
@@ -126,19 +126,19 @@ rabbitmq-plugins enable rabbitmq_management
 
 ### i、创建Virtual Hosts
 
-![img](D:\workIdea\learn\img\rclip_image009.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image009.jpg)
 
 ### j、设置权限
 
-![img](D:\workIdea\learn\img\rclip_image011.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image011.jpg)
 
 选中admin，设置权限
 
-![img](D:\workIdea\learn\img\rclip_image013.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image013.jpg)
 
 查看权限已添加
 
-![img](D:\workIdea\learn\img\rclip_image015.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image015.jpg)
 
 k、 
 
@@ -152,21 +152,21 @@ https://www.rabbitmq.com/java-client.html
 
 ii.   建立Sender发送消息，从管理界面查看：
 
-![img](D:\workIdea\learn\img\rclip_image017.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image017.jpg)
 
-![img](D:\workIdea\learn\img\rclip_image019.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image019.jpg)
 
 iii.  点击上图队列名称，查看详情，并获取消息内容
 
-![img](D:\workIdea\learn\img\rclip_image021.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image021.jpg)
 
 iv.  消费者从队列中获取消息（example）
 
-![img](D:\workIdea\learn\img\rclip_image023.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image023.jpg)
 
 ### b、Work模式的“能者多劳”，一个消息只能被一个消费者获取。（work）
 
-![img](D:\workIdea\learn\img\rclip_image024.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image024.png)
 
 ### c、消息的确认模式
 
@@ -174,13 +174,13 @@ iv.  消费者从队列中获取消息（example）
 
 只要消息从队列中获取，无论消费者获取到消息后是否成功消息， 都认为是消息已经成功消费。
 
-![img](D:\workIdea\learn\img\rclip_image026.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image026.jpg)
 
 #### ii.   手动确认
 
 消费者从队列中获取消息后，服务器会将该消息标记为不可用状态，等待消费者的反馈，如果消费者一直没有反馈，那么该消息将一直处于不可用状态
 
-![img](D:\workIdea\learn\img\rclip_image028.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image028.jpg)
 
 ### d、交换机的三种模式
 
@@ -204,7 +204,7 @@ iv.  消费者从队列中获取消息（example）
 
 Sender
 
-![img](D:\workIdea\learn\img\rclip_image030.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image030.jpg)
 
 注意：消息发送到没有队列绑定的交换机时，消息将丢失，因为，交换机没有存储消息的能力，消息只能存在在队列中
 
@@ -214,11 +214,11 @@ Sender
 
 Recv
 
-![img](D:\workIdea\learn\img\rclip_image032.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image032.jpg)
 
 在管理工具中查看队列和交换机的绑定关系：
 
-![img](D:\workIdea\learn\img\rclip_image034.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image034.jpg)
 
 ![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image036.jpg)
 
@@ -226,11 +226,11 @@ Recv
 
 Sender
 
-![img](D:\workIdea\learn\img\rclip_image038.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image038.jpg)
 
 Recv
 
-![img](D:\workIdea\learn\img\rclip_image040.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image040.jpg)
 
 Direct模式：Binding Key == Rounting Key
 
@@ -238,11 +238,11 @@ Direct模式：Binding Key == Rounting Key
 
 Sender
 
-![img](D:\workIdea\learn\img\rclip_image042.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image042.jpg)
 
 Recv
 
-![img](D:\workIdea\learn\img\rclip_image044.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image044.jpg)
 
 ### e、持久化交换机和队列
 
@@ -250,7 +250,7 @@ Recv
 
 非持久化：将交换机或队列的数据保存到内存，服务器宕机或重启之后将不存在。
 
-![img](D:\workIdea\learn\img\rclip_image046.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image046.jpg)
 
 f、 
 
@@ -262,31 +262,31 @@ f、
 
 ### b、导入jar包列表
 
-![img](D:\workIdea\learn\img\rclip_image048.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image048.jpg)
 
 ### c、Spring和RabbitMQ集成的主要jar包
 
-![img](D:\workIdea\learn\img\rclip_image049.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image049.png)
 
 ### d、配置文件
 
-![img](D:\workIdea\learn\img\rclip_image051.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image051.jpg)
 
-![img](D:\workIdea\learn\img\rclip_image053.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image053.jpg)
 
 ### e、测试发送消息
 
-![img](D:\workIdea\learn\img\rclip_image055.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image055.jpg)
 
 ## 6、RabbitMQ插件
 
 a、插件管理的一些基本命令
 
-![img](D:\workIdea\learn\img\rclip_image057.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image057.jpg)
 
 i.    rabbitmq-plugins list-查看已安装的插件
 
-![img](D:\workIdea\learn\img\rclip_image059.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image059.jpg)
 
 ii.   rabbitmq-plugins enable/disable plugin-name --启动/禁用插件
 
@@ -294,7 +294,7 @@ b、插件是以(.ez)结尾的文件
 
 c、插件存放目录路径配置，/sbin/rabbitmq-env.bat
 
-![img](D:\workIdea\learn\img\rclip_image061.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image061.jpg)
 
 d、插件的开发需要下载源码，准备环境(使用Erlang开发，暂缓)
 
@@ -302,7 +302,7 @@ e、
 
 ## 7、RabbitMQ目录
 
-![img](D:\workIdea\learn\img\rclip_image063.jpg)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/rclip_image063.jpg)
 
 a、ebin-RabbitMQ的运行库
 
