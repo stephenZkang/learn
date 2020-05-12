@@ -7,6 +7,8 @@
 
 #### **【activiti】目录下为学习activiti练习的代码**
 
+1. [activiti学习](https://github.com/stephenZkang/learn/blob/master/activiti/activiti.md)
+
 #### **【leetcode】目录下为Leetcode 刷题总结以及代码**
 
 1. [Java解题汇总](https://github.com/stephenZkang/learn/tree/master/leetcode/leetcode-java)
