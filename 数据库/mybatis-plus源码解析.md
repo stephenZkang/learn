@@ -138,6 +138,11 @@
   2. **实现IDialect接口对分页做处理**
   3. **在DialectRegistry类中填上对应的厂家数据库类型和方言的关联**
 
+  两种方式扩展：
+
+  1. 修改源代码构建mybatis-plus的jar依赖
+  2. 覆盖**JdbcUtils**和**DialectRegistry**，两个类，新增方言类
+
 - 
 
 
