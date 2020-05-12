@@ -140,8 +140,8 @@
 
   两种方式扩展：
 
-  1. 修改源代码构建mybatis-plus的jar依赖
-  2. 覆盖**JdbcUtils**和**DialectRegistry**，两个类，新增方言类
+  1. 修改源代码构建mybatis-plus的jar依赖（麻烦）
+  2. 覆盖**JdbcUtils**和**DialectRegistry**，两个类，新增方言类**（推荐）**
 
 - 
 
