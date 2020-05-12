@@ -24,4 +24,4 @@
 
 ##### **50. [Pow(x, n)](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MyPow.java) - 【递归|迭代】-【2】 - 【MyPow】**
 
-##### **155. [最小栈](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MyPow.java) - 【辅助栈】-【1】 - 【MinStack】**
+##### **155. [最小栈](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinStack.java) - 【辅助栈】-【1】 - 【MinStack】**
