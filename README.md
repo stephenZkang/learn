@@ -1,5 +1,9 @@
 ### learn
 
+#### **【MQ】目录下为学习MQ练习的代码**
+
+1. ActiveMQ学习
+
 #### **【activiti】目录下为学习activiti练习的代码**
 
 #### **【leetcode】目录下为Leetcode 刷题总结以及代码**
