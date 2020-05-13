@@ -76,7 +76,8 @@
 
 面试官：那你跟我说下你是怎么用的？
 
-我是结合spring boot使用的。一般有两种方式，一种是直接通过RedisTemplate来使用，另一种是使用spring cache集成Redis（也就是注解的方式）。具体的代码我就不说了，在我的掘金中有一个demo（见下）。
+1. 使用jedis连接
+2. 结合spring boot使用。一般有两种方式，一种是直接通过RedisTemplate来使用，另一种是使用spring cache集成Redis（也就是注解的方式）。具体的代码我就不说了，有一个demo（见下）。
 
 
 
@@ -149,13 +150,9 @@ spring:
 
 ```java
 public class User implements Serializable{
-
     private static final long serialVersionUID = 662692455422902539L;
-
     private Integer id;
-
     private String name;
-
     private Integer age;
 
     public User() {
@@ -166,43 +163,32 @@ public class User implements Serializable{
         this.name = name;
         this.age = age;
     }
-
     public Integer getId() {
         return id;
     }
-
     public void setId(Integer id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public Integer getAge() {
         return age;
     }
-
     public void setAge(Integer age) {
         this.age = age;
     }
-
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "User{" +"id=" + id +", name='" + name + '\'' +", age=" + age +'}';
     }
 }
 ```
 
-#### **RedisTemplate的使用方式**
+**RedisTemplate的使用方式**
 
 默认情况下的模板只能支持`RedisTemplate`，也就是只能存入字符串，所以自定义模板很有必要。
 
@@ -250,7 +236,9 @@ public class UserController {
 
 然后在浏览器访问，观察后台日志 http://localhost:8082/user/test
 
-!![image-20200513123732079](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123732079.png)
+![image-20200513123732079](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123732079.png)
+
+
 
 #### **使用spring cache集成redis**
 
@@ -392,6 +380,8 @@ public class Application {
 
 没有了缓存，所以进入了get方法，从userMap中获取。
 
+
+
 ### **缓存注解**
 
 **1、@Cacheable**
@@ -422,8 +412,6 @@ public class Application {
 
   
 
-
-
 ### **缓存问题**
 
 #### 缓存和数据库数据一致性问题
@@ -431,6 +419,8 @@ public class Application {
 面试官：看了一下你的demo，简单易懂。那你在实际项目中使用缓存有遇到什么问题或者会遇到什么问题你知道吗？
 
 我：缓存和数据库数据一致性问题：分布式环境下非常容易出现缓存和数据库间数据一致性问题，针对这一点，如果项目对缓存的要求是强一致性的，那么就不要使用缓存。我们只能采取合适的策略来降低缓存和数据库间数据不一致的概率，而无法保证两者间的强一致性。合适的策略包括合适的缓存更新策略，更新数据库后及时更新缓存、缓存失败时增加重试机制。
+
+
 
 #### 缓存雪崩
 
