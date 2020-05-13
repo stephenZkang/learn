@@ -16,6 +16,7 @@
 #### **【Redis】目录下为使用Redis和阅读博客的一些总结**
 
 1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md) - 总结了[缓存穿透](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F)、[缓存雪崩](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9)、[缓存击穿](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF)等问题的概念以及解决方法
+2. [Redis简述](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E9%9D%A2%E8%AF%95.md)
 
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
