@@ -32,7 +32,7 @@
 
 我：当然可以，但是在说之前，我觉得有必要先来了解下Redis内部内存管理是如何描述这5种数据类型的。说着，我拿着笔给面试官画了一张图：
 
-![image-20200513123626343](D:\workIdea\learn\img\image-20200513123626343.png)
+![image-20200513123626343](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123626343.png)
 
 我：首先redis内部使用一个redisObject对象来表示所有的key和value，redisObject最主要的信息如上图所示：type表示一个value对象具体是何种数据类型，encoding是不同数据类型在redis内部的存储方式。比如：type=string表示value存储的是一个普通字符串，那么encoding可以是raw或者int。
 
@@ -66,7 +66,7 @@
 
 数据类型应用场景总结
 
-![image-20200513123640383](D:\workIdea\learn\img\image-20200513123640383.png)
+![image-20200513123640383](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123640383.png)
 
 面试官：想不到你平时也下了不少工夫，那redis缓存你一定用过的吧
 
@@ -250,7 +250,7 @@ public class UserController {
 
 然后在浏览器访问，观察后台日志 http://localhost:8082/user/test
 
-!![image-20200513123732079](D:\workIdea\learn\img\image-20200513123732079.png)
+!![image-20200513123732079](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123732079.png)
 
 #### **使用spring cache集成redis**
 
@@ -376,19 +376,19 @@ public class Application {
 
 1、先调用添加接口：http://localhost:8082/user/add
 
-![image-20200513123814145](D:\workIdea\learn\img\image-20200513123814145.png)
+![image-20200513123814145](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123814145.png)
 
 2、再调用查询接口，查询id=4的用户信息：
 
-![image-20200513123920091](D:\workIdea\learn\img\image-20200513123920091.png)
+![image-20200513123920091](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123920091.png)
 
 可以看出，这里已经从缓存中获取数据了，因为上一步add方法已经把id=4的用户数据放入了redis缓存 3、调用删除方法，删除id=4的用户信息，同时清除缓存
 
-![image-20200513123934266](D:\workIdea\learn\img\image-20200513123934266.png)
+![image-20200513123934266](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123934266.png)
 
 4、再次调用查询接口，查询id=4的用户信息：
 
-![image-20200513123944482](D:\workIdea\learn\img\image-20200513123944482.png)
+![image-20200513123944482](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513123944482.png)
 
 没有了缓存，所以进入了get方法，从userMap中获取。
 
@@ -536,7 +536,7 @@ public static String getData(String key) throws InterruptedException {
 
 我：Redis有六种淘汰策略
 
-![image-20200513124026270](D:\workIdea\learn\img\image-20200513124026270.png)
+![image-20200513124026270](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124026270.png)
 
 补充一下：Redis4.0加入了LFU(least frequency use)淘汰策略，包括volatile-lfu和allkeys-lfu，通过统计访问频率，将访问频率最少，即最不经常使用的KV淘汰。
 
@@ -612,7 +612,7 @@ repl_backlog_size：保存在主节点上的一个固定长度的先进先出队
 - 主节点发送数据给从节点过程中，主节点还会进行一些写操作，这时候的数据存储在复制缓冲区中。从节点同步主节点数据完成后，主节点将缓冲区的数据继续发送给从节点，用于部分复制。
 - 主节点响应写命令时，不但会把命名发送给从节点，还会写入复制积压缓冲区，用于复制命令丢失的数据补救。
 
-![image-20200513124044898](D:\workIdea\learn\img\image-20200513124044898.png)
+![image-20200513124044898](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124044898.png)
 
 上面是psync的执行流程：
 
@@ -626,7 +626,7 @@ repl_backlog_size：保存在主节点上的一个固定长度的先进先出队
 
 我：可以
 
-![image-20200513124055937](D:\workIdea\learn\img\image-20200513124055937.png)
+![image-20200513124055937](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124055937.png)
 
 上面是全量复制的流程。主要有以下几步：
 
@@ -670,7 +670,7 @@ repl_backlog_size：保存在主节点上的一个固定长度的先进先出队
 
 面试官：那么问题又来了。那你说下哨兵有哪些功能？
 
-![image-20200513124108244](D:\workIdea\learn\img\image-20200513124108244.png)
+![image-20200513124108244](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124108244.png)
 
 我：如图，是Redis Sentinel（哨兵）的架构图。Redis Sentinel（哨兵）主要功能包括主节点存活检测、主从运行情况检测、自动故障转移、主从切换。Redis Sentinel最小配置是一主一从。
 
@@ -685,31 +685,31 @@ Redis的Sentinel系统可以用来管理多个Redis服务器，该系统可以�
 
 我：话不多说，直接上图：
 
-![image-20200513124118001](D:\workIdea\learn\img\image-20200513124118001.png)
+![image-20200513124118001](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124118001.png)
 
 1、每个Sentinel节点都需要定期执行以下任务：每个Sentinel以每秒一次的频率，向它所知的主服务器、从服务器以及其他的Sentinel实例发送一个PING命令。（如上图）
 
-![image-20200513124126778](D:\workIdea\learn\img\image-20200513124126778.png)
+![image-20200513124126778](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124126778.png)
 
 2、如果一个实例距离最后一次有效回复PING命令的时间超过down-after-milliseconds所指定的值，那么这个实例会被Sentinel标记为主观下线。（如上图）
 
-![image-20200513124136131](D:\workIdea\learn\img\image-20200513124136131.png)
+![image-20200513124136131](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124136131.png)
 
 3、如果一个主服务器被标记为主观下线，那么正在监视这个服务器的所有Sentinel节点，要以每秒一次的频率确认主服务器的确进入了主观下线状态。
 
-![image-20200513124203837](D:\workIdea\learn\img\image-20200513124203837.png)
+![image-20200513124203837](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124203837.png)
 
 4、如果一个主服务器被标记为主观下线，并且有足够数量的Sentinel（至少要达到配置文件指定的数量）在指定的时间范围内同意这一判断，那么这个主服务器被标记为客观下线。
 
-![image-20200513124212457](D:\workIdea\learn\img\image-20200513124212457.png)
+![image-20200513124212457](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124212457.png)
 
 5、一般情况下，每个Sentinel会以每10秒一次的频率向它已知的所有主服务器和从服务器发送INFO命令，当一个主服务器被标记为客观下线时，Sentinel向下线主服务器的所有从服务器发送INFO命令的频率，会从10秒一次改为每秒一次。
 
-![image-20200513124221098](D:\workIdea\learn\img\image-20200513124221098.png)
+![image-20200513124221098](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124221098.png)
 
 6、Sentinel和其他Sentinel协商客观下线的主节点的状态，如果处于SDOWN状态，则投票自动选出新的主节点，将剩余从节点指向新的主节点进行数据复制。
 
-![image-20200513124229249](D:\workIdea\learn\img\image-20200513124229249.png)
+![image-20200513124229249](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200513124229249.png)
 
 7、当没有足够数量的Sentinel同意主服务器下线时，主服务器的客观下线状态就会被移除。当主服务器重新向Sentinel的PING命令返回有效回复时，主服务器的主观下线状态就会被移除。
 
