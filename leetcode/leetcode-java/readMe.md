@@ -16,7 +16,7 @@
 
 ##### **221.[最大正方形](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MaximalSquare.java) - 【动态规划】-【4】 - 【MaximalSquare】**
 
-##### 202.[快乐数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/HappyNumber.java)- 【快慢指针法||用 HashSet 检测循环】-【2】 - 【HappyNumber 】
+##### 202.[快乐数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/HappyNumber.java)- 【快慢指针法||用 HashSet 检测循环】-【3】 - 【HappyNumber 】
 
 ##### **69.[x 的平方根](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MySqrt.java) - 【其他数学函数||二分查找||牛顿迭代】-【1】 - 【MySqrt】**
 
