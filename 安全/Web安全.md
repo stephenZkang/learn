@@ -1,72 +1,68 @@
-# 【干货分享】Web安全漏洞深入分析及其安全编码
+# Web安全漏洞深入分析及其安全编码
 
 超全Web漏洞详解及其对应的安全编码规则，包括：SQL注入、XSS、CSRF、文件上传、路径遍历、越权、XML以及业务安全等，实例告诉你各个漏洞对应的编码规则。给你的代码加把安全锁！
 
-
-
 文章目录
 
+[一、Web安全基础](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E4%B8%80web%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80)
 
+[1.1 常见的Web安全漏洞](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#11-%E5%B8%B8%E8%A7%81%E7%9A%84web%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E)
 
-[一、Web安全基础](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#一、Web安全基础)
+[1.2 安全编码原则]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#12-%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E5%8E%9F%E5%88%99](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#12-安全编码原则))
 
-[1.1 常见的Web安全漏洞](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#1_1_常见的Web安全漏洞)
+[1.3 数据验证]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#13-%E6%95%B0%E6%8D%AE%E9%AA%8C%E8%AF%81](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#13-数据验证))
 
-[1.2 安全编码原则](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#1_2_安全编码原则)
+[1.4 身份认证&会话管理]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#14-%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81%E4%BC%9A%E8%AF%9D%E7%AE%A1%E7%90%86](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#14-身份认证会话管理))
 
-[1.3 数据验证](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#1_3_数据验证)
+[1.5 授权管理]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#15-%E6%8E%88%E6%9D%83%E7%AE%A1%E7%90%86](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#15-授权管理))
 
-[1.4 身份认证&会话管理](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#1_4_身份认证_会话管理)
+[1.6 存储安全]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#16-%E5%AD%98%E5%82%A8%E5%AE%89%E5%85%A8](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#16-存储安全))
 
-[1.5 授权管理](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#1_5_授权管理)
+[二、SQL注入及其安全编码]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E4%BA%8Csql%E6%B3%A8%E5%85%A5%E5%8F%8A%E5%85%B6%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#二sql注入及其安全编码))
 
-[1.6 存储安全](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#1_6_存储安全)
+[2.1 定义]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#21-%E5%AE%9A%E4%B9%89](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#21-定义))
 
-[二、SQL注入及其安全编码](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#二、SQL注入及其安全编码)
+[2.2 经典SQL注入代码示例]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#22-%E7%BB%8F%E5%85%B8sql%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#22-经典sql注入代码示例))
 
-[2.1 定义](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#2_1_定义)
+[2.3 文艺的SQL注入]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#23-%E6%96%87%E8%89%BA%E7%9A%84sql%E6%B3%A8%E5%85%A5](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#23-文艺的sql注入))
 
-[2.2 经典SQL注入代码示例](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#2_2_经典SQL注入代码示例)
+[2.4 SQL注入防护]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#24-sql%E6%B3%A8%E5%85%A5%E9%98%B2%E6%8A%A4](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#24-sql注入防护))
 
-[2.3 文艺的SQL注入](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#2_3_文艺的SQL注入)
+[2.5 MyBatis的SQL注入防护]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#25-mybatis%E7%9A%84sql%E6%B3%A8%E5%85%A5%E9%98%B2%E6%8A%A4](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#25-mybatis的sql注入防护))
 
-[2.4 SQL注入防护](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#2_4_SQL注入防护)
+[三、跨站脚本攻击及其安全编码]([[https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E4%B8%89%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB%E5%8F%8A%E5%85%B6%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#三跨站脚本攻击及其安全编码)))
 
-[2.5 MyBatis的SQL注入防护](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#2_5_MyBatis的SQL注入防护)
+[3.1 定义]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#31-%E5%AE%9A%E4%B9%89](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#31-定义))
 
-[三、跨站脚本攻击及其安全编码](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#三、跨站脚本攻击及其安全编码)
+[3.2 XSS攻击模式]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#32-xss%E6%94%BB%E5%87%BB%E6%A8%A1%E5%BC%8F](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#32-xss攻击模式))
 
-[3.1 定义](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_1_定义)
+[3.3 XSS的利用]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#33-xss%E7%9A%84%E5%88%A9%E7%94%A8](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#33-xss的利用))
 
-[3.2 XSS攻击模式](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_2_XSS攻击模式)
+[3.4 XSS的分类]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#34-xss%E7%9A%84%E5%88%86%E7%B1%BB](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#34-xss的分类))
 
-[3.3 XSS的利用](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_3_XSS的利用)
+[3.5 跨站脚本攻击]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#35-%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#35-跨站脚本攻击))
 
-[3.4 XSS的分类](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_4_XSS的分类)
+[3.6 跨站脚本攻击防护]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#36-%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB%E9%98%B2%E6%8A%A4](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#36-跨站脚本攻击防护))
 
-[3.5 跨站脚本攻击](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_5_跨站脚本攻击)
+[3.7 XSS防护—Spring MVC]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#37-xss%E9%98%B2%E6%8A%A4spring-mvc](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#37-xss防护spring-mvc))
 
-[3.6 跨站脚本攻击防护](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_6_跨站脚本攻击防护)
+[四、跨站请求伪造及其安全编码](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#四跨站请求伪造及其安全编码)
 
-[3.7 XSS防护—Spring MVC](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#3_7_XSS防护—Spring_MVC)
+[4.1 定义]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#41-%E5%AE%9A%E4%B9%89](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#41-定义))
 
-[四、跨站请求伪造及其安全编码](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#四、跨站请求伪造及其安全编码)
+[4.2 CSRF攻击过程]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#42-csrf%E6%94%BB%E5%87%BB%E8%BF%87%E7%A8%8B](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#42-csrf攻击过程))
 
-[4.1 定义](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_1_定义)
+[4.3 CSRF的危害]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#43-csrf%E7%9A%84%E5%8D%B1%E5%AE%B3](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#43-csrf的危害))
 
-[4.2 CSRF攻击过程](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_2_CSRF攻击过程)
+[4.4 CSRF攻击分析]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#44-csrf%E6%94%BB%E5%87%BB%E5%88%86%E6%9E%90](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#44-csrf攻击分析))
 
-[4.3 CSRF的危害](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_3_CSRF的危害)
+[4.4 CSRF缺陷代码]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#44-csrf%E7%BC%BA%E9%99%B7%E4%BB%A3%E7%A0%81](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#44-csrf缺陷代码))
 
-[4.4 CSRF攻击分析](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_4_CSRF攻击分析)
+[4.5 CSRF解决方案]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#45-csrf%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#45-csrf解决方案))
 
-[4.4 CSRF缺陷代码](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_4_CSRF缺陷代码)
+[4.5.1 检测referer]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#451-%E6%A3%80%E6%B5%8Breferer](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#451-检测referer))
 
-[4.5 CSRF解决方案](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_5_CSRF解决方案)
-
-[4.5.1 检测referer](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_5_1_检测referer)
-
-[4.5.2 CSRF Token使用原则](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#4_5_2_CSRF_Token使用原则)
+[4.5.2 CSRF Token使用原则]([https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#452-csrf-token%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%88%99](https://github.com/stephenZkang/learn/blob/master/安全/Web安全.md#452-csrf-token使用原则))
 
 [五、文件上传及其安全编码](http://blog.nsfocus.net/web-vulnerability-analysis-coding-security/#五、文件上传及其安全编码)
 
@@ -130,9 +126,9 @@
 
 ### 1.1 常见的Web安全漏洞
 
-![img](D:\workIdea\learn\img\5ffd4b8626370b81cbe15e106d47ab31.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/5ffd4b8626370b81cbe15e106d47ab31.png)
 
-![img](D:\workIdea\learn\img\934a41683f06ad3869a6a5f6a5e59b72.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/934a41683f06ad3869a6a5f6a5e59b72.png)
 
 ### 1.2 安全编码原则
 
@@ -146,19 +142,19 @@
 
 ### 1.3 数据验证
 
-![img](D:\workIdea\learn\img\94e202dc6793a6e5c592bfd34dce83b3.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/94e202dc6793a6e5c592bfd34dce83b3.png)
 
 ### 1.4 身份认证&会话管理
 
-![img](D:\workIdea\learn\img\96444291e05f47d18375a8b0cf970396.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/96444291e05f47d18375a8b0cf970396.png)
 
 ### 1.5 授权管理
 
-![img](D:\workIdea\learn\img\d54929ed8256fff6fbbdf53c1865d48e.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d54929ed8256fff6fbbdf53c1865d48e.png)
 
 ### 1.6 存储安全
 
-![img](D:\workIdea\learn\img\96a2d74e273808fc68e10eda07f7dfea.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/96a2d74e273808fc68e10eda07f7dfea.png)
 
 ## 二、SQL注入及其安全编码
 
@@ -176,51 +172,51 @@ SQL注入漏洞，就是将用户可控的数据拼接进了SQL语句中，一�
 
 攻击者通过注入语句，改变SQL语句执行逻辑，通过控制部分SQL语句，攻击者可以查询数据库中任何自己需要的数据，利用数据库的一些特性，可以直接获取数据库服务器的系统权限。
 
-![img](D:\workIdea\learn\img\5ebbb0e01e81cdd83e17cbbc951a7934.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/5ebbb0e01e81cdd83e17cbbc951a7934.png)
 
 **某银行信用卡商城SQL注入漏洞**
 
 https://shop.***.com.cn/BusinessCityWeb/ecity.do?func=queryClassFun&dom=<request><queryClass currpage=”1″ rowspage=”20″ sorttype=”0″ brand=”043″ goods_price=”0|300″ goods_nm=”” color=”” type_pid=”” type_id=”” querytype=”brandForColor”/></request>中参数goods_price、brand存在SQL注入漏洞；
 
-![img](D:\workIdea\learn\img\b3beb86c266839df3e435eb7e4dce3b1.png)**某输入法网站Ajax页面POST型SQL注入漏洞**
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/b3beb86c266839df3e435eb7e4dce3b1.png)**某输入法网站Ajax页面POST型SQL注入漏洞**
 
 该网站的Ajax页面是http://***.***.com/zt/acgn/pc/ajax_post.php，POST内容为：qq=CasterJs&type=pc&nickname=CasterJs&entries=CasterJs，Web应用程序未过滤参数type，导致存在POST型注入漏洞。使用sqlmap工具，可以注入得到数据库名
 
-![img](D:\workIdea\learn\img\7f90ea1297197842ef8279ccdc5ff153.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/7f90ea1297197842ef8279ccdc5ff153.png)
 
 ### 2.2 经典SQL注入代码示例
 
 **1）Servlet示例**
 
-![img](D:\workIdea\learn\img\397cb93d4bfdb8ae660b151f473608b3.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/397cb93d4bfdb8ae660b151f473608b3.png)
 
 **2）mybatis示例**
 
-![img](D:\workIdea\learn\img\d020cca669e23372fcbf6d1d4ac3c1a6.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d020cca669e23372fcbf6d1d4ac3c1a6.png)
 
 ### 2.3 文艺的SQL注入
 
 **a）用户注册页面将用户数据存入数据库**
 
-![img](D:\workIdea\learn\img\f89abdb3c7f47ac66d0e888169ff573f.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/f89abdb3c7f47ac66d0e888169ff573f.png)
 
 **b）从数据库中取出用户名，根据用户名查询其他信息**
 
-![img](D:\workIdea\learn\img\b0d0305770699642449977258c3e0b20.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/b0d0305770699642449977258c3e0b20.png)
 
 ### 2.4 SQL注入防护
 
 a)对输入点进行过滤（不是根本解决方法 可能被绕过）
 
-![img](D:\workIdea\learn\img\524618d0a505d6c91a5edec1725c4c56.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/524618d0a505d6c91a5edec1725c4c56.png)
 
 建议使用ESAPI针对输入数据进行过滤。
 
-![img](D:\workIdea\learn\img\48cfb4f8895588a0a9f2a90f8ff800db.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/48cfb4f8895588a0a9f2a90f8ff800db.png)
 
 b）预编译方式访问数据库
 
-![img](D:\workIdea\learn\img\781845fe53d82a3d0c78bbcbaf2cadbd.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/781845fe53d82a3d0c78bbcbaf2cadbd.png)
 
 预编译本质上也是对参数的过滤，只不过由官方实现。
 
@@ -228,7 +224,7 @@ b）预编译方式访问数据库
 
 c）使用存储过程
 
-![img](D:\workIdea\learn\img\de3208079daf0c032e77229f84d66e72.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/de3208079daf0c032e77229f84d66e72.png)
 
 ### 2.5 MyBatis的SQL注入防护
 
@@ -260,27 +256,27 @@ XSS（Cross Site Script）漏洞，从本质上来说就是将数据注入到了
 
 **XSS不止可以弹窗……**
 
-![img](D:\workIdea\learn\img\918db210342c40b3d167e4ff6e13c7a4.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/918db210342c40b3d167e4ff6e13c7a4.png)
 
 ### 3.2 XSS攻击模式
 
-![img](D:\workIdea\learn\img\e2a7328ee201976cc809215f632b7737.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/e2a7328ee201976cc809215f632b7737.png)
 
 ### 3.3 XSS的利用
 
-![img](D:\workIdea\learn\img\90aa9c83f8c1349dfebb0815ab04b24f.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/90aa9c83f8c1349dfebb0815ab04b24f.png)
 
-![img](D:\workIdea\learn\img\3cb7027b02b174328579b86ad76971d0.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/3cb7027b02b174328579b86ad76971d0.png)
 
 **某生活网站存在反射型、存储型跨站脚本攻击**
 
 在wap页面的网友中心发表提问页面中，应用程序对用户的输入过滤不严格，导致存在存储型跨站脚本攻击，攻击者在标题处构造跨站脚本”<img src=@ onerror=alert(19)>”
 
-![img](D:\workIdea\learn\img\8b6b0b4db27c07a94cc792f1c37d6dd4.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/8b6b0b4db27c07a94cc792f1c37d6dd4.png)
 
 提交问题后回到“我的帖子”页面，可以看到跨站脚本被执行，弹出“19”窗口，
 
-![img](D:\workIdea\learn\img\2017704beac19df49bc7433a63c5edcf.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/2017704beac19df49bc7433a63c5edcf.png)
 
 ### 3.4 XSS的分类
 
@@ -300,7 +296,7 @@ XSS（Cross Site Script）漏洞，从本质上来说就是将数据注入到了
 
 **a) 存储型跨站脚本攻击**
 
-![img](D:\workIdea\learn\img\862d5f580fc591f2351d21ace3737f96.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/862d5f580fc591f2351d21ace3737f96.png)
 
 **b）反射型跨站脚本攻击**
 
@@ -310,7 +306,7 @@ XSS（Cross Site Script）漏洞，从本质上来说就是将数据注入到了
 
 对输出数据使用HtmlEncoder对一些字符做转义处理
 
-![img](D:\workIdea\learn\img\1e28ac18b4754f42d32044dcde7509e9.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/1e28ac18b4754f42d32044dcde7509e9.png)
 
 **a) 全局拦截 （全局过滤器、拦截器），适用于不包含富文本的情况**
 
@@ -403,7 +399,7 @@ CSRF的应用与危害要取决于其场景。对于开源的、多用户的、�
 
 ### 4.4 **CSR****F****攻击分析**
 
-![img](D:\workIdea\learn\img\72a278fd0808a235a53aaf3fbce622ee.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/72a278fd0808a235a53aaf3fbce622ee.png)
 
 从上图可以看出，要完成一次CSRF攻击，受害者必须依次完成两个步骤：
 
@@ -464,7 +460,7 @@ POST方式
 
 **合规代码示例**
 
-![img](D:\workIdea\learn\img\62d563a97bc9d607e45934de74b47293.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/62d563a97bc9d607e45934de74b47293.png)
 
 #### 4.5.2 CSRF Token使用原则
 
@@ -483,7 +479,7 @@ POST方式
 
 ![img](http://blog.nsfocus.net/wp-content/uploads/2017/10/774ec62af22badfcefc1ed7f6440fc95.png)
 
-![img](D:\workIdea\learn\img\d7f42f4245ebf17dd155c2f86a8d170e.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d7f42f4245ebf17dd155c2f86a8d170e.png)
 
 ### 5.2 文件上传防护
 
@@ -511,7 +507,7 @@ POST方式
 
 访问链接：http://econline.***.com.cn:8080/NASApp/iTreasury-ebank/DownloadFile.web?fileName=/etc/passwd
 
-![img](D:\workIdea\learn\img\588af5086689eb577f77465227ead77f.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/588af5086689eb577f77465227ead77f.png)
 
 ### 6.2 路径遍历防护
 
@@ -545,19 +541,19 @@ POST方式
 
 ![img](http://blog.nsfocus.net/wp-content/uploads/2017/10/bea8b9d03e1f8ba6046d51ec2b6dd66b.png)
 
-![img](D:\workIdea\learn\img\5b8f67a77358d75fff73c08e4d06b272.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/5b8f67a77358d75fff73c08e4d06b272.png)
 
 #### 7.1.2 水平越权漏洞
 
 **越权删除用户地址**
 
-![img](D:\workIdea\learn\img\43cccfe14dcf5ec8e526ba4134164bbc.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/43cccfe14dcf5ec8e526ba4134164bbc.png)
 
 **某银行水平越权遍历其它账号的余额**
 
 该银行越权漏洞存在于涉及转账汇款的地方，选择付款账户时系统会先查询账户的余额，在此处通过遍历账号即可获取到其他人的账户余额，使用burpsuite的intruder功能遍历accountNo查询他人账户余额
 
-![img](D:\workIdea\learn\img\6f8eeee5344f07db0df7cc0930fbe3ce.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/6f8eeee5344f07db0df7cc0930fbe3ce.png)
 
 ### 7.2 越权漏洞防护
 
@@ -565,31 +561,31 @@ POST方式
 
 **垂直越权****漏洞：**在调用功能之前，验证当前用户身份是否有权限调用相关功能（推荐使用过滤器，进行统一权限验证）
 
-![img](D:\workIdea\learn\img\d4e033c2c186c74a32b625394d3bae07.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d4e033c2c186c74a32b625394d3bae07.png)
 
 **垂直越权漏洞****防护方案****：**通过全局过滤器来检测用户是否登录，是否对资源具有访问权限。
 
-![img](D:\workIdea\learn\img\fb97a1b7aadb3d205773b34a02cf21f5.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/fb97a1b7aadb3d205773b34a02cf21f5.png)
 
 将权限访问规则存入privilege.properties文件中
 
-![img](D:\workIdea\learn\img\1e39da72d1493856fd707e2eac019586.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/1e39da72d1493856fd707e2eac019586.png)
 
 在web.xml中配置过滤器及权限配置文件。
 
-![img](D:\workIdea\learn\img\7ee9cb54a075e3b99bdf01ed89eb6908.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/7ee9cb54a075e3b99bdf01ed89eb6908.png)
 
 **Spring MVC访问控制**
 
 Spring Security也提供了“基于URL的访问控制”和“基于Method的访问控制”。
 
-![img](D:\workIdea\learn\img\ce3552b4bca09da84c28a62d4f9a1998.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/ce3552b4bca09da84c28a62d4f9a1998.png)
 
 #### 7.2.2 水平越权漏洞
 
 **水平****越权****漏洞****：**在用户进行操作时，从session中获取用户id，将传入的参数与用户的身份做绑定校验。
 
-![img](D:\workIdea\learn\img\849cb2239bdb4bb2fe7962d8652ff700.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/849cb2239bdb4bb2fe7962d8652ff700.png)
 
 ## 八、XML外部实体注入及其安全编码
 
@@ -597,9 +593,9 @@ Spring Security也提供了“基于URL的访问控制”和“基于Method的�
 
 XXE（XML External Entity Injection）是一种针对XML终端实施的攻击，黑客想要实施这种攻击，需要在XML的payload包含外部实体声明，且服务器本身允许实体扩展。这样的话，黑客或许能读取WEB服务器的文件系统，通过UNC路径访问远程文件系统，或者通过HTTP/HTTPS连接到任意主机。
 
-![img](D:\workIdea\learn\img\70a64f60bea2150b2d4afb57838900a5.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/70a64f60bea2150b2d4afb57838900a5.png)
 
-![img](D:\workIdea\learn\img\4ee9765b4a49805978442ac834fb1f49.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/4ee9765b4a49805978442ac834fb1f49.png)
 
 ### 8.2 XXE-利用方法
 
@@ -607,21 +603,21 @@ XML实体注入产生的根本原因就是在XML1.0标准中引入了“entity�
 
 - 带回显的利用方式：直接读取本地文件
 
-![img](D:\workIdea\learn\img\4c95c7e9d306754f5d933a7e69ad2123.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/4c95c7e9d306754f5d933a7e69ad2123.png)
 
 - Bland XXE：服务器禁用了外部实体或者做了过滤或者是显示限制
 
-![img](D:\workIdea\learn\img\d11ce69cfc0eeed3e57323741e31769d.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d11ce69cfc0eeed3e57323741e31769d.png)
 
 - 拒绝服务攻击
 
-![img](D:\workIdea\learn\img\87faf42b97fea2f2adb52c47ec3d5f2a.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/87faf42b97fea2f2adb52c47ec3d5f2a.png)
 
 ### 8.3 XXE-经典漏洞代码
 
 **使用****org.w3c.dom****包来解析****xml****数据**
 
-![img](D:\workIdea\learn\img\19c3e13cdd8653e7159afca3b595c5a1.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/19c3e13cdd8653e7159afca3b595c5a1.png)
 
 ### 8.4 XXE安全防护
 
@@ -630,7 +626,7 @@ XML实体注入产生的根本原因就是在XML1.0标准中引入了“entity�
 1. 通过传参的方式发送数据；
 2. 后台对数据ESAPI的encoder接口对数据转码处理，然后进行XML数据格式化。
 
-![img](D:\workIdea\learn\img\afe045f38f445dbe344d050040b7c6ee.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/afe045f38f445dbe344d050040b7c6ee.png)
 
 **方案二：**
 
@@ -652,7 +648,7 @@ setExpandEntityReferences(false)
 
 参考代码：
 
-![img](D:\workIdea\learn\img\83133d1d25642f51d08419d7b3573c76.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/83133d1d25642f51d08419d7b3573c76.png)
 
 ## 九、业务安全
 
@@ -736,7 +732,7 @@ setExpandEntityReferences(false)
 
 系统根据客户端提交的x-forwarded-for值来判断内网登陆还是外网登陆，当客户端请求携带x-forwarded-for值为127.0.0.1时，可直接使用内网登陆方式登陆系统。
 
-![img](D:\workIdea\learn\img\d82284bd5f88fc5bc65fe39f8113759e.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d82284bd5f88fc5bc65fe39f8113759e.png)
 
 ### 10.2 服务端请求伪造攻击
 
@@ -748,7 +744,7 @@ setExpandEntityReferences(false)
 
 3）将收到的内容返回给浏览器。
 
-![img](D:\workIdea\learn\img\2783cf57e3d3f10ce53d7ac75ea17772.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/2783cf57e3d3f10ce53d7ac75ea17772.png)
 
 **服务端请求伪造攻击防护**
 
@@ -762,7 +758,7 @@ setExpandEntityReferences(false)
 
 代码中使用e.printStackTrace()打印异常错误信息，在系统发生异常时，如未自定义错误页面，系统就会将发生异常的详细信息打印出来。
 
-![img](D:\workIdea\learn\img\69da3c29c9af988b34059e2eeff46935.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/69da3c29c9af988b34059e2eeff46935.png)
 
 ### 10.4 基础框架漏洞
 
