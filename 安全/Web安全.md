@@ -50,77 +50,77 @@
 
 [4.1 定义](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#41-%E5%AE%9A%E4%B9%89)
 
-4.2 CSRF攻击过程
+[4.2 CSRF攻击过程](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#42-csrf%E6%94%BB%E5%87%BB%E8%BF%87%E7%A8%8B)
 
-4.3 CSRF的危害
+[4.3 CSRF的危害](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#43-csrf%E7%9A%84%E5%8D%B1%E5%AE%B3)
 
-4.4 CSRF攻击分析
+[4.4 CSRF攻击分析](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#44-csrf%E6%94%BB%E5%87%BB%E5%88%86%E6%9E%90)
 
-4.4 CSRF缺陷代码
+[4.4 CSRF缺陷代码](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#44-csrf%E7%BC%BA%E9%99%B7%E4%BB%A3%E7%A0%81)
 
-4.5 CSRF解决方案
+[4.5 CSRF解决方案](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#45-csrf%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
 
-4.5.1 检测referer
+[4.5.1 检测referer](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#451-%E6%A3%80%E6%B5%8Breferer)
 
-4.5.2 CSRF Token使用原则
+[4.5.2 CSRF Token使用原则](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#452-csrf-token%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%88%99)
 
-五、文件上传及其安全编码
+[五、文件上传及其安全编码](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E4%BA%94%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%8F%8A%E5%85%B6%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81)
 
-5.1 非法文件上传
+[5.1 非法文件上传](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#51-%E9%9D%9E%E6%B3%95%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0)
 
-5.2 文件上传防护
+[5.2 文件上传防护](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#52-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%98%B2%E6%8A%A4)
 
-六、路径遍历漏洞及其安全编码
+[六、路径遍历漏洞及其安全编码](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E5%85%AD%E8%B7%AF%E5%BE%84%E9%81%8D%E5%8E%86%E6%BC%8F%E6%B4%9E%E5%8F%8A%E5%85%B6%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81)
 
-6.1 定义
+[6.1 定义](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#61-%E5%AE%9A%E4%B9%89)
 
-6.2 路径遍历防护
+[6.2 路径遍历防护](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#62-%E8%B7%AF%E5%BE%84%E9%81%8D%E5%8E%86%E9%98%B2%E6%8A%A4)
 
-七、越权漏洞及其安全编码
+[七、越权漏洞及其安全编码](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E4%B8%83%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E%E5%8F%8A%E5%85%B6%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81)
 
-7.1 定义
+[7.1 定义](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#71-%E5%AE%9A%E4%B9%89)
 
-7.1.1 垂直越权漏洞
+[7.1.1 垂直越权漏洞](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#711-%E5%9E%82%E7%9B%B4%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E)
 
-7.1.2 水平越权漏洞
+[7.1.2 水平越权漏洞](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#712-%E6%B0%B4%E5%B9%B3%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E)
 
-7.2 越权漏洞防护
+[7.2 越权漏洞防护](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#72-%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E%E9%98%B2%E6%8A%A4)
 
-7.2.1 垂直越权漏洞
+[7.2.1 垂直越权漏洞](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#721-%E5%9E%82%E7%9B%B4%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E)
 
-7.2.2 水平越权漏洞
+[7.2.2 水平越权漏洞](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#722-%E6%B0%B4%E5%B9%B3%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E)
 
-八、XML外部实体注入及其安全编码
+[八、XML外部实体注入及其安全编码](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E5%85%ABxml%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93%E6%B3%A8%E5%85%A5%E5%8F%8A%E5%85%B6%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81)
 
-8.1 XXE->XML外部实体注入
+[8.1 XXE->XML外部实体注入](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#81-xxe-xml%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93%E6%B3%A8%E5%85%A5)
 
-8.2 XXE-利用方法
+[8.2 XXE-利用方法](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#82-xxe-%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95)
 
-8.3 XXE-经典漏洞代码
+[8.3 XXE-经典漏洞代码](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#83-xxe-%E7%BB%8F%E5%85%B8%E6%BC%8F%E6%B4%9E%E4%BB%A3%E7%A0%81)
 
-8.4 XXE安全防护
+[8.4 XXE安全防护](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#84-xxe%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4)
 
-九、业务安全
+[九、业务安全](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#%E4%B9%9D%E4%B8%9A%E5%8A%A1%E5%AE%89%E5%85%A8)
 
-9.1 账户信息安全
+[9.1 账户信息安全](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#91-%E8%B4%A6%E6%88%B7%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8)
 
-9.2 业务数据安全
+[9.2 业务数据安全](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#92-%E4%B8%9A%E5%8A%A1%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8)
 
-9.3 业务流程安全
+[9.3 业务流程安全](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#93-%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%AE%89%E5%85%A8)
 
-9.4 业务接口安全
+[9.4 业务接口安全](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#94-%E4%B8%9A%E5%8A%A1%E6%8E%A5%E5%8F%A3%E5%AE%89%E5%85%A8)
 
-9.5 总结
+[9.5 总结](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#95-%E6%80%BB%E7%BB%93)
 
 十、其它
 
-10.1 IP登录限制绕过
+[10.1 IP登录限制绕过](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#101-ip%E7%99%BB%E5%BD%95%E9%99%90%E5%88%B6%E7%BB%95%E8%BF%87)
 
-10.2 服务端请求伪造攻击
+[10.2 服务端请求伪造攻击](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#102-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0%E6%94%BB%E5%87%BB)
 
-10.3 异常调试信息泄露
+[10.3 异常调试信息泄露](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#103-%E5%BC%82%E5%B8%B8%E8%B0%83%E8%AF%95%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2)
 
-10.4 基础框架漏洞
+[10.4 基础框架漏洞](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md#104-%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E6%BC%8F%E6%B4%9E)
 
 ## 一、Web安全基础
 
@@ -477,7 +477,7 @@ POST方式
 
 非法文件上传产生的主要原因就是在服务器端没有对用户上传的文件类型做校验或者校验不完整，导致用户可以上传恶意脚本到服务器。
 
-![img](http://blog.nsfocus.net/wp-content/uploads/2017/10/774ec62af22badfcefc1ed7f6440fc95.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/774ec62af22badfcefc1ed7f6440fc95.png)
 
 ![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d7f42f4245ebf17dd155c2f86a8d170e.png)
 
@@ -493,7 +493,7 @@ POST方式
 
 5、记录日志
 
-![img](http://blog.nsfocus.net/wp-content/uploads/2017/10/f6f83b9ca90bdef6b9f9afe98266742e.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/f6f83b9ca90bdef6b9f9afe98266742e.png)
 
 ## 六、路径遍历漏洞及其安全编码
 
@@ -501,7 +501,7 @@ POST方式
 
 路径遍历漏洞成因：服务器端，接收请求中传来的文件名称，在服务器端拼凑成文件的绝对路径，并且用输出流下载。
 
-![img](http://blog.nsfocus.net/wp-content/uploads/2017/10/d2831eabbafcff321940bcdde683e896.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/d2831eabbafcff321940bcdde683e896.png)
 
 **某网上银行系统任意文件下载漏洞**
 
@@ -539,7 +539,7 @@ POST方式
 
 #### 7.1.1 垂直越权漏洞
 
-![img](http://blog.nsfocus.net/wp-content/uploads/2017/10/bea8b9d03e1f8ba6046d51ec2b6dd66b.png)
+![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/bea8b9d03e1f8ba6046d51ec2b6dd66b.png)
 
 ![img](https://raw.githubusercontent.com/stephenZkang/learn/master/img/5b8f67a77358d75fff73c08e4d06b272.png)
 
