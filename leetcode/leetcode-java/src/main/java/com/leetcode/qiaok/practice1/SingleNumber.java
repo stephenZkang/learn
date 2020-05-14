@@ -115,25 +115,24 @@ public class SingleNumber {
     }
 
     /**
-     * 2*（a+b+c） - (a+a+b+b+c) = c - 未成功
+     * 2*（a+b+c） - (a+a+b+b+c) = c
      * 时间复杂度：O(n2)
      * 空间复杂度：O(n)
      * @param nums
      * @return
      */
     private int singleNumber4(int[] nums) {
-        HashSet<Integer> set = new HashSet<>();
-        int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            set.add(nums[i]);
-            sum += nums[i];
+        int sumOfSet = 0, sumOfNums = 0;
+        Set<Integer> set = new HashSet();
+
+        for (int num : nums) {
+            if (!set.contains(num)) {
+                set.add(num);
+                sumOfSet += num;
+            }
+            sumOfNums += num;
         }
-        int sumMul = 0;
-        for (int n : set) {
-            sumMul += n;
-        }
-        sumMul = sumMul * 3;
-        return (sumMul - sum) / 2;
+        return 2 * sumOfSet - sumOfNums;
     }
 
 
