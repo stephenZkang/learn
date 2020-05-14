@@ -28,3 +28,6 @@
 
 ##### **102. [二叉树的层序遍历](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LevelOrder.java) - 【广度优先】-【1】 - 【LevelOrder】**
 
+##### **136. [只出现一次的数字](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SingleNumber.java) - 【异或|分治算法|HashMap|双层循环|快速排序】-【1】 - 【SingleNumber】**
+
+

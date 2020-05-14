@@ -39,8 +39,8 @@ public class HappyNumber {
 
     /**
      * 快慢指针
-     * 时间复杂度：
-     * 空间复杂度：
+     * 时间复杂度：O(logn)
+     * 空间复杂度：O(1)
      * @param target
      * @return
      */
