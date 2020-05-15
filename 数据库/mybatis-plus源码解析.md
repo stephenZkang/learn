@@ -104,6 +104,24 @@
 
   mybatis-plus的根据库自动生成代码
 
+##### **插件架构**
+
+mybatis架构图
+
+![image-20200515100502853](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200515100502853.png)
+
+![image-20200515103331522](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200515103331522.png)
+
+###### mybatis流程图
+
+![image-20200515100101979](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200515100101979.png)
+
+###### mybatis缓存机制
+
+![image-20200515100300117](https://raw.githubusercontent.com/stephenZkang/learn/master/img/image-20200515100300117.png)
+
+
+
 ##### 插件支持
 
 ###### 分页插件（扩展其他厂家数据库支持）
