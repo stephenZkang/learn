@@ -46,6 +46,7 @@
 3. [学习路径](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/3.%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84.md)
 4. [内核组成](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/4.%20Linux%E5%86%85%E6%A0%B8%E7%BB%84%E6%88%90.md)
 5. [Linux常用命令](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/5.%20Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+6. [系统调用](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/6.%20Linux%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8.md)
 
 #### **【问题】目录下为阅读中遇到的一些问题搜集**
 
