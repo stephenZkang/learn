@@ -28,7 +28,7 @@ public class SubArraySum {
         int k = 2;
         SubArraySum test = new SubArraySum();
         long start = System.currentTimeMillis();
-        int res = test.subArraySum1(nums,k);
+        int res = test.subArraySum(nums,k);
         System.out.println("耗时："+(System.currentTimeMillis() - start)+"毫秒");
         System.out.println("res="+res);
     }
@@ -45,14 +45,15 @@ public class SubArraySum {
         int count = 0;
         for (int i = 0; i < nums.length; ++i) {
             int sum = 0;
-            for (int j = i; j >= 0; --j) {
+            for (int j = i; j <  nums.length; ++j) {
                 sum += nums[j];
-                if (sum == k) {
+                if (k == sum) {
                     count++;
                 }
             }
         }
-        return count;
+        return  count;
+
     }
 
 
