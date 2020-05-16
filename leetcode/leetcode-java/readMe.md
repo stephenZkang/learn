@@ -33,3 +33,5 @@
 ##### **1. [两数之和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TwoSum.java) - 【暴力|HashMap】-【1】 - 【TwoSum】**
 
 ##### **560. [和为K的子数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SubArraySum.java) - 【枚举|HashMap】-【1】 - 【SubArraySum】**
+
+##### **4. [检查平衡性](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsBalanced.java) - 【深度优先搜索】-【3】 - 【IsBalanced】**
