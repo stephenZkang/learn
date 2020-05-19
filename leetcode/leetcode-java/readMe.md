@@ -39,3 +39,5 @@
 ##### **25. [K个一组翻转链表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ReverserKGroup.java) - 【递归】-【2】 - 【ReverserKGroup】**
 
 ##### **680. [验证回文字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ValidPalindrome.java) - 【双指针】-【1】 - 【ValidPalindrome】**
+
+##### **66. [加一](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PlusOne.java) - 【双指针】-【1】 - 【PlusOne】**
