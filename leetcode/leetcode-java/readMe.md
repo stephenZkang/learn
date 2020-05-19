@@ -37,3 +37,5 @@
 ##### **4. [检查平衡性](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsBalanced.java) - 【深度优先搜索】-【3】 - 【IsBalanced】**
 
 ##### **25. [K个一组翻转链表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ReverserKGroup.java) - 【递归】-【2】 - 【ReverserKGroup】**
+
+##### **680. [验证回文字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ValidPalindrome.java) - 【双指针】-【1】 - 【ValidPalindrome】**
