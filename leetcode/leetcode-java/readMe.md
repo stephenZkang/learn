@@ -1,3 +1,9 @@
+####每天任务
+- 复习昨天的算法
+- 复习一周前的算法
+- 复习一个月前的算法
+- 练习今天的算法
+
 #### **leetcode标题 - 【方法】 - 【练习次数】 - 【名称】**
 
 ##### **1248.[统计「优美子数组」](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/BeautifulArray.java) - 【双指针】 - 【1】 - 【BeautifulArray 】**
