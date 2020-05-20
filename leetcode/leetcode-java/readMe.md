@@ -47,3 +47,5 @@
 ##### **680. [验证回文字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ValidPalindrome.java) - 【双指针】-【1】 - 【ValidPalindrome】**
 
 ##### **66. [加一](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PlusOne.java) - 【数学】-【2】 - 【PlusOne】**
+
+##### **1371. [每个元音包含偶数次的最长子字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindTheLongestSubstring.java) - 【前缀和】-【1】 - 【FindTheLongestSubstring】**
