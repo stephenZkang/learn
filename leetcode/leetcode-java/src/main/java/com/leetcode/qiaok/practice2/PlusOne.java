@@ -1,7 +1,6 @@
 package com.leetcode.qiaok.practice2;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  *  66. 加一
