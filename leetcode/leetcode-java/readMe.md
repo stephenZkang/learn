@@ -49,3 +49,5 @@
 ##### **66. [加一](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PlusOne.java) - 【数学】-【2】 - 【PlusOne】**
 
 ##### **1371. [每个元音包含偶数次的最长子字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindTheLongestSubstring.java) - 【前缀和】-【1】 - 【FindTheLongestSubstring】**
+
+##### **5. [最长回文子串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestPalindrome.java) - 【动态规划|中心扩展法】-【1】 - 【LongestPalindrome】**
