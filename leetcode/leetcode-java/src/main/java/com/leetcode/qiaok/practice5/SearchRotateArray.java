@@ -15,41 +15,39 @@ package com.leetcode.qiaok.practice5;
  *
  * 输入: nums = [4,5,6,7,0,1,2], target = 3
  * 输出: -1
- * @since 2020-05-10
+ * @since 2020-05-09
  * @author qiaok
  */
 public class SearchRotateArray {
-    /**
-     * 测试
-     * @param args
-     */
-    public static void main(String[] args) {
-        SearchRotateArray test = new SearchRotateArray();
+
+    public static void main(String[] args){
         int[] nums = {4,5,6,7,0,1,2};
-        int target = 0 ;
+        int target = 0;
+        SearchRotateArray test = new SearchRotateArray();
         long start = System.currentTimeMillis();
         int res = test.searchRotateArray(nums,target);
-        System.out.println("耗时："+(System.currentTimeMillis() - start)+"毫秒");
-        System.out.println("res="+res);
+        System.out.println("耗时："+(System.currentTimeMillis() - start) +"毫秒");
+        System.out.println("res:" + res);
     }
 
     /**
      * 二分查找
-     *
+     * 时间复杂度：O(log n)
+     * 空间复杂度：O(n)
      * @param nums
      * @param target
      * @return
      */
     private int searchRotateArray(int[] nums, int target) {
-        int start = 0 ; int end = nums.length - 1;
+        int start =0, end = nums.length - 1;
         while(start<=end){
-            int mid = start + (end - start)/2;
+            int mid = start + (end - start) / 2;
             if(nums[mid] == target){
                 return mid;
             }
 
-            if(target > nums[0]){
-                if(nums[mid] <= nums[0]){
+            if(target > nums[0]){   //目标比第一元素大
+                if(nums[mid] <= nums[0]){ //中间值小于第一元素
                     nums[mid] = Integer.MAX_VALUE;
                 }
             }else{
@@ -58,10 +56,10 @@ public class SearchRotateArray {
                 }
             }
 
-            if(target >= nums[mid]){
+            if(nums[mid] <= target){
                 start = mid + 1;
             }else{
-                end = mid -1;
+                end = mid - 1;
             }
         }
         return -1;
