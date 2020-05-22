@@ -80,21 +80,3 @@ public class MergeTwoOrderLinkedList {
 
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-
-    @Override
-    public String toString() {
-        StringBuffer buffer = new StringBuffer();
-        buffer.append(val);
-        ListNode temp = next;
-        while(temp!=null){
-            buffer.append(",").append(temp.val);
-            temp = temp.next;
-        }
-        return buffer.toString();
-    }
-}
