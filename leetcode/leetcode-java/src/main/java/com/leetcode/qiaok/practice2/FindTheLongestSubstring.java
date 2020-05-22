@@ -1,5 +1,6 @@
 package com.leetcode.qiaok.practice2;
 
+
 import java.util.Arrays;
 
 /**
@@ -44,21 +45,21 @@ public class FindTheLongestSubstring {
 
     /**
      *
-     * 时间复杂度：
-     * 空间复杂度：
+     * 时间复杂度：O(n)
+     * 空间复杂度：O(1)
      * @param s
      * @return
      */
     private int findTheLongestSubstring(String s) {
         int n = s.length();
-        int[] pos = new int[1<<5];
-        Arrays.fill(pos,-1);
-        pos[0] = 0;
-        int ans = 0 ;int status =0;
+        int[] dp = new int[1<<5];
+        Arrays.fill(dp,-1);
+        dp[0] = 0;
+        int ans = 0;int status = 0;
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             if(ch == 'a'){
-                status^= (1<<0);
+                status ^= (1<<0);
             }else if(ch == 'e'){
                 status ^= (1<<1);
             }else if(ch == 'i'){
@@ -68,13 +69,12 @@ public class FindTheLongestSubstring {
             }else if(ch == 'u'){
                 status ^= (1<<4);
             }
-            if(pos[status]>=0){
-                ans = Math.max(ans,i+1-pos[status]);
+            if(dp[status]>=0){
+                ans = Math.max(ans,i + 1 - dp[status]);
             }else{
-                pos[status] = i+1;
+                dp[status] = i+1;
             }
         }
-
         return ans;
     }
 }
