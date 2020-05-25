@@ -51,3 +51,5 @@
 ##### **1371. [每个元音包含偶数次的最长子字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindTheLongestSubstring.java) - 【前缀和】-【1】 - 【FindTheLongestSubstring】**
 
 ##### **5. [最长回文子串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestPalindrome.java) - 【动态规划|中心扩展法】-【1】 - 【LongestPalindrome】**
+
+##### **146. [LRU缓存机制](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LRUCache.java) - 【动态规划|中心扩展法】-【1】 - 【LRUCache】**
