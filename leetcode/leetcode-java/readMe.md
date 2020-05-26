@@ -52,4 +52,6 @@
 
 ##### **5. [最长回文子串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestPalindrome.java) - 【动态规划|中心扩展法】-【1】 - 【LongestPalindrome】**
 
-##### **146. [LRU缓存机制](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LRUCache.java) - 【动态规划|中心扩展法】-【1】 - 【LRUCache】**
+##### **146. [LRU缓存机制](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LRUCache.java) - 【动态规划|中心扩展法】-【2】 - 【LRUCache】**
+
+##### **287. [寻找重复数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindDuplicate.java) - 【快慢指针|二分查找】-【1】 - 【FindDuplicate】**
