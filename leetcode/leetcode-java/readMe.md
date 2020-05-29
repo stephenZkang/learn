@@ -57,3 +57,5 @@
 ##### **287. [寻找重复数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindDuplicate.java) - 【快慢指针|二分查找】-【1】 - 【FindDuplicate】**
 
 ##### **974. [和可被 K 整除的子数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SubArraysDivByK.java) - 【哈希表+逐一统计|哈希表+单次统计】-【1】 - 【SubArraysDivByK】**
+
+##### **198. [打家劫舍](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Rob.java) - 【动态规划】-【1】 - 【Rob】**
