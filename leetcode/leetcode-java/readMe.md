@@ -59,3 +59,5 @@
 ##### **974. [和可被 K 整除的子数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SubArraysDivByK.java) - 【哈希表+逐一统计|哈希表+单次统计】-【1】 - 【SubArraysDivByK】**
 
 ##### **198. [打家劫舍](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Rob.java) - 【动态规划】-【1】 - 【Rob】**
+
+##### **1431. [拥有最多糖果的孩子](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/KidsWithCandies.java) - 【动态规划】-【1】 - 【KidsWithCandies】**
