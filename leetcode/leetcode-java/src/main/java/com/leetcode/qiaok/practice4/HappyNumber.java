@@ -29,10 +29,38 @@ public class HappyNumber {
      * @param args
      */
     public static void main(String[] args){
-
+        HappyNumber test = new HappyNumber();
+        int n = 19;
+        long start = System.currentTimeMillis();
+        boolean res = test.happyNumber(n);
+        System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
+        System.out.println("res="+res);
     }
 
+    /**
+     * 快慢指针
+     * @param n
+     * @return
+     */
+    private boolean happyNumber(int n) {
+        int slowRunner = n;
+        int fastRunner = getNext(n);
+        while(fastRunner !=1 && slowRunner!=fastRunner){
+            slowRunner = getNext(slowRunner);
+            fastRunner = getNext(getNext(fastRunner));
+        }
+        return fastRunner == 1;
+    }
 
+    private int getNext(int n) {
+        int total = 0;
+        while (n>0){
+            int d = n % 10;
+            n = n / 10;
+            total += d * d;
+        }
+        return total;
+    }
 
 
 }
