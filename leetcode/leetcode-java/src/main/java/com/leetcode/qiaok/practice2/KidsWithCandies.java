@@ -1,5 +1,6 @@
 package com.leetcode.qiaok.practice2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -47,8 +48,8 @@ public class KidsWithCandies {
      */
     public static void main(String[] args){
         KidsWithCandies test = new KidsWithCandies();
-        int[] nums = {};
-        int x = 4;
+        int[] nums = { 2,3,5,1,3 };
+        int x = 3;
         long start = System.currentTimeMillis();
         List<Boolean> res = test.kidsWithCandies(nums,x);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -58,14 +59,21 @@ public class KidsWithCandies {
     /**
      * 时间复杂度：
      * 空间复杂度：
-     * @param nums
-     * @param x
+     * @param candies
+     * @param extCandies
      * @return
      */
-    private List<Boolean> kidsWithCandies(int[] nums, int x) {
-
-        
-        return null;
+    private List<Boolean> kidsWithCandies(int[] candies, int extCandies) {
+        int n  = candies.length;
+        int maxCandies = 0;
+        for (int i = 0; i < n; i++) {
+            maxCandies = Math.max(maxCandies,candies[i]);
+        }
+        List<Boolean> data = new ArrayList<>(n);
+        for (int i = 0; i < n; i++) {
+            data.add((candies[i]+extCandies)>=maxCandies);
+        }
+        return data;
     }
 
 
