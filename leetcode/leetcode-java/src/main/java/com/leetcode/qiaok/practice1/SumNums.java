@@ -31,6 +31,9 @@ public class SumNums {
         int res = test.sumNums2(n);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
         System.out.println("res="+res);
+        int x = 1 ,y = 2 , z = 3;
+        int m = y+=z--/++x;
+        System.out.println(m);
     }
 
     /**
