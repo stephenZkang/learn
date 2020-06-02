@@ -33,6 +33,7 @@
 #### **【并发】目录下为学习并发的总结**
 
 1. [深入synchronized的实现机制、优化方式](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/1.%20%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90synchronized%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)(深入到jvm指令)
+2. [CAS和AQS](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/2.%20CAS%E5%92%8CAQS%E6%AF%94%E8%BE%83.md)
 
 #### **【数据库】目录下为使用数据库的一些总结**
 
