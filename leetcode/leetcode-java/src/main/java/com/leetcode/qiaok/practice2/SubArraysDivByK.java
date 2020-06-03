@@ -1,5 +1,8 @@
 package com.leetcode.qiaok.practice2;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *      974. 和可被 K 整除的子数组
  *      给定一个整数数组 A，返回其中元素之和可被 K 整除的（连续、非空）子数组的数目。
@@ -28,8 +31,8 @@ public class SubArraysDivByK {
      */
     public static  void  main(String[] args){
         SubArraysDivByK test = new SubArraysDivByK();
-        int[] nums = {};
-        int k = 0;
+        int[] nums = {4,5,0,-2,-3,1};
+        int k = 5;
         long start = System.currentTimeMillis();
         int res = test.subArraysDivByK(nums,k);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -46,6 +49,16 @@ public class SubArraysDivByK {
      * @return
      */
     private int subArraysDivByK(int[] nums, int k) {
-        return 0;
+        Map<Integer,Integer> record = new HashMap<>();
+        record.put(0,1);
+        int ans =0 ,sum =0;
+        for (int elm: nums) {
+            sum += elm;
+            int module = (sum%k + k)%k;
+            int same = record.getOrDefault(module,0);
+            ans += same;
+            record.put(module,same + 1);
+        }
+        return ans;
     }
 }
