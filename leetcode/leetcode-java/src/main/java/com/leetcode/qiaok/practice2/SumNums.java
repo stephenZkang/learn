@@ -26,7 +26,7 @@ public class SumNums {
      */
     public static void main(String[] args){
         SumNums test = new SumNums();
-        int n = 3;
+        int n = 9;
         long start = System.currentTimeMillis();
         int res = test.sumNums(n);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -41,7 +41,8 @@ public class SumNums {
      * @return
      */
     private int sumNums(int n) {
-        return 0;
+        boolean flag = n>0 && (n+= sumNums(n-1))>0;
+        return n;
     }
 
 }
