@@ -61,3 +61,5 @@
 ##### **198. [打家劫舍](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Rob.java) - 【动态规划】-【1】 - 【Rob】**
 
 ##### **1431. [拥有最多糖果的孩子](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/KidsWithCandies.java) - 【动态规划】-【1】 - 【KidsWithCandies】**
+
+##### **837. [新21点](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/New21Game.java) - 【动态规划】-【1】 - 【New21Game】**
