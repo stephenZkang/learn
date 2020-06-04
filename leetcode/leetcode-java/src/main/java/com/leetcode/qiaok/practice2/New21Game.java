@@ -41,9 +41,9 @@ public class New21Game {
      */
     public static void main(String[] args){
         New21Game test = new New21Game();
-        int N = 0;
-        int K = 0;
-        int W = 0;
+        int N = 21;
+        int K = 17;
+        int W = 10;
         long start = System.currentTimeMillis();
         double res = test.new21Game(N,K,W);
         System.out.println("耗时" + (System.currentTimeMillis() - start) + "毫秒");
@@ -51,7 +51,7 @@ public class New21Game {
     }
 
     /**
-     *
+     * 动态规划
      * 时间复杂度：
      * 空间复杂度：
      * @param N
@@ -60,6 +60,17 @@ public class New21Game {
      * @return
      */
     private double new21Game(int N, int K, int W) {
-        return 0;
+        if(K ==0){
+            return 1.0;
+        }
+        double[] dp = new double[K+W];
+        for (int i = K; i <= N && i < K+W; i++) {
+            dp[i] = 1.0;
+        }
+        dp[K-1] = 1.0 * Math.min(N-K+1,W)/W;
+        for (int i = K-2; i >= 0 ; i--) {
+            dp[i] = dp[i+1]-(dp[i+W+1] - dp[i+1])/W;
+        }
+        return dp[0];
     }
 }
