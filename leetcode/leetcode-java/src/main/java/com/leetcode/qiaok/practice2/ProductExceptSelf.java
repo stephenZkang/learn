@@ -1,5 +1,7 @@
 package com.leetcode.qiaok.practice2;
 
+import java.util.Arrays;
+
 /**
  * 238. 除自身以外数组的乘积
  * 给你一个长度为 n 的整数数组 nums，其中 n > 1，返回输出数组 output ，
@@ -29,22 +31,38 @@ public class ProductExceptSelf {
      */
     public static void main(String[] args){
         ProductExceptSelf test = new ProductExceptSelf();
-        int[] nums = {};
+        int[] nums = { 1,2,3,4 };
         long start = System.currentTimeMillis();
         int[] res = test.productExceptSelf(nums);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
-        System.out.println("res="+res);
+        System.out.println("res="+ Arrays.toString(res));
     }
 
     /**
-     * 
+     * 左右乘积法
      * 时间复杂度：
      * 空间复杂度：
      * @param nums
      * @return
      */
     private int[] productExceptSelf(int[] nums) {
-        return new int[0];
+        int length = nums.length;
+        int[] L = new int[length];
+        L[0] = 1;
+        for (int i = 1; i < length; i++) {
+            L[i] = nums[i-1] * L[i-1];
+        }
+        int[] R = new int[length];
+        R[length-1] = 1;
+        for (int i = length - 2; i >=0; i--) {
+            R[i] = nums[i+1] * R[i+1];
+        }
+        int[] answer = new int[length];
+        for (int i = 0; i < length; i++) {
+            answer[i] = L[i]*R[i];
+        }
+
+        return answer;
     }
 
 
