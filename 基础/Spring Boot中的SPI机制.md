@@ -124,3 +124,28 @@ public static void main(String[] args) throws Exception{
 ### 3、springboot中的类SPI扩展机制
 
 - 在springboot的自动装配过程中，最终会加载META-INF/spring.factories文件，而加载的过程是由SpringFactoriesLoader加载的。从CLASSPATH下的每个Jar包中搜寻所有META-INF/spring.factories配置文件，然后将解析properties文件，找到指定名称的配置后返回。需要注意的是，其实这里不仅仅是会去ClassPath路径下查找，会扫描所有路径下的Jar包，只不过这个文件只会在Classpath下的jar包中。
+
+  ```java
+  public static final String FACTORIES_RESOURCE_LOCATION = "META-INF/spring.factories";
+  // spring.factories文件的格式为：key=value1,value2,value3
+  // 从所有的jar包中找到META-INF/spring.factories文件
+  // 然后从文件中解析出key=factoryClass类名称的所有value值
+  public static List<String> loadFactoryNames(Class<?> factoryClass, ClassLoader classLoader) {
+      String factoryClassName = factoryClass.getName();
+      // 取得资源文件的URL
+      Enumeration<URL> urls = (classLoader != null ? classLoader.getResources(FACTORIES_RESOURCE_LOCATION) : ClassLoader.getSystemResources(FACTORIES_RESOURCE_LOCATION));
+      List<String> result = new ArrayList<String>();
+      // 遍历所有的URL
+      while (urls.hasMoreElements()) {
+          URL url = urls.nextElement();
+          // 根据资源文件URL解析properties文件，得到对应的一组@Configuration类
+          Properties properties = PropertiesLoaderUtils.loadProperties(new UrlResource(url));
+          String factoryClassNames = properties.getProperty(factoryClassName);
+          // 组装数据，并返回
+          result.addAll(Arrays.asList(StringUtils.commaDelimitedListToStringArray(factoryClassNames)));
+      }
+      return result;
+  }
+  ```
+
+  
