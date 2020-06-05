@@ -21,7 +21,7 @@
 > Extension ClassLoader：负责加载java的扩展类库从jre/lib/ect目录或者java.ext.dirs系统属性指定的目录下加载类，是System ClassLoader的父类加载器
 > System ClassLoader：负责从classpath环境变量中加载类文件
 
-![java类加载结构](D:\workIdea\learn\img\9cff201fbfda8dde974cac6899746600.jpg)
+![java类加载结构](https://raw.githubusercontent.com/stephenZkang/learn/master/img/9cff201fbfda8dde974cac6899746600.jpg)
 
 ### 1、双亲委派模型
 
