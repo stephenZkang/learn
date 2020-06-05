@@ -22,6 +22,10 @@
 
 1. [nodejs](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md) - 总结了使用vue过程中遇到的问题（如[环境配置](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#3%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)、概念理解、[组件化传参](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#9vue%E4%B8%AD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%8F%82%E9%97%AE%E9%A2%98)）
 
+#### 【基础】
+
+1. [Spring Boot的SPI机制](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/Spring%20Boot%E4%B8%AD%E7%9A%84SPI%E6%9C%BA%E5%88%B6.md)
+
 #### 【大数据】
 
 1. [分布式ID](https://github.com/stephenZkang/learn/blob/master/%E5%A4%A7%E6%95%B0%E6%8D%AE/1.%E5%88%86%E5%B8%83%E5%BC%8FID.md)
