@@ -67,3 +67,5 @@
 ##### **238. [除自身以外数组的乘积](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ProductExceptSelf.java) - 【动态规划】-【1】 - 【ProductExceptSelf】**
 
 ##### **面试题29. [顺时针打印矩阵](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SpiralOrder.java) - 【动态规划】-【1】 - 【SpiralOrder】**
+
+##### **990. [等式方程的可满足性](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/EquationsPossible.java) - 【差集法】-【1】 - 【EquationsPossible】**
