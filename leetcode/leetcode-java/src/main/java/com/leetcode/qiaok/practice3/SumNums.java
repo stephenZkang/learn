@@ -41,7 +41,8 @@ public class SumNums {
      * @return
      */
     private int sumNums(int n) {
-        return 0;
+        boolean flag = n > 0 &&(n+=sumNums(n-1))>0;
+        return n;
     }
 
 }
