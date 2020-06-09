@@ -69,3 +69,5 @@
 ##### **面试题29. [顺时针打印矩阵](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SpiralOrder.java) - 【动态规划】-【1】 - 【SpiralOrder】**
 
 ##### **990. [等式方程的可满足性](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/EquationsPossible.java) - 【差集法】-【1】 - 【EquationsPossible】**
+
+##### **面试题46. [把数字翻译成字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TranslateNum.java) - 【动态规划】-【1】 - 【TranslateNum】**
