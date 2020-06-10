@@ -71,3 +71,5 @@
 ##### **990. [等式方程的可满足性](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/EquationsPossible.java) - 【差集法】-【1】 - 【EquationsPossible】**
 
 ##### **面试题46. [把数字翻译成字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TranslateNum.java) - 【动态规划】-【1】 - 【TranslateNum】**
+
+##### **9. [回文数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindrome.java) - 【首尾逼近】-【1】 - 【IsPalindrome】**
