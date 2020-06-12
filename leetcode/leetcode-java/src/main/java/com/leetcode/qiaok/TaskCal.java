@@ -15,7 +15,7 @@ public class TaskCal {
     private static String root = "D:/workIdea/";
     public static void main(String[] args) throws IOException {
         File dir = new File(root + "learn/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok");
-        String now = DateTimeFormatter.ofPattern("yyyy-MM-dd").format(LocalDateTime.now());
+        String now = DateTimeFormatter.ofPattern("yyyy-MM-dd").format(LocalDateTime.now().plusDays(-1));
         System.out.println("今日任务：" + now);
 
         if(dir!=null&&dir.isDirectory()){

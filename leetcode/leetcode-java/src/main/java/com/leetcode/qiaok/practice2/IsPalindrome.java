@@ -31,9 +31,9 @@ public class IsPalindrome {
      */
     public static void main(String[] args){
         IsPalindrome test = new IsPalindrome();
-        int x = -121;
+        int x = 121;
         long start = System.currentTimeMillis();
-        boolean res = test.isPalindrome(x);
+        boolean res = test.isPalindrome1(x);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
         System.out.println("res="+res);
     }
@@ -45,10 +45,23 @@ public class IsPalindrome {
      * @return
      */
     public boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }
+        String s = String.valueOf(x);
+        int start = 0 , end = s.length()-1;
+        while(start <= end){
+            if(s.charAt(start)!=s.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
+        }
         return true;
     }
 
     /**
+     * 数学法
      * 时间复杂度：O(logN)
      * 空间复杂度：O(1)
      * @param x
@@ -56,7 +69,15 @@ public class IsPalindrome {
      */
     public boolean isPalindrome1(int x) {
         //思考：这里大家可以思考一下，为什么末尾为 0 就可以直接返回 false
-       return false;
+        if(x<0||(x % 10 == 0 && x != 0)){
+            return false;
+        }
+        int remeber = 0;
+        while(x > remeber){
+            remeber = remeber * 10 + x % 10;
+            x /= 10;
+        }
+       return x == remeber || x == remeber / 10;
     }
 
 }
