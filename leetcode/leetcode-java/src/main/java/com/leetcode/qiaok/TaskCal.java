@@ -9,10 +9,10 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * @since 2020-05-20
- * @author qiaok
+ * @author qiaokE:\work_idea
  */
 public class TaskCal {
-    private static String root = "D:/workIdea/";
+    private static String root = "E:\\work_idea/";
     public static void main(String[] args) throws IOException {
         File dir = new File(root + "learn/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok");
         String now = DateTimeFormatter.ofPattern("yyyy-MM-dd").format(LocalDateTime.now()/*.plusDays(-1)*/);
