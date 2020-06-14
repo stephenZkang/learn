@@ -73,3 +73,5 @@
 ##### **面试题46. [把数字翻译成字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TranslateNum.java) - 【动态规划】-【1】 - 【TranslateNum】**
 
 ##### **9. [回文数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindrome.java) - 【首尾逼近】-【2】 - 【IsPalindrome】**
+
+##### **1300. [转变数组后最接近目标值的数组和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindBestValue.java) - 【枚举 + 二分查找】-【1】 - 【FindBestValue】**
