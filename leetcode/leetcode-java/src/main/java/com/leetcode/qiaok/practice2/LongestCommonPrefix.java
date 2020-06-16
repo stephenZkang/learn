@@ -45,7 +45,28 @@ public class LongestCommonPrefix {
      * @return
      */
     public String longestCommonPrefix(String[] strs) {
-        return "";
+       if(strs == null || strs.length == 0){
+           return null;
+       }
+
+        int count = strs.length;
+       String prefix = strs[0];
+        for (int i = 0; i < count; i++) {
+            prefix = longestCommonPrefix1(prefix,strs[i]);
+            if(prefix.length() == 0){
+                break;
+            }
+        }
+        return prefix;
+    }
+
+    private String longestCommonPrefix1(String prefix, String str) {
+        int length = Math.min(prefix.length(), str.length());
+        int index = 0;
+        while(index < length && prefix.charAt(index) == str.charAt(index)){
+            index++;
+        }
+        return str.substring(0,index);
     }
 
 

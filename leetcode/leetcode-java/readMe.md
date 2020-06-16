@@ -74,4 +74,6 @@
 
 ##### **9. [回文数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindrome.java) - 【首尾逼近】-【2】 - 【IsPalindrome】**
 
+##### **14. [最长公共前缀](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestCommonPrefix.java) - 【横向扫描|纵向扫描|二分查找|分治】-【2】 - 【LongestCommonPrefix】**
+
 ##### **297. [二叉树的序列化与反序列化](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Codec.java) - 【深度搜索】-【2】 - 【Codec】**
