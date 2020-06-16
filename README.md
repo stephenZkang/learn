@@ -15,8 +15,9 @@
 
 #### **【Redis】目录下为使用Redis和阅读博客的一些总结**
 
-1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md) - 总结了[缓存穿透](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F)、[缓存雪崩](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9)、[缓存击穿](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF)等问题的概念以及解决方法
-2. [Redis简述](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E9%9D%A2%E8%AF%95.md)
+1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/1.%20Redis缓存常遇问题.md) - 总结了[缓存穿透](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F)、[缓存雪崩](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9)、[缓存击穿](https://github.com/stephenZkang/learn/blob/master/redis/Redis%E7%BC%93%E5%AD%98%E5%B8%B8%E9%81%87%E9%97%AE%E9%A2%98.md#%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF)等问题的概念以及解决方法
+2. [Redis面试](https://github.com/stephenZkang/learn/blob/master/redis/2.%20Redis%E9%9D%A2%E8%AF%95.md)
+3. [Redis淘汰策略](https://github.com/stephenZkang/learn/blob/master/redis/3.%20Redis%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
 
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
