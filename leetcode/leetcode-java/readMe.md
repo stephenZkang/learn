@@ -73,3 +73,5 @@
 ##### **面试题46. [把数字翻译成字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TranslateNum.java) - 【动态规划】-【1】 - 【TranslateNum】**
 
 ##### **9. [回文数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindrome.java) - 【首尾逼近】-【2】 - 【IsPalindrome】**
+
+##### **297. [二叉树的序列化与反序列化](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Codec.java) - 【深度搜索】-【2】 - 【Codec】**
