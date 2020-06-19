@@ -79,3 +79,5 @@
 ##### **297. [二叉树的序列化与反序列化](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Codec.java) - 【深度搜索】-【2】 - 【Codec】**
 
 ##### **125. [验证回文串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindromeSecond.java) - 【双指针】-【1】 - 【IsPalindromeSecond】**
+
+##### **42. [连续子数组的最大和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MaxSubArraySecond.java) - 【动态规划】-【1】 - 【MaxSubArraySecond】**
