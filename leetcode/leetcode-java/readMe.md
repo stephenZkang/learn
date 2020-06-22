@@ -81,3 +81,5 @@
 ##### **125. [验证回文串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindromeSecond.java) - 【双指针】-【1】 - 【IsPalindromeSecond】**
 
 ##### **42. [连续子数组的最大和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MaxSubArraySecond.java) - 【动态规划】-【1】 - 【MaxSubArraySecond】**
+
+##### **面试题 16.18. [模式匹配](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PatternMatching.java) - 【枚举】-【1】 - 【PatternMatching】**
