@@ -25,7 +25,10 @@
 
 #### 【基础】
 
-1. [Spring Boot的SPI机制](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/Spring%20Boot%E4%B8%AD%E7%9A%84SPI%E6%9C%BA%E5%88%B6.md)
+1. [Spring Boot的SPI机制](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/1.%20Spring%20Boot%E4%B8%AD%E7%9A%84SPI%E6%9C%BA%E5%88%B6.md)
+2. [HashMap20问](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/2.%20HashMap20%E9%97%AE.md)
+3. [HTTP幂等性](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/3.%20HTTP%E5%B9%82%E7%AD%89%E6%80%A7.md)
+4. 
 
 #### 【大数据】
 
