@@ -38,7 +38,7 @@ public class LongestCommonPrefix {
     }
 
     /**
-     *
+     * 比较当前串和前一个串的公共部分
      * 时间复杂度：
      * 空间复杂度：
      * @param strs
