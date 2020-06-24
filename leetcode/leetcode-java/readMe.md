@@ -74,4 +74,12 @@
 
 ##### **9. [回文数](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindrome.java) - 【首尾逼近】-【2】 - 【IsPalindrome】**
 
-##### **1300. [转变数组后最接近目标值的数组和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindBestValue.java) - 【枚举 + 二分查找】-【1】 - 【FindBestValue】**
+##### **14. [最长公共前缀](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestCommonPrefix.java) - 【横向扫描|纵向扫描|二分查找|分治】-【2】 - 【LongestCommonPrefix】**
+
+##### **297. [二叉树的序列化与反序列化](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Codec.java) - 【深度搜索】-【2】 - 【Codec】**
+
+##### **125. [验证回文串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsPalindromeSecond.java) - 【双指针】-【1】 - 【IsPalindromeSecond】**
+
+##### **42. [连续子数组的最大和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MaxSubArraySecond.java) - 【动态规划】-【1】 - 【MaxSubArraySecond】**
+
+##### **面试题 16.18. [模式匹配](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PatternMatching.java) - 【枚举】-【1】 - 【PatternMatching】**
