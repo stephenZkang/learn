@@ -1,0 +1,591 @@
+{
+	"info": {
+		"_postman_id": "b163f320-b922-49a2-ba19-79dc13c64ee5",
+		"name": "Es Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. AddBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{PreHttp}}/es/book?id=1&name=围城",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"es",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "围城"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. GetBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PreHttp}}/es/book?id=1",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"es",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. AddBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "139.217.110.199:9200",
+					"host": [
+						"139",
+						"217",
+						"110",
+						"199"
+					],
+					"port": "9200"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.RestBook_ES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/es",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"es"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. RestBook_ES_ASYN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/es/asyn",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"es",
+						"asyn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. RestBook_add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":14,\r\n    \"name\":\"john smith Look\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. RestBook_Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/1",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. RestBook_Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/1",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. RestBook_Update2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/update2/1?name=333",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"update2",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "333"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. RestBook_Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/1",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11. RestBook_GetAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/_search/book",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"_search",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12. RestBook_SearchByCondition",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/searchByCondition?name=1112",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"searchByCondition"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "1112"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13. RestBook_SearchByCondition2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/searchByCondition2?name=1112",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"searchByCondition2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "1112"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14. RestBook_SearchByCondition3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/searchByCondition3?name=adsdasdasda&id=5",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"searchByCondition3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "adsdasdasda"
+						},
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15. RestBook_addAndType",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":13,\r\n    \"name\":\"adsdasdasda\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/book2",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"book2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16. RestBook_SearchByCondition4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/searchByCondition4?name=smith",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"searchByCondition4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "smith"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17. RestBook_SearchByCondition5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/searchByCondition5?name=smith",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"searchByCondition5"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "smith"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18. RestBook_SearchByCondition6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"aaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "{{PreHttp}}/rest/book/searchByCondition6?name=smith",
+					"host": [
+						"{{PreHttp}}"
+					],
+					"path": [
+						"rest",
+						"book",
+						"searchByCondition6"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "smith"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "db1d7263-30bb-4e62-ad2b-dbc1ef5390b6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2e757a20-e880-46ca-8dcb-12e5ba0cdbab",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "fe3cb1bf-b27a-4930-92f3-fc23f383eafa",
+			"key": "PreHttp",
+			"value": "http://localhost:8080"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
