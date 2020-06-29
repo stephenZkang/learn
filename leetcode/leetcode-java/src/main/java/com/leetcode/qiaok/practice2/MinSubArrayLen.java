@@ -1,7 +1,5 @@
 package com.leetcode.qiaok.practice2;
 
-import java.util.Arrays;
-
 /**
  * 209. 长度最小的子数组
  * 给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的连续子数组，
@@ -42,7 +40,24 @@ public class MinSubArrayLen {
      * @return
      */
     public int minSubArrayLen(int s, int[] nums) {
-        return 0;
+        int n = nums.length;
+        if(n == 0){
+            return 0;
+        }
+
+        int start =0,end=0;
+        int sum =0;
+        int ans = Integer.MAX_VALUE;
+        while(end<n){
+            sum += nums[end];
+            while(sum>=s){
+                ans = Math.min(ans, end - start + 1);
+                sum-=nums[start];
+                start++;
+            }
+            end++;
+        }
+        return ans == Integer.MAX_VALUE ?0 :ans;
     }
 
 
