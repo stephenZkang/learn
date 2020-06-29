@@ -32,7 +32,7 @@ public class Rob {
      */
     public static void main(String[] args){
         Rob test = new Rob();
-        int[] nums = {};
+        int[] nums = {1,2,3,1};
         long start = System.currentTimeMillis();
         int res = test.rob(nums);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -41,13 +41,27 @@ public class Rob {
     }
 
     /**
-     * 
+     * 动态规划和滚动数组
      * 时间复杂度：
      * 空间复杂度
      * @param nums
      * @return
      */
-    private int rob(int[] nums) {
-        return 0;
+    public int rob(int[] nums) {
+        if(nums == null || nums.length == 0){
+            return 0;
+        }
+        if(nums.length == 1){
+            return nums[0];
+        }
+
+        int first = nums[0]; int second = Math.max(nums[0],nums[1]);
+        for (int i = 2; i < nums.length; i++) {
+            int temp = second;
+            second = Math.max(first+nums[i],second);
+            first = temp;
+        }
+
+        return second;
     }
 }
