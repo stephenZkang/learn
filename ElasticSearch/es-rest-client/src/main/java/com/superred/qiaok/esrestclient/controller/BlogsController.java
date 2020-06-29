@@ -7,9 +7,7 @@ import org.apache.http.nio.entity.NStringEntity;
 import org.apache.http.util.EntityUtils;
 import org.elasticsearch.client.Request;
 import org.elasticsearch.client.Response;
-import org.elasticsearch.client.ResponseListener;
 import org.elasticsearch.client.RestClient;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,16 +19,16 @@ import java.io.IOException;
 
 /**
  *
- * 第一个业务需求是存储员工数据。 这将会以 员工文档 的形式存储：一个文档代表一个员工。
- * 存储数据到 Elasticsearch 的行为叫做 索引 ，但在索引一个文档之前，需要确定将文档存储在哪里。
+ * 添加索引
+ * 我们往 Elasticsearch 添加数据时需要用到 索引 —— 保存相关数据的地方。
+ * 索引实际上是指向一个或者多个物理 分片 的 逻辑命名空间 。
  *
- * 一个 Elasticsearch 集群可以 包含多个 索引 ，相应的每个索引可以包含多个 类型 。
- * 这些不同的类型存储着多个 文档 ，每个文档又有 多个 属性 。
+ *
  *
  */
 @RestController
-@RequestMapping("/megacorp/employee")
-public class EmployeeController {
+@RequestMapping("/blogs")
+public class BlogsController {
 
     @Autowired
     private RestClient client;
@@ -42,17 +40,20 @@ public class EmployeeController {
      * @return ResponseEntity
      * @throws IOException
      */
-    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<String> add(@RequestBody Employee employee,@PathVariable("id") String id) throws IOException {
-        Request request = new Request("POST", new StringBuilder("/megacorp/employee/").
-                append(id).toString());
+    @RequestMapping(value = "", method = RequestMethod.PUT)
+    public ResponseEntity<String> add() throws IOException {
+        Request request = new Request("PUT", new StringBuilder("/blogs/").toString());
         // 设置其他一些参数比如美化json
         request.addParameter("pretty", "true");
 
-        JSONObject jsonObject = new JSONObject(employee);
-        System.out.println(jsonObject.toString());
+        JSONObject param = new JSONObject();
+        JSONObject settings = new JSONObject();
+        settings.put("number_of_shards",3);
+        settings.put("number_of_replicas", 1);
+        param.put("settings",settings);
+        System.out.println(param.toString());
         // 设置请求体并指定ContentType，如果不指定默认为APPLICATION_JSON
-        request.setEntity(new NStringEntity(jsonObject.toString()));
+        request.setEntity(new NStringEntity(param.toString()));
 
         // 发送HTTP请求
         Response response = client.performRequest(request);
@@ -380,6 +381,7 @@ public class EmployeeController {
     @RequestMapping(value = "/searchByAggs", method = RequestMethod.GET)
     public ResponseEntity<String> searchByAggs() throws IOException {
         Request request = new Request("GET", new StringBuilder("/megacorp/employee/_search").toString());
+        request.addParameter("pretty", "true");
 
         JSONObject param = new JSONObject();
         JSONObject aggs = new JSONObject();
@@ -504,7 +506,7 @@ public class EmployeeController {
         return new ResponseEntity<>(responseBody, HttpStatus.OK);
     }
 
-
+    
 
     /**
      * 添加ES对象, Book的ID就是ES中存储的document的ID，所以最好不要为空，自定义生成的ID太浮夸
