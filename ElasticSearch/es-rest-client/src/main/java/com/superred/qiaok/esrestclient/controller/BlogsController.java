@@ -42,7 +42,7 @@ public class BlogsController {
      */
     @RequestMapping(value = "", method = RequestMethod.PUT)
     public ResponseEntity<String> add() throws IOException {
-        Request request = new Request("PUT", new StringBuilder("/blogs/").toString());
+        Request request = new Request("PUT", new StringBuilder("/blogs").toString());
         // 设置其他一些参数比如美化json
         request.addParameter("pretty", "true");
 
