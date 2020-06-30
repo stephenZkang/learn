@@ -47,7 +47,7 @@ public class BlogsController {
      *
      * 技术上来说，一个主分片最大能够存储 Integer.MAX_VALUE - 128 个文档，但是实际最大值还需要参考你的使用场景：
      * 包括你使用的硬件， 文档的大小和复杂程度，索引和查询文档的方式以及你期望的响应时长。
-     * 
+     *
      * @return ResponseEntity
      * @throws IOException
      */
