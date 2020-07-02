@@ -28,8 +28,8 @@ public class FindLength {
      */
     public static void main(String[] args){
         FindLength test = new FindLength();
-        int[] A = {};
-        int[] B = {};
+        int[] A = { 1,2,3,2,1 };
+        int[] B = { 3,2,1,4,7 };
         long start = System.currentTimeMillis();
         int len = test.findLength(A,B);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -37,6 +37,7 @@ public class FindLength {
     }
 
     /**
+     * 动态规划
      * 时间复杂度：
      * 空间复杂度：
      * @param A
@@ -44,6 +45,16 @@ public class FindLength {
      * @return
      */
     public int findLength(int[] A, int[] B) {
-        return 0;
+        int n = A.length;
+        int m = B.length;
+        int[][] dp = new int[n+1][m+1];
+        int ans = 0;
+        for (int i = n-1; i >=0 ; i--) {
+            for (int j = m-1; j >=0 ; j--) {
+                dp[i][j] = A[i] == B[j]?dp[i+1][j+1] +1 :0;
+                ans = Math.max(ans,dp[i][j]);
+            }
+        }
+        return ans;
     }
 }
