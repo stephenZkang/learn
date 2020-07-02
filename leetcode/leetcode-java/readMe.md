@@ -91,3 +91,5 @@
 ##### **215. [数组中的第K个最大元素](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindKthLargest.java) - 【前缀和+二分查找|双指针】-【1】 - 【FindKthLargest】**
 
 ##### **718. [最长重复子数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindLength.java) - 【动态规划|滑动窗口|二分查找+哈希】-【1】 - 【FindLength】**
+
+##### **378. [有序矩阵中第K小的元素](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/KthSmallest.java) - 【二分查找】-【1】 - 【KthSmallest】**
