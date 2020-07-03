@@ -2,6 +2,9 @@ package com.leetcode.qiaok.practice3;
 
 import com.leetcode.qiaok.practice1.ListNode;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 面试题 02.01. 移除重复节点
  * 编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
@@ -49,6 +52,20 @@ public class RemoveDuplicateNodes {
      * @return
      */
     public ListNode removeDuplicateNodes(ListNode head) {
-        return null;
+        if(head==null){
+            return head;
+        }
+        Set<Integer> oc = new HashSet<>();
+        oc.add(head.val);
+        ListNode pos = head;
+        while(pos.next!=null){
+            if(oc.add(pos.next.val)){
+                pos = pos.next;
+            }else{
+                pos.next = pos.next.next;
+            }
+        }
+        pos.next = null;
+        return head;
     }
 }
