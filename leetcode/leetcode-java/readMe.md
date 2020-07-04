@@ -95,3 +95,5 @@
 ##### **378. [有序矩阵中第K小的元素](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/KthSmallest.java) - 【二分查找】-【1】 - 【KthSmallest】**
 
 ##### **108. [将有序数组转换为二叉搜索树](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/SortedArrayToBST.java) - 【二分查找】-【1】 - 【SortedArrayToBST】**
+
+##### **32. [最长有效括号](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestValidParentheses.java) - 【动态规划】-【1】 - 【LongestValidParentheses】**
