@@ -34,7 +34,7 @@ public class FirstMissingPositive {
      */
     public static void main(String[] args){
         FirstMissingPositive test = new FirstMissingPositive();
-        int[] nums = { };
+        int[] nums = { 1,2,0};
         long start = System.currentTimeMillis();
         int res  = test.firstMissingPositive(nums);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -48,7 +48,23 @@ public class FirstMissingPositive {
      * @return
      */
     public int firstMissingPositive(int[] nums) {
-
-        return 0;
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            if(nums[i] <= 0){
+                nums[i] = n + 1;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            int num = Math.abs(nums[i]);
+            if(num<=n){
+                nums[num-1] = - Math.abs(nums[num-1]);
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if(nums[i]>0){
+                return i+1;
+            }
+        }
+        return n+1;
     }
 }
