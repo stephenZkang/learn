@@ -53,8 +53,10 @@
 
 #### **【数据库】目录下为使用数据库的一些总结**
 
-1. [mybatis-plus源码解析及应用](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/mybatis-plus%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
-2. [mysql锁机制](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E9%94%81%E6%9C%BA%E5%88%B6.md)
+1. mybatis-plus源码解析及应用
+2. mysql锁机制
+3. mysql索引原理及问题
+4. mysql索引存储最大值多少
 
 #### **【趣唠Linux操作系统】目录下为学习Linux内核的一些总结**
 
