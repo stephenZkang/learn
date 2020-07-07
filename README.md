@@ -23,6 +23,7 @@
 1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/1.%20Redis缓存常遇问题.md) - 总结了缓存穿透、缓存雪崩、缓存击穿等问题的概念以及解决方法
 2. [Redis面试](https://github.com/stephenZkang/learn/blob/master/redis/2.%20Redis%E9%9D%A2%E8%AF%95.md)
 3. [Redis淘汰策略](https://github.com/stephenZkang/learn/blob/master/redis/3.%20Redis%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
+4. Redis主从复制的核心原理解读
 
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
