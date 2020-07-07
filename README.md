@@ -23,7 +23,7 @@
 1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/1.%20Redis缓存常遇问题.md) - 总结了缓存穿透、缓存雪崩、缓存击穿等问题的概念以及解决方法
 2. [Redis面试](https://github.com/stephenZkang/learn/blob/master/redis/2.%20Redis%E9%9D%A2%E8%AF%95.md)
 3. [Redis淘汰策略](https://github.com/stephenZkang/learn/blob/master/redis/3.%20Redis%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
-4. Redis主从复制的核心原理解读
+4. [Redis主从复制的核心原理解读](https://github.com/stephenZkang/learn/blob/master/redis/4.%20Redis%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AF%BB.md)
 
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
@@ -34,7 +34,8 @@
 1. [Spring Boot的SPI机制](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/1.%20Spring%20Boot%E4%B8%AD%E7%9A%84SPI%E6%9C%BA%E5%88%B6.md)
 2. [HashMap20问](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/2.%20HashMap20%E9%97%AE.md)
 3. [HTTP幂等性](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/3.%20HTTP%E5%B9%82%E7%AD%89%E6%80%A7.md)
-4. 
+4. [JVM内存异常分析](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/4.%20JVM%E5%86%85%E5%AD%98%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
+5. 
 
 #### 【大数据】
 
