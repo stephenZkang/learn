@@ -50,13 +50,14 @@
 
 1. [深入synchronized的实现机制、优化方式](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/1.%20%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90synchronized%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)(深入到jvm指令)
 2. [CAS和AQS](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/2.%20CAS%E5%92%8CAQS%E6%AF%94%E8%BE%83.md)
+3. [谈谈对volatile的认识](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/3.%20%E8%B0%88%E8%B0%88%E5%AF%B9volatile%E7%9A%84%E8%AE%A4%E8%AF%86.md)
 
 #### **【数据库】目录下为使用数据库的一些总结**
 
-1. mybatis-plus源码解析及应用
-2. mysql锁机制
-3. mysql索引原理及问题
-4. mysql索引存储最大值多少
+1. [mybatis-plus源码解析及应用](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/1.%20mybatis-plus%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
+2. [mysql锁机制](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/2.%20mysql%E9%94%81%E6%9C%BA%E5%88%B6.md)
+3. [mysql索引原理及问题](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/3.%20mysql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E5%8F%8A%E9%97%AE%E9%A2%98.md)
+4. [mysql索引存储最大值多少](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/4.%20mysql%E7%B4%A2%E5%BC%95%E5%AD%98%E5%82%A8%E6%9C%80%E5%A4%A7%E5%80%BC%E5%A4%9A%E5%B0%91.md)
 
 #### **【趣唠Linux操作系统】目录下为学习Linux内核的一些总结**
 
@@ -69,25 +70,31 @@
 
 #### **【问题】目录下为阅读中遇到的一些问题搜集**
 
-1. [docker学习](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/docker%E5%AD%A6%E4%B9%A0.md)
+1. docker学习
 
-2. [github如何使用，以及图片加载过慢的问题解决](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/git.md)
+2. github如何使用，以及图片加载过慢的问题解决
 
-3. [https如何理解](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/https%E8%AF%A6%E8%A7%A3.md)
+3. https如何理解
 
-4. [http协议相关](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/http%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3.md) - 总结了OSI分层的概念以及对http长连接的误解
+4. http协议相关 - 总结了OSI分层的概念以及对http长连接的误解
 
-5. [策略模式优化](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96.md)
+5. 策略模式优化
 
-6. [单点登录](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95.md)  [oauth2](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95.md#oauth2)  [jwt概念](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95.md#jwt)
+6. 单点登录 oauth2  jwt概念
 
-7. [单点登录实现-cas](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95%E5%AE%9E%E7%8E%B0-cas.md)
+7. 单点登录实现-cas
 
-8. [面试问题_20200103](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98_20200103.md)
+8. 面试问题_20200103
 
-9. [中间件开发指南](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%BC%80%E5%8F%91.md) - 莫那鲁道对中间件开发的一份指导
+9. 多模块项目搭建
 
-    
+10. 面试问题_20200103
+
+11. 系统架构设计
+
+12. 中间件开发指南- 莫那鲁道对中间件开发的一份指导
+
+     
 
 
 
