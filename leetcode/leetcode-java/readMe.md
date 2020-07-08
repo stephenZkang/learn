@@ -101,3 +101,5 @@
 ##### **63. [不同路径 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/UniquePathsWithObstacles.java) - 【动态规划】-【1】 - 【UniquePathsWithObstacles】**
 
 ##### **112. [路径总和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/HasPathSum.java) - 【广度优先搜索|递归】-【1】 - 【HasPathSum】**
+
+##### **面试题 16.11. [跳水板](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/DivingBoard.java) - 【数学】-【1】 - 【DivingBoard】**
