@@ -64,6 +64,9 @@ public class EquationsPossible {
      */
     private boolean equationsPossible(String[] equations) {
         int[] parent = new int[26];
+        for (int i = 0; i < 26; i++) {
+            parent[i] = i;
+        }
         for (String str:equations) {
             if(str.charAt(1) == '='){
                 int index1 = str.charAt(0) - 'a';
