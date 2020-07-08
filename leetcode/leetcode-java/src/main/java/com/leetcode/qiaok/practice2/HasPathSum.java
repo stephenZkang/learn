@@ -2,6 +2,9 @@ package com.leetcode.qiaok.practice2;
 
 import com.leetcode.qiaok.practice1.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 112. 路径总和
  * 给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
@@ -41,12 +44,13 @@ public class HasPathSum {
         root.right.right.right = new TreeNode(1);
         int sum = 22;
         long start = System.nanoTime();
-        boolean res = test.hasPathSum(root,sum);
+        boolean res = test.hasPathSum1(root,sum);
         System.out.println("耗时"+(System.nanoTime()-start)+"毫秒");
         System.out.println("res="+res);
     }
 
     /**
+     * 递归
      * 时间复杂度：
      * 空间复杂度：
      * @param root
@@ -54,6 +58,53 @@ public class HasPathSum {
      * @return
      */
     public boolean hasPathSum(TreeNode root, int sum) {
+        if(root == null){
+            return false;
+        }
+
+        if(root.left == null&&root.right == null){
+            return root.val == sum;
+        }
+        return hasPathSum(root.left,sum-root.val)||hasPathSum(root.right,sum-root.val);
+    }
+
+    /**
+     * 广度优先搜索
+     * 时间复杂度：
+     * 空间复杂度：
+     * @param root
+     * @param sum
+     * @return
+     */
+    public boolean hasPathSum1(TreeNode root, int sum) {
+        if(root == null){
+            return false;
+        }
+        Queue<TreeNode> queTre = new LinkedList<>();
+        Queue<Integer> queVal = new LinkedList<>();
+        queTre.offer(root);
+        queVal.offer(root.val);
+        while(!queTre.isEmpty()){
+            TreeNode now = queTre.poll();
+            Integer temp = queVal.poll();
+            if(now.left==null&&now.right==null){
+                if(temp == sum){
+                    return true;
+                }
+                continue;
+            }
+
+            if(now.left!=null){
+                queTre.offer(now.left);
+                queVal.offer(now.left.val+temp);
+            }
+
+            if(now.right!=null){
+                queTre.offer(now.right);
+                queVal.offer(now.right.val+temp);
+            }
+
+        }
         return false;
     }
 }
