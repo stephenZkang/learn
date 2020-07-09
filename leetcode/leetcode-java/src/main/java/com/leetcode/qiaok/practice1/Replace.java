@@ -29,6 +29,7 @@ import java.util.Arrays;
 public class Replace {
 
     public static void main(String[] args){
+
         Replace test = new Replace();
         String[] dictionary = {
             "looked","just","like","her","brother"
