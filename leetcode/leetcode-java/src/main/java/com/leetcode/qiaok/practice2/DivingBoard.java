@@ -32,9 +32,9 @@ public class DivingBoard {
      */
     public static void main(String[] args){
         DivingBoard test = new DivingBoard();
-        int shorter = 0;
-        int longer = 0;
-        int k = 0;
+        int shorter = 1;
+        int longer = 2;
+        int k = 3;
         long start = System.currentTimeMillis();
         int[] res = test.divingBoard(shorter,longer,k);
         System.out.println("耗时"+(System.currentTimeMillis() -start)+"毫秒");
@@ -51,7 +51,18 @@ public class DivingBoard {
      * @return
      */
     public int[] divingBoard(int shorter, int longer, int k) {
+        if(k == 0){
+            return new int[0];
+        }
 
-        return new int[0];
+        if(shorter == longer){
+            return new int[]{shorter * k};
+        }
+
+        int[] dp = new int[k+1];
+        for (int i = 0; i <= k; i++) {
+            dp[i] = shorter*(k-i)+longer*i;
+        }
+        return dp;
     }
 }
