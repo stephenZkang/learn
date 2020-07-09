@@ -1,6 +1,8 @@
 package com.leetcode.qiaok.practice3;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 /**
  * 378. 有序矩阵中第K小的元素
@@ -70,4 +72,24 @@ public class KthSmallest {
         Arrays.sort(dp);
         return dp[k-1];
     }
+
+    public int kthSmallest1(int[][] matrix, int k) {
+        PriorityQueue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return a[0] - b[0];
+            }
+        });
+        int n = matrix.length;
+        for (int i = 0; i < n; i++) {
+            pq.offer(new int[]{matrix[i][0], i, 0});
+        }
+        for (int i = 0; i < k - 1; i++) {
+            int[] now = pq.poll();
+            if (now[2] != n - 1) {
+                pq.offer(new int[]{matrix[now[1]][now[2] + 1], now[1], now[2] + 1});
+            }
+        }
+        return pq.poll()[0];
+    }
+
 }
