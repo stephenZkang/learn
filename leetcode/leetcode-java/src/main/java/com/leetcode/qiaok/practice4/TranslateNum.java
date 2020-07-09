@@ -42,6 +42,7 @@ public class TranslateNum {
      */
     public int translateNum(int num) {
         String s = String.valueOf(num);
+
         int q = 0,p =0, r =1;
         for (int i = 0; i < s.length(); i++) {
             p = q;
