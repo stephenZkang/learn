@@ -73,6 +73,12 @@ public class KthSmallest {
         return dp[k-1];
     }
 
+    /**
+     * 二分查找
+     * @param matrix
+     * @param k
+     * @return
+     */
     public int kthSmallest1(int[][] matrix, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
             public int compare(int[] a, int[] b) {
