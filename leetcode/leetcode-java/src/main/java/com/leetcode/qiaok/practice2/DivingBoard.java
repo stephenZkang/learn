@@ -63,6 +63,7 @@ public class DivingBoard {
         for (int i = 0; i <= k; i++) {
             dp[i] = shorter*(k-i)+longer*i;
         }
+
         return dp;
     }
 }
