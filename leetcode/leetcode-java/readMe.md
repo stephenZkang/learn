@@ -109,3 +109,5 @@
 ##### **174. [地下城游戏](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CalculateMiniumumHP.java) - 【动态规划】-【1】 - 【CalculateMiniumumHP】**
 
 ##### **350. [两个数组的交集 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Intersect.java) - 【哈希】-【1】 - 【Intersect】**
+
+##### **96. [不同的二叉搜索树](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/NumTrees.java) - 【动态规划|数学】-【1】 - 【NumTrees】**
