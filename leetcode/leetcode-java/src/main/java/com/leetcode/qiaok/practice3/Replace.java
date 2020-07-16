@@ -1,5 +1,7 @@
 package com.leetcode.qiaok.practice3;
 
+import java.util.Arrays;
+
 /**
  * 面试题 17.13. 恢复空格
  * 哦，不！你不小心把一个长篇文章中的空格、标点都删掉了，并且大写也弄成了小写。
@@ -35,10 +37,11 @@ public class Replace {
         long start = System.currentTimeMillis();
         int res = test.replace(dictionary,sentence);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
-        System.out.println("res"+res);
+        System.out.println("res="+res);
     }
 
     /**
+     * 前缀树+动态规划
      * 时间复杂度：
      * 空间复杂度：
      * @param dictionary
@@ -46,8 +49,56 @@ public class Replace {
      * @return
      */
     public int replace(String[] dictionary, String sentence) {
+        int n = sentence.length();
+        Tries root = new Tries();
+        for (String word:dictionary) {
+            root.insert(word);
+        }
 
+        int[] dp = new int[n+1];
+        Arrays.fill(dp,Integer.MAX_VALUE);
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            dp[i] = dp[i-1] + 1;
+            Tries curPos = root;
+            for (int j = i; j >=1 ; j--) {
+                int t = sentence.charAt(j - 1) - 'a';
+                if(curPos.next[t] ==null){
+                    break;
+                } else if (curPos.next[t].isEnd) {
+                    dp[i] = Math.min(dp[i], dp[j - 1]);
+                }
 
-        return 0;
+                if(dp[i] == 0){
+                    break;
+                }
+                curPos = curPos.next[t];
+            }
+        }
+
+        return dp[n];
     }
+}
+
+class Tries{
+    public Tries[] next;
+    public boolean isEnd;
+
+    public Tries(){
+        next = new Tries[26];
+        isEnd = false;
+    }
+
+    public void insert(String s){
+        Tries curPos = this;
+        for (int i = s.length()-1; i >=0 ; i--) {
+            int t = s.charAt(i) - 'a';
+            if(curPos.next[t] == null){
+                curPos.next[t] = new Tries();
+            }
+            curPos = curPos.next[t];
+        }
+        curPos.isEnd = true;
+    }
+
 }
