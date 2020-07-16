@@ -110,4 +110,6 @@
 
 ##### **350. [两个数组的交集 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Intersect.java) - 【哈希】-【1】 - 【Intersect】**
 
-##### **96. [不同的二叉搜索树](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/NumTrees.java) - 【动态规划|数学】-【1】 - 【NumTrees】**
+##### **96. [不同的二叉搜索树](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/NumTrees.java) - 【动态规划|数学】-【2】 - 【NumTrees】**
+
+##### **785. [判断二分图](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsBipartite.java) - 【深度优先搜索|广度优先搜索】-【1】 - 【IsBipartite】**
