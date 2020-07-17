@@ -270,6 +270,8 @@ public class BeautifulArray {
         BeautifulArray test = new BeautifulArray();
         int[] nums = { 1, 2, 3, 1, 1, 2, 33 };
         int k = 3;
+        long start = System.currentTimeMillis();
+        System.out.println("start="+start);
         int res = test.numberOfSubarrays(nums,k);
         System.out.println("res:"+res);
     }
