@@ -114,4 +114,6 @@
 
 ##### **167. [两数之和 II - 输入有序数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TwoNumII.java) - 【双指针】-【1】 - 【TwoNumII】**
 
-##### **95. [不同的二叉搜索树 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/GenerateTrees.java) - 【递归】-【1】 - 【GenerateTrees】**
+##### **95. [不同的二叉搜索树 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/GenerateTrees.java) - 【递归】-【2】 - 【GenerateTrees】**
+
+##### **剑指 Offer 11. [旋转数组的最小数字](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinArray.java) - 【二分查找】-【1】 - 【MinArray】**

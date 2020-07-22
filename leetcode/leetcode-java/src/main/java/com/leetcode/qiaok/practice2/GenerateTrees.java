@@ -2,6 +2,7 @@ package com.leetcode.qiaok.practice2;
 
 import com.leetcode.qiaok.practice1.TreeNode;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -41,7 +42,7 @@ public class GenerateTrees {
 
     public static void main(String[] args){
         GenerateTrees test = new GenerateTrees();
-        int n = 0;
+        int n = 3;
         long start = System.currentTimeMillis();
         List<TreeNode>  res = test.generateTrees(n);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -49,13 +50,41 @@ public class GenerateTrees {
     }
 
     /**
-     * 
+     * 递归
      * 时间复杂度：
      * 空间复杂度：
      * @param n
      * @return
      */
     public List<TreeNode> generateTrees(int n) {
-        return null;
+        if(n == 0){
+            return new LinkedList<>();
+        }
+
+        return generateTrees(1,n);
+    }
+
+    public List<TreeNode> generateTrees(int start,int end) {
+        List<TreeNode> temp = new LinkedList<>();
+        if(start>end){
+            temp.add(null);
+            return temp;
+        }
+        for (int i = start; i <= end; i++) {
+            List<TreeNode> leftTrees = generateTrees(start, i - 1);
+            List<TreeNode> rightTrees = generateTrees(i + 1, end);
+            for (TreeNode ln :leftTrees) {
+                for (TreeNode rn: rightTrees) {
+                    TreeNode cur = new TreeNode(i);
+                    cur.left = ln;
+                    cur.right = rn;
+                    temp.add(cur);
+                }
+            }
+
+
+        }
+
+        return temp;
     }
 }
