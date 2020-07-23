@@ -1,5 +1,7 @@
 package com.leetcode.qiaok.practice3;
 
+import java.util.Arrays;
+
 /**
  * 785. 判断二分图
  * 给定一个无向图graph，当这个图为二分图时返回true。
@@ -64,14 +66,44 @@ public class IsBipartite {
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
         System.out.println("res="+res);
     }
-
+    private static final int UNCOLORED = 0;
+    private static final int RED = 1;
+    private static final int GREEN = 2;
+    private int[] color;
+    private boolean valid;
     /**
+     * 深度优先搜索
      * 时间复杂度：
      * 空间复杂度：
      * @param graph
      * @return
      */
     public boolean isBipartite(int[][] graph) {
-        return false;
+        int n = graph.length;
+        valid = true;
+        color = new int[n];
+        Arrays.fill(color, UNCOLORED);
+        for (int i = 0; i < n && valid; ++i) {
+            if (color[i] == UNCOLORED) {
+                dfs(i, RED, graph);
+            }
+        }
+        return valid;
+    }
+
+    private void dfs(int node, int c, int[][] graph) {
+        color[node] = c;
+        int cNei = c == RED ? GREEN : RED;
+        for (int neighbor : graph[node]) {
+            if (color[neighbor] == UNCOLORED) {
+                dfs(neighbor, cNei, graph);
+                if (!valid) {
+                    return;
+                }
+            } else if (color[neighbor] != cNei) {
+                valid = false;
+                return;
+            }
+        }
     }
 }
