@@ -25,7 +25,7 @@ public class MinArray {
     public static void main(String[] args){
         MinArray test = new MinArray();
         int[] numbers = {
-
+                3,4,5,1,2
         };
         long start = System.currentTimeMillis();
         int res = test.minArray(numbers);
@@ -35,13 +35,24 @@ public class MinArray {
     }
 
     /**
-     *
+     * 二分查找
      * 时间复杂度：
      * 空间复杂度：
      * @param numbers
      * @return
      */
     public int minArray(int[] numbers) {
-        return 0;
+        int low = 0 ; int high = numbers.length -1;
+        while(low < high){
+            int mid = (high - low) / 2 + low;
+            if(numbers[mid] == numbers[high]){
+                high--;
+            }else if(numbers[mid] >numbers[high]){
+                low = mid +1;
+            }else{
+                high = mid;
+            }
+        }
+        return numbers[low];
     }
 }
