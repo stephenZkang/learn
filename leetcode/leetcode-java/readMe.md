@@ -117,3 +117,5 @@
 ##### **95. [不同的二叉搜索树 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/GenerateTrees.java) - 【递归】-【2】 - 【GenerateTrees】**
 
 ##### **剑指 Offer 11. [旋转数组的最小数字](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinArray.java) - 【二分查找】-【1】 - 【MinArray】**
+
+##### **64. [最小路径和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinPathSum.java) - 【动态规划】-【1】 - 【MinPathSum】**
