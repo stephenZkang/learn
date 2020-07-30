@@ -121,3 +121,5 @@
 ##### **64. [最小路径和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinPathSum.java) - 【动态规划】-【1】 - 【MinPathSum】**
 
 ##### **LCP 13. [寻宝](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinimalSteps.java) - 【状态压缩动态规划】-【1】 - 【MinimalSteps】**
+
+##### **343. [整数拆分](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IntegerBreak.java) - 【动态规划】-【1】 - 【IntegerBreak】**
