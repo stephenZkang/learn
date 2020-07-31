@@ -19,7 +19,7 @@ package com.leetcode.qiaok.practice2;
  *
  * nums长度在[1, 1000000]之间
  *
- * @since 2020-07-31
+ * @since 2020-08-01
  * @author qiaok
  */
 public class FindMagicIndex {
