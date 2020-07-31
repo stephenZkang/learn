@@ -123,3 +123,5 @@
 ##### **LCP 13. [寻宝](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinimalSteps.java) - 【状态压缩动态规划】-【1】 - 【MinimalSteps】**
 
 ##### **343. [整数拆分](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IntegerBreak.java) - 【动态规划】-【1】 - 【IntegerBreak】**
+
+##### **面试题 08.03. [魔术索引](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindMagicIndex.java) - 【循环】-【1】 - 【FindMagicIndex】**
