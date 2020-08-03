@@ -125,3 +125,5 @@
 ##### **343. [整数拆分](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IntegerBreak.java) - 【动态规划】-【1】 - 【IntegerBreak】**
 
 ##### **面试题 08.03. [魔术索引](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindMagicIndex.java) - 【循环】-【1】 - 【FindMagicIndex】**
+
+##### **415. [字符串相加](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/AddStrings.java) - 【模拟】-【1】 - 【AddStrings】**
