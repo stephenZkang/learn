@@ -18,8 +18,8 @@ public class AddStrings {
 
     public static void main(String[] args){
         AddStrings test = new AddStrings();
-        String num1 = "";
-        String num2 = "";
+        String num1 = "111";
+        String num2 = "2222";
         long start = System.currentTimeMillis();
         String res  = test.addStrings(num1,num2);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -27,7 +27,7 @@ public class AddStrings {
     }
 
     /**
-     *
+     * 模拟
      * 时间复杂度：
      * 空间复杂度：
      * @param num1
@@ -35,6 +35,20 @@ public class AddStrings {
      * @return
      */
     public String addStrings(String num1, String num2) {
-        return null;
+        int i = num1.length() - 1;
+        int j = num2.length() - 1;
+        int add = 0;
+        StringBuffer buffer = new StringBuffer();
+        while(i>=0||j>=0||add!=0){
+            int x = i>=0 ?num1.charAt(i) - '0' : 0 ;
+            int y = j>=0 ?num2.charAt(j) - '0' : 0 ;
+            int result = x + y + add;
+            buffer.append(result % 10);
+            add = result / 10;
+            i--;
+            j--;
+        }
+        buffer.reverse();
+        return buffer.toString();
     }
 }
