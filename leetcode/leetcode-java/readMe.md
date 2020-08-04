@@ -127,3 +127,5 @@
 ##### **面试题 08.03. [魔术索引](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindMagicIndex.java) - 【循环】-【1】 - 【FindMagicIndex】**
 
 ##### **415. [字符串相加](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/AddStrings.java) - 【模拟】-【1】 - 【AddStrings】**
+
+##### **207. [课程表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CanFinish.java) - 【深度优先搜索】-【1】 - 【CanFinish】**
