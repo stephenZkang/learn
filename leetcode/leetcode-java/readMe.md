@@ -135,3 +135,6 @@
 ##### **130. [被围绕的区域](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Solve.java) - 【深度优先搜索】-【1】 - 【Solve】**
 
 ##### **43. [字符串相乘](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Mutiply.java) - 【深度优先搜索】-【1】 - 【Mutiply】**
+
+##### **20. [有效的括号](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsValid.java) - 【栈】-【1】 - 【IsValid】**
+
