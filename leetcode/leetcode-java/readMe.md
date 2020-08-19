@@ -138,3 +138,6 @@
 
 ##### **20. [有效的括号](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsValid.java) - 【栈】-【1】 - 【IsValid】**
 
+##### **647. [回文子串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CountSubstrings.java) - 【中心扩展】-【1】 - 【CountSubstrings】**
+
+
