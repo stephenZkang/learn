@@ -1,6 +1,6 @@
 package com.leetcode.qiaok.practice2;
 
-import com.leetcode.qiaok.practice1.ListNode;
+import com.leetcode.qiaok.practice2.ListNode;
 import com.leetcode.qiaok.practice1.TreeNode;
 
 /**
@@ -39,11 +39,29 @@ public class SortedListToBST {
      *
      * 时间复杂度：
      * 空间复杂度：
-     * @param node
+     * @param head
      * @return
      */
-    public TreeNode sortedListToBST(ListNode node) {
-        return null;
+    public TreeNode sortedListToBST(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        if(head.next == null){
+            return new TreeNode(head.val);
+        }
+
+        ListNode slow = head ,quick = head,pre =null;
+        while(quick!=null&&quick.next!=null){
+            pre = slow;
+            slow = slow.next;
+            quick = quick.next.next;
+        }
+
+        pre.next = null;
+        TreeNode node = new TreeNode(slow.val);
+        node.left = sortedListToBST(head);
+        node.right = sortedListToBST(slow.next);
+        return node;
     }
 }
 
