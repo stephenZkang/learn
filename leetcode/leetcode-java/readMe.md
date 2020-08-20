@@ -140,4 +140,7 @@
 
 ##### **647. [回文子串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CountSubstrings.java) - 【中心扩展】-【1】 - 【CountSubstrings】**
 
+##### **529. [扫雷游戏](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/UpdateBoard.java) - 【中心扩展】-【1】 - 【UpdateBoard】**
+
+
 
