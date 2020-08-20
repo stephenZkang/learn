@@ -31,7 +31,7 @@ public class CountSubstrings {
 
     public static void main(String[] args){
         CountSubstrings test = new CountSubstrings();
-        String s  = "";
+        String s  = "abc";
         long start = System.currentTimeMillis();
         int res = test.countSubstrings(s);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -46,8 +46,15 @@ public class CountSubstrings {
      * @return
      */
     public int countSubstrings(String s) {
-        
-
-        return 0;
+        int n = s.length();int ans = 0;
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int l = i /2 , r = i/2 + i % 2;
+            while(l>=0&&r < n && s.charAt(l) == s.charAt(r)){
+                --l;
+                ++r;
+                ++ans;
+            }
+        }
+        return ans;
     }
 }

@@ -33,7 +33,7 @@ public class CountSubstrings {
         CountSubstrings test = new CountSubstrings();
         String s  = "abc";
         long start = System.currentTimeMillis();
-        int res = test.countSubstrings1(s);
+        int res = test.countSubstrings2(s);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
         System.out.println("res="+res);
 
