@@ -142,5 +142,8 @@
 
 ##### **529. [扫雷游戏](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/UpdateBoard.java) - 【中心扩展】-【1】 - 【UpdateBoard】**
 
+##### **111. [二叉树的最小深度](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinDepth.java) - 【深度优先搜索】-【1】 - 【MinDepth】**
+
+
 
 
