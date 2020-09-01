@@ -150,6 +150,9 @@
 
 ##### **841. [钥匙和房间](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CanVisitAllRooms.java) - 【深度优先搜索|广度优先搜索】-【1】 - 【CanVisitAllRooms】**
 
+##### **486. [预测赢家](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PredictTheWinner.java) - 【动态规划|递归】-【1】 - 【PredictTheWinner】**
+
+
 
 
 
