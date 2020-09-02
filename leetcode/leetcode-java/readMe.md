@@ -152,6 +152,9 @@
 
 ##### **486. [预测赢家](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PredictTheWinner.java) - 【动态规划|递归】-【1】 - 【PredictTheWinner】**
 
+##### **剑指 Offer 20. [表示数值的字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsNumber.java) - 【有限状态自动机】-【1】 - 【IsNumber】**
+
+
 
 
 
