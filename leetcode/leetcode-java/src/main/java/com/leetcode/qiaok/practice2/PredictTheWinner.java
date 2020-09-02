@@ -39,7 +39,7 @@ public class PredictTheWinner {
     public static void main(String[] args){
         PredictTheWinner test = new PredictTheWinner();
         int[] nums = {
-
+                1, 5, 233, 7
         };
         long start = System.currentTimeMillis();
         boolean flag = test.predictTheWinner(nums);
@@ -49,12 +49,23 @@ public class PredictTheWinner {
     }
 
     /**
+     * 动态规划
      * 时间复杂度：
      * 空间复杂度:
      * @param nums
      * @return
      */
     public boolean predictTheWinner(int[] nums) {
-        return false;
+        int n = nums.length;
+        int[][] dp = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = nums[i];
+        }
+        for (int i = n - 2; i >= 0 ; i--) {
+            for (int j = i+1; j < n ; j++) {
+                dp[i][j] = Math.max(nums[i] - dp[i+1][j],nums[j] - dp[i][j-1]);
+            }
+        }
+        return dp[0][n-1] > 0;
     }
 }
