@@ -28,7 +28,7 @@ public class JudgeCricle {
 
     public static void main(String[] args){
         JudgeCricle test = new JudgeCricle();
-        String moves = "";
+        String moves = "UD";
         long start = System.currentTimeMillis();
         boolean res = test.judgeCricle(moves);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -42,6 +42,20 @@ public class JudgeCricle {
      * @return
      */
     public boolean judgeCricle(String moves) {
-        return false;
+        int x = 0; int y = 0;
+        int length = moves.length();
+        for (int i = 0; i < length; i++) {
+            char ch = moves.charAt(i);
+            if(ch == 'U'){
+                y++;
+            }else if(ch == 'D'){
+                y--;
+            }else if(ch == 'L'){
+                x++;
+            }else if(ch == 'R'){
+                x--;
+            }
+        }
+        return x == y;
     }
 }
