@@ -156,6 +156,9 @@
 
 ##### **257. [二叉树的所有路径](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/BinaryTreePaths.java) - 【深度优先搜索|广度优先搜索】-【1】 - 【BinaryTreePaths】**
 
+##### **347. [前 K 个高频元素](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TopKFrequent.java) - 【堆|快速排序】-【1】 - 【TopKFrequent】**
+
+
 
 
 
