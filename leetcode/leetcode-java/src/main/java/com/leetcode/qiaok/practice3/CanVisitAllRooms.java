@@ -1,7 +1,9 @@
 package com.leetcode.qiaok.practice3;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 841. 钥匙和房间
@@ -60,6 +62,22 @@ public class CanVisitAllRooms {
      * @return
      */
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        return false;
+        int size = rooms.size();int num = 0;
+        boolean[] vis = new boolean[size];
+        Queue<Integer> queue = new LinkedList<>();
+        vis[0] = true;
+        queue.offer(0);
+        while(!queue.isEmpty()){
+            Integer x = queue.poll();
+            num++;
+            for (int it : rooms.get(x)) {
+                if(!vis[it]){
+                    vis[it] = true;
+                    queue.offer(it);
+                }
+            }
+        }
+
+        return num == size;
     }
 }
