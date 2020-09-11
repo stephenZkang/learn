@@ -2,6 +2,7 @@ package com.leetcode.qiaok.practice3;
 
 import com.leetcode.qiaok.practice1.TreeNode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -41,13 +42,29 @@ public class BinaryTreePaths {
     }
 
     /**
-     *
+     * 深度优先搜索
      * 时间复杂度：
      * 空间复杂度：
      * @param root
      * @return
      */
-    private List<String> binaryTreePaths(TreeNode root) {
-        return null;
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> paths = new ArrayList<>();
+        constructPath(root,"",paths);
+        return paths;
+    }
+
+    private void constructPath(TreeNode root, String path, List<String> paths) {
+        if(root!=null){
+            StringBuffer pathSB = new StringBuffer(path);
+            pathSB.append(Integer.toString(root.val));
+            if(root.left ==null && root.right == null){
+                paths.add(pathSB.toString());
+            }else{
+                pathSB.append("->");  // 当前节点不是叶子节点，继续递归遍历
+                constructPath(root.left, pathSB.toString(), paths);
+                constructPath(root.right, pathSB.toString(), paths);
+            }
+        }
     }
 }
