@@ -36,6 +36,19 @@ public class InOrderTraversal {
     }
 
     /**
+     * 栈
+     * 时间复杂度：
+     * 空间复杂度：
+     * @param root
+     * @return
+     */
+    public List<Integer> inorderTraversal1(TreeNode root) {
+        List<Integer> arr = new ArrayList<>();
+        inOrder(root,arr);
+        return arr;
+    }
+
+    /**
      * 递归
      * 时间复杂度：
      * 空间复杂度：
