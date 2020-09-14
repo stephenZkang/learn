@@ -1,6 +1,6 @@
 package com.leetcode.qiaok.practice3;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * 347. 前 K 个高频元素
@@ -34,10 +34,10 @@ public class TopKFrequent {
     public static void main(String[] args){
         TopKFrequent test = new TopKFrequent();
         int[] nums = {
-
+            1,1,1,2,2,3
         };
 
-        int k = 0;
+        int k = 2;
         long start = System.currentTimeMillis();
         int[] res = test.topKFrequent(nums,k);
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
@@ -53,6 +53,32 @@ public class TopKFrequent {
      * @return
      */
     public int[] topKFrequent(int[] nums, int k) {
-        return new int[0];
+        Map<Integer,Integer> m = new HashMap<>();
+        for (int num:nums) {
+            m.put(num,m.getOrDefault(num,0) + 1);
+        }
+        PriorityQueue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[1] - o2[1];
+            }
+        });
+        for (Map.Entry<Integer,Integer> entry:m.entrySet()) {
+            int num = entry.getKey(); int value = entry.getValue();
+            if(queue.size() == k){
+                if(queue.peek()[1]<value){
+                    queue.poll();
+                    queue.offer(new int[]{num,value});
+                }
+            }else{
+                queue.offer(new int[]{num,value});
+            }
+        }
+
+        int[] ret = new int[k];
+        for (int i = 0; i < k; i++) {
+            ret[i] = queue.poll()[0];
+        }
+        return  ret;
     }
 }
