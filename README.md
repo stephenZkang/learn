@@ -26,6 +26,11 @@
 4. [Redis主从复制的核心原理解读](https://github.com/stephenZkang/learn/blob/master/redis/4.%20Redis%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AF%BB.md)
 5.  [Redis哨兵基础](https://github.com/stephenZkang/learn/blob/master/redis/5.%20Redis哨兵基础.md)
 
+**【Spring】目录下为Spring Cloud一些总结**
+
+1. [Spring Cloud](https://github.com/stephenZkang/learn/blob/master/spring/1.%20Spring%20Cloud.md)
+2. [配置中心选型](https://github.com/stephenZkang/learn/blob/master/spring/2.%20%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E9%80%89%E5%9E%8B.md)
+
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
 1. [nodejs](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md) - 总结了使用vue过程中遇到的问题（如[环境配置](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#3%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)、概念理解、[组件化传参](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#9vue%E4%B8%AD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%8F%82%E9%97%AE%E9%A2%98)）
