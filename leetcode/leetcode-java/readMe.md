@@ -168,6 +168,9 @@
 
 ##### **94. [二叉树的中序遍历](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/InOrderTraversal.java) - 【递归|栈】-【1】 - 【InOrderTraversal】**
 
+##### **47. [全排列 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PremuteUnique.java) - 【搜索回溯】-【1】 - 【PremuteUnique】**
+
+
 
 
 
