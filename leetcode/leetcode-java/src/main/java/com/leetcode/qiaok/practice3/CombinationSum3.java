@@ -1,5 +1,6 @@
 package com.leetcode.qiaok.practice3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,7 +33,8 @@ public class CombinationSum3 {
         System.out.println("耗时"+(System.currentTimeMillis() - start)+"毫秒");
         System.out.println("res="+res.toString());
     }
-
+    List<Integer> temp = new ArrayList<Integer>();
+    List<List<Integer>> ans = new ArrayList<List<Integer>>();
     /**
      *
      * 时间复杂度：
@@ -42,6 +44,27 @@ public class CombinationSum3 {
      * @return
      */
     public List<List<Integer>> combinationSum3(int k, int n) {
-        return null;
+        dfs(1, 9, k, n);
+        return ans;
+    }
+
+    public void dfs(int cur, int n, int k, int sum) {
+        if (temp.size() + (n - cur + 1) < k || temp.size() > k) {
+            return;
+        }
+        if (temp.size() == k) {
+            int tempSum = 0;
+            for (int num : temp) {
+                tempSum += num;
+            }
+            if (tempSum == sum) {
+                ans.add(new ArrayList<Integer>(temp));
+                return;
+            }
+        }
+        temp.add(cur);
+        dfs(cur + 1, n, k, sum);
+        temp.remove(temp.size() - 1);
+        dfs(cur + 1, n, k, sum);
     }
 }
