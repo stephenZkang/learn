@@ -7,9 +7,9 @@
 
 #### **【MQ】目录下为学习MQ练习的代码**
 
-1. [ActiveMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/ActiveMQ%E5%AD%A6%E4%B9%A0.md)
-2. [RabbitMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/RabbitMQ.md)
-3. Kafka和Pulsar对比
+1. [ActiveMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/1.%20ActiveMQ%E5%AD%A6%E4%B9%A0.md)
+2. [RabbitMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/2.%20RabbitMQ.md)
+3. [Kafka和Pulsar对比](https://github.com/stephenZkang/learn/blob/master/MQ/3.%20Kafka%E5%92%8CPulsar%E5%AF%B9%E6%AF%94.md)
 
 #### **【activiti】目录下为学习activiti练习的代码**
 
