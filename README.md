@@ -25,6 +25,7 @@
 3. [Redis淘汰策略](https://github.com/stephenZkang/learn/blob/master/redis/3.%20Redis%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
 4. [Redis主从复制的核心原理解读](https://github.com/stephenZkang/learn/blob/master/redis/4.%20Redis%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AF%BB.md)
 5.  [Redis哨兵基础](https://github.com/stephenZkang/learn/blob/master/redis/5.%20Redis哨兵基础.md)
+6. [Redis分布式锁](https://github.com/stephenZkang/learn/blob/master/redis/6.%20Redis分布式锁.md)
 
 **【Spring】目录下为Spring Cloud一些总结**
 
