@@ -170,6 +170,7 @@
 
 ##### **47. [全排列 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PremuteUnique.java) - 【搜索回溯】-【1】 - 【PremuteUnique】**
 
+##### **143. [重排链表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ReOrderList.java) - 【递归】-【1】 - 【ReOrderList】**
 
 
 
