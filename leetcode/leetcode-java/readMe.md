@@ -172,6 +172,7 @@
 
 ##### **143. [重排链表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ReOrderList.java) - 【递归】-【1】 - 【ReOrderList】**
 
+##### **763. [划分字母区间](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PartitionLabels.java) - 【贪心算法|双指针】-【1】 - 【PartitionLabels】**
 
 
 
