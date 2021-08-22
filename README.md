@@ -58,6 +58,8 @@
 
 ##### 2. [配置中心选型](https://github.com/stephenZkang/learn/blob/master/spring/2.%20%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E9%80%89%E5%9E%8B.md)
 
+##### 3. [链路追踪 ]() - 同事总结
+
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
 1. [nodejs](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md) - 总结了使用vue过程中遇到的问题（如[环境配置](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#3%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)、概念理解、[组件化传参](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#9vue%E4%B8%AD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%8F%82%E9%97%AE%E9%A2%98)）
