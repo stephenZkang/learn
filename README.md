@@ -2,36 +2,61 @@
 
 #### **【ElasticSearch】目录下为学习ElasticSearch的总结**
 
-1. [入门](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/1.ES%E5%85%A5%E9%97%A8.md)-[参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/foreword_id.html)
-2. 
+##### 1. 第一次学习
+
+###### 1. [入门](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/one/1.ES%E5%85%A5%E9%97%A8.md)-[参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/foreword_id.html)
+
+##### 2. 第二次重学
+
+###### 1. 第一部分【入门级】
+
+1. [概述](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-17.md)
+2. [部署和基本概念](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-18.md)
+3. [CRUD和倒排索引](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-19.md)
+4. [Search API和Mapping](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-20.md)
+5. [实践问题](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/practice.md)
+
+###### 2. 第二部分【深入了解】
+
+1. 
 
 #### **【MQ】目录下为学习MQ练习的代码**
 
-1. [ActiveMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/1.%20ActiveMQ%E5%AD%A6%E4%B9%A0.md)
-2. [RabbitMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/2.%20RabbitMQ.md)
-3. [Kafka和Pulsar对比](https://github.com/stephenZkang/learn/blob/master/MQ/3.%20Kafka%E5%92%8CPulsar%E5%AF%B9%E6%AF%94.md)
+##### 1.[ActiveMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/1.%20ActiveMQ%E5%AD%A6%E4%B9%A0.md)
+
+##### 2.[RabbitMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/2.%20RabbitMQ.md)
+
+##### 3.[Kafka和Pulsar对比](https://github.com/stephenZkang/learn/blob/master/MQ/3.%20Kafka%E5%92%8CPulsar%E5%AF%B9%E6%AF%94.md)
 
 #### **【activiti】目录下为学习activiti练习的代码**
 
-1. [activiti学习](https://github.com/stephenZkang/learn/blob/master/activiti/activiti.md)
+##### 1. [activiti学习](https://github.com/stephenZkang/learn/blob/master/activiti/activiti.md)
 
 #### **【leetcode】目录下为Leetcode 刷题总结以及代码**
 
-1. [Java解题汇总](https://github.com/stephenZkang/learn/tree/master/leetcode/leetcode-java)
+##### 1. [Java解题汇总](https://github.com/stephenZkang/learn/tree/master/leetcode/leetcode-java)
 
 #### **【Redis】目录下为使用Redis和阅读博客的一些总结**
 
-1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/1.%20Redis缓存常遇问题.md) - 总结了缓存穿透、缓存雪崩、缓存击穿等问题的概念以及解决方法
-2. [Redis面试](https://github.com/stephenZkang/learn/blob/master/redis/2.%20Redis%E9%9D%A2%E8%AF%95.md)
-3. [Redis淘汰策略](https://github.com/stephenZkang/learn/blob/master/redis/3.%20Redis%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
-4. [Redis主从复制的核心原理解读](https://github.com/stephenZkang/learn/blob/master/redis/4.%20Redis%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AF%BB.md)
-5.  [Redis哨兵基础](https://github.com/stephenZkang/learn/blob/master/redis/5.%20Redis哨兵基础.md)
-6. [Redis分布式锁](https://github.com/stephenZkang/learn/blob/master/redis/6.%20Redis分布式锁.md)
+##### 1. [Redis缓存常遇问题](https://github.com/stephenZkang/learn/blob/master/redis/1.%20Redis缓存常遇问题.md) 
 
-**【Spring】目录下为Spring Cloud一些总结**
+总结了缓存穿透、缓存雪崩、缓存击穿等问题的概念以及解决方法
 
-1. [Spring Cloud](https://github.com/stephenZkang/learn/blob/master/spring/1.%20Spring%20Cloud.md)
-2. [配置中心选型](https://github.com/stephenZkang/learn/blob/master/spring/2.%20%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E9%80%89%E5%9E%8B.md)
+##### 2. [Redis面试](https://github.com/stephenZkang/learn/blob/master/redis/2.%20Redis%E9%9D%A2%E8%AF%95.md)
+
+##### 3. [Redis淘汰策略](https://github.com/stephenZkang/learn/blob/master/redis/3.%20Redis%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
+
+##### 4. [Redis主从复制的核心原理解读](https://github.com/stephenZkang/learn/blob/master/redis/4.%20Redis%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AF%BB.md)
+
+##### 5. [Redis哨兵基础](https://github.com/stephenZkang/learn/blob/master/redis/5.%20Redis哨兵基础.md)
+
+##### 6. [Redis分布式锁](https://github.com/stephenZkang/learn/blob/master/redis/6.%20Redis分布式锁.md)
+
+#### **【Spring】目录下为Spring Cloud一些总结**
+
+##### 1. [Spring Cloud](https://github.com/stephenZkang/learn/blob/master/spring/1.%20Spring%20Cloud.md)
+
+##### 2. [配置中心选型](https://github.com/stephenZkang/learn/blob/master/spring/2.%20%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E9%80%89%E5%9E%8B.md)
 
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
@@ -45,9 +70,9 @@
 4. [JVM内存异常分析](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/4.%20JVM%E5%86%85%E5%AD%98%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
 5.  [jvm垃圾回收](https://github.com/stephenZkang/learn/blob/master/基础/5.%20JVM垃圾回收.md)
 
-#### 【大数据】
+#### 【分布式】
 
-1. [分布式ID](https://github.com/stephenZkang/learn/blob/master/%E5%A4%A7%E6%95%B0%E6%8D%AE/1.%E5%88%86%E5%B8%83%E5%BC%8FID.md)
+##### 1. [分布式ID](https://github.com/stephenZkang/learn/blob/master/%E5%A4%A7%E6%95%B0%E6%8D%AE/1.%E5%88%86%E5%B8%83%E5%BC%8FID.md)
 
 #### 【安全】
 
@@ -104,7 +129,6 @@
 13. [API设计](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
 
      
-
 
 
 
