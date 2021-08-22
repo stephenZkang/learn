@@ -58,7 +58,7 @@
 
 ##### 2. [配置中心选型](https://github.com/stephenZkang/learn/blob/master/spring/2.%20%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E9%80%89%E5%9E%8B.md)
 
-##### 3. [链路追踪 ]() - 同事总结
+##### 3. [链路追踪 ](https://github.com/stephenZkang/learn/blob/master/spring/3.%20SpringCloudSleuth%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA%E6%A6%82%E8%BF%B0.pdf) - 同事总结
 
 #### **【vue】目录下为学习vue admin的总结以及代码**
 
