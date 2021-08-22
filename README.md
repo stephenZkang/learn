@@ -26,11 +26,11 @@
 
 ### **【MQ】目录下为学习MQ练习的代码**
 
-##### 1.[ActiveMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/1.%20ActiveMQ%E5%AD%A6%E4%B9%A0.md)
+##### 1. [ActiveMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/1.%20ActiveMQ%E5%AD%A6%E4%B9%A0.md)
 
-##### 2.[RabbitMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/2.%20RabbitMQ.md)
+##### 2. [RabbitMQ学习](https://github.com/stephenZkang/learn/blob/master/MQ/2.%20RabbitMQ.md)
 
-##### 3.[Kafka和Pulsar对比](https://github.com/stephenZkang/learn/blob/master/MQ/3.%20Kafka%E5%92%8CPulsar%E5%AF%B9%E6%AF%94.md)
+##### 3. [Kafka和Pulsar对比](https://github.com/stephenZkang/learn/blob/master/MQ/3.%20Kafka%E5%92%8CPulsar%E5%AF%B9%E6%AF%94.md)
 
 ------
 
@@ -157,7 +157,7 @@
 
 ##### 3. [https如何理解](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/3.%20https%E8%AF%A6%E8%A7%A3.md)
 
-##### 4.[http协议相关](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/4.%20http%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3.md) - 总结了OSI分层的概念以及对http长连接的误解
+##### 4. [http协议相关](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/4.%20http%E5%8D%8F%E8%AE%AE%E7%9B%B8%E5%85%B3.md) - 总结了OSI分层的概念以及对http长连接的误解
 
 ##### 5. [策略模式优化](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/5.%20%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E4%BC%98%E5%8C%96.md)
 
@@ -173,9 +173,9 @@
 
 ##### 11. [系统架构设计](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/11.%20%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.md)
 
-##### 12.[中间件开发指南](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/12.%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%BC%80%E5%8F%91.md)- 莫那鲁道对中间件开发的一份指导
+##### 12. [中间件开发指南](https://github.com/stephenZkang/learn/blob/master/%E9%97%AE%E9%A2%98/12.%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%BC%80%E5%8F%91.md)- 莫那鲁道对中间件开发的一份指导
 
-##### 13.[API设计](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
+##### 13. [API设计](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
 
 ------
 
