@@ -19,6 +19,9 @@
 ###### 2. 第二部分【深入了解】
 
 1. 
+2. 
+
+------
 
 ### **【MQ】目录下为学习MQ练习的代码**
 
@@ -28,13 +31,19 @@
 
 ##### 3.[Kafka和Pulsar对比](https://github.com/stephenZkang/learn/blob/master/MQ/3.%20Kafka%E5%92%8CPulsar%E5%AF%B9%E6%AF%94.md)
 
+------
+
 ### **【activiti】目录下为学习activiti练习的代码**
 
 ##### 1. [activiti学习](https://github.com/stephenZkang/learn/blob/master/activiti/activiti.md)
 
+------
+
 ### **【leetcode】目录下为Leetcode 刷题总结以及代码**
 
 ##### 1. [Java解题汇总](https://github.com/stephenZkang/learn/tree/master/leetcode/leetcode-java)
+
+------
 
 ### **【Redis】目录下为使用Redis和阅读博客的一些总结**
 
@@ -56,7 +65,8 @@
 
 - 本篇来自【芋道源码】分享，作者【阿飞】
 - 极致优化凸显在pipline的使用中，以及cluster集群对应pipline多条语句是如何均衡到不同slot上，又如何设计来分散到相同的slot上，并保持其离散性
-- 
+
+------
 
 ### **【Spring】目录下为Spring Cloud一些总结**
 
@@ -66,9 +76,13 @@
 
 ##### 3. [链路追踪 ](https://github.com/stephenZkang/learn/blob/master/spring/3.%20SpringCloudSleuth%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA%E6%A6%82%E8%BF%B0.pdf) - 同事总结
 
+------
+
 ### **【vue】目录下为学习vue admin的总结以及代码**
 
 1. [nodejs](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md) - 总结了使用vue过程中遇到的问题（如[环境配置](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#3%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2)、概念理解、[组件化传参](https://github.com/stephenZkang/learn/blob/master/vue/nodejs.md#9vue%E4%B8%AD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%8F%82%E9%97%AE%E9%A2%98)）
+
+------
 
 ### 【基础】
 
@@ -78,13 +92,21 @@
 4. [JVM内存异常分析](https://github.com/stephenZkang/learn/blob/master/%E5%9F%BA%E7%A1%80/4.%20JVM%E5%86%85%E5%AD%98%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
 5.  [jvm垃圾回收](https://github.com/stephenZkang/learn/blob/master/基础/5.%20JVM垃圾回收.md)
 
+------
+
 ### 【分布式】
 
 ##### 1. [分布式ID](https://github.com/stephenZkang/learn/blob/master/%E5%A4%A7%E6%95%B0%E6%8D%AE/1.%E5%88%86%E5%B8%83%E5%BC%8FID.md)
 
+
+
+------
+
 ### 【安全】
 
 1. [WEB安全](https://github.com/stephenZkang/learn/blob/master/%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8.md)
+
+------
 
 ### **【并发】目录下为学习并发的总结**
 
@@ -92,12 +114,16 @@
 2. [CAS和AQS](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/2.%20CAS%E5%92%8CAQS%E6%AF%94%E8%BE%83.md)
 3. [谈谈对volatile的认识](https://github.com/stephenZkang/learn/blob/master/%E5%B9%B6%E5%8F%91/3.%20%E8%B0%88%E8%B0%88%E5%AF%B9volatile%E7%9A%84%E8%AE%A4%E8%AF%86.md)
 
+------
+
 ### **【数据库】目录下为使用数据库的一些总结**
 
 1. [mybatis-plus源码解析及应用](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/1.%20mybatis-plus%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
 2. [mysql锁机制](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/2.%20mysql%E9%94%81%E6%9C%BA%E5%88%B6.md)
 3. [mysql索引原理及问题](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/3.%20mysql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E5%8F%8A%E9%97%AE%E9%A2%98.md)
 4. [mysql索引存储最大值多少](https://github.com/stephenZkang/learn/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/4.%20mysql%E7%B4%A2%E5%BC%95%E5%AD%98%E5%82%A8%E6%9C%80%E5%A4%A7%E5%80%BC%E5%A4%9A%E5%B0%91.md)
+
+------
 
 ### **【趣唠Linux操作系统】目录下为学习Linux内核的一些总结**
 
@@ -107,6 +133,8 @@
 4. [内核组成](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/4.%20Linux%E5%86%85%E6%A0%B8%E7%BB%84%E6%88%90.md)
 5. [Linux常用命令](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/5.%20Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 6. [Linux系统调用](https://github.com/stephenZkang/learn/blob/master/%E8%B6%A3%E5%94%A0Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/6.%20Linux%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8.md)
+
+------
 
 ### **【问题】目录下为阅读中遇到的一些问题搜集**
 
