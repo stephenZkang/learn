@@ -52,7 +52,7 @@
 
 ##### 6. [Redis分布式锁](https://github.com/stephenZkang/learn/blob/master/redis/6.%20Redis分布式锁.md)
 
-##### 7. [Redis性能优化](https://github.com/stephenZkang/learn/blob/master/spring/3.%20SpringCloudSleuth%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA%E6%A6%82%E8%BF%B0.pdf)
+##### 7. [Redis性能优化](https://github.com/stephenZkang/learn/blob/master/redis/7.%20Redis%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-1.md)
 
 - 本篇来自【芋道源码】分享，作者【阿飞】
 - 极致优化凸显在pipline的使用中，以及cluster集群对应pipline多条语句是如何均衡到不同slot上，又如何设计来分散到相同的slot上，并保持其离散性
