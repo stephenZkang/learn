@@ -14,7 +14,7 @@
 2. [部署和基本概念](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-18.md)
 3. [CRUD和倒排索引](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-19.md)
 4. [Search API和Mapping](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/2021-08-20.md)
-5. [实践问题](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/practice.md)
+5. [实践问题](https://github.com/stephenZkang/learn/blob/master/ElasticSearch/two/practice-1.md)
 
 ###### 2. 第二部分【深入了解】
 
