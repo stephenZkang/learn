@@ -98,4 +98,96 @@
 
 ##### **32. [最长有效括号](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LongestValidParentheses.java) - 【动态规划】-【1】 - 【LongestValidParentheses】**
 
+##### **63. [不同路径 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/UniquePathsWithObstacles.java) - 【动态规划】-【1】 - 【UniquePathsWithObstacles】**
+
+##### **112. [路径总和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/HasPathSum.java) - 【广度优先搜索|递归】-【2】 - 【HasPathSum】**
+
+##### **面试题 16.11. [跳水板](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/DivingBoard.java) - 【数学】-【2】 - 【DivingBoard】**
+
+##### **面试题 17.13. [恢复空格](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Replace.java) - 【Trie + 动态规划】-【1】 - 【Replace】**
+
+##### **174. [地下城游戏](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CalculateMiniumumHP.java) - 【动态规划】-【1】 - 【CalculateMiniumumHP】**
+
+##### **350. [两个数组的交集 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Intersect.java) - 【哈希】-【1】 - 【Intersect】**
+
+##### **785. [判断二分图](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsBipartite.java) - 【深度优先搜索|广度优先搜索】-【1】 - 【IsBipartite】**
+
+##### **167. [两数之和 II - 输入有序数组](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TwoNumII.java) - 【双指针】-【1】 - 【TwoNumII】**
+
+##### **95. [不同的二叉搜索树 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/GenerateTrees.java) - 【递归】-【2】 - 【GenerateTrees】**
+
+##### **剑指 Offer 11. [旋转数组的最小数字](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinArray.java) - 【二分查找】-【1】 - 【MinArray】**
+
+##### **64. [最小路径和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinPathSum.java) - 【动态规划】-【1】 - 【MinPathSum】**
+
+##### **LCP 13. [寻宝](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinimalSteps.java) - 【状态压缩动态规划】-【1】 - 【MinimalSteps】**
+
+##### **343. [整数拆分](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IntegerBreak.java) - 【动态规划】-【1】 - 【IntegerBreak】**
+
+##### **面试题 08.03. [魔术索引](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/FindMagicIndex.java) - 【循环】-【1】 - 【FindMagicIndex】**
+
+##### **415. [字符串相加](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/AddStrings.java) - 【模拟】-【1】 - 【AddStrings】**
+
+##### **207. [课程表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CanFinish.java) - 【深度优先搜索】-【1】 - 【CanFinish】**
+
+##### **336. [回文对](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PalindromePair.java) - 【字典树 + manacher】-【1】 - 【PalindromePair】**
+
+##### **130. [被围绕的区域](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Solve.java) - 【深度优先搜索】-【1】 - 【Solve】**
+
+##### **43. [字符串相乘](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Mutiply.java) - 【深度优先搜索】-【1】 - 【Mutiply】**
+
+##### **20. [有效的括号](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsValid.java) - 【栈】-【1】 - 【IsValid】**
+
+##### **647. [回文子串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CountSubstrings.java) - 【中心扩展】-【1】 - 【CountSubstrings】**
+
+##### **529. [扫雷游戏](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/UpdateBoard.java) - 【中心扩展】-【1】 - 【UpdateBoard】**
+
+##### **111. [二叉树的最小深度](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/MinDepth.java) - 【深度优先搜索】-【1】 - 【MinDepth】**
+
+##### **17. [电话号码的字母组合](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/LetterCombination.java) - 【回溯】-【1】 - 【LetterCombination】**
+
+##### **657. [机器人能否返回原点](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/JudgeCricle.java) - 【模拟】-【1】 - 【JudgeCricle】**
+
+##### **841. [钥匙和房间](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CanVisitAllRooms.java) - 【深度优先搜索|广度优先搜索】-【1】 - 【CanVisitAllRooms】**
+
+##### **486. [预测赢家](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PredictTheWinner.java) - 【动态规划|递归】-【1】 - 【PredictTheWinner】**
+
+##### **剑指 Offer 20. [表示数值的字符串](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsNumber.java) - 【有限状态自动机】-【1】 - 【IsNumber】**
+
+##### **257. [二叉树的所有路径](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/BinaryTreePaths.java) - 【深度优先搜索|广度优先搜索】-【1】 - 【BinaryTreePaths】**
+
+##### **347. [前 K 个高频元素](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/TopKFrequent.java) - 【堆|快速排序】-【1】 - 【TopKFrequent】**
+
+##### **77. [组合](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/Combine.java) - 【回溯+剪枝】-【1】 - 【Combine】**
+
+##### **39. [组合总和](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CombinationSum.java) - 【回溯+剪枝】-【1】 - 【CombinationSum】**
+
+##### **40. [组合总和 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CombinationSum2.java) - 【回溯+剪枝】-【1】 - 【CombinationSum2】**
+
+##### **216. [组合总和 III](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/CombinationSum3.java) - 【回溯+剪枝】-【1】 - 【CombinationSum3】**
+
+##### **94. [二叉树的中序遍历](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/InOrderTraversal.java) - 【递归|栈】-【1】 - 【InOrderTraversal】**
+
+##### **47. [全排列 II](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PremuteUnique.java) - 【搜索回溯】-【1】 - 【PremuteUnique】**
+
+##### **143. [重排链表](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/ReOrderList.java) - 【递归】-【1】 - 【ReOrderList】**
+
+##### **763. [划分字母区间](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/PartitionLabels.java) - 【贪心算法|双指针】-【1】 - 【PartitionLabels】**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##### **44. [通配符匹配](https://github.com/stephenZkang/learn/blob/master/leetcode/leetcode-java/src/main/java/com/leetcode/qiaok/practice1/IsMatch.java) - 【动态规划】-【1】 - 【IsMatch】**
