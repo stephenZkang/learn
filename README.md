@@ -81,8 +81,9 @@
 - 数据库和redis只能保持弱一致性、最终一致性
 - 三种数据库和redis同步方案
 
+##### 9. [聊聊分布式锁的多种实现](https://github.com/stephenZkang/learn/blob/deveplop/redis/9.%20%E8%81%8A%E8%81%8A%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E7%9A%84%E5%A4%9A%E7%A7%8D%E5%AE%9E%E7%8E%B0.md)
+
 ------
-##### 9. [聊聊分布式锁的多种实现](https://github.com/stephenZkang/learn/blob/master/redis/7.%20Redis%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-1.md)
 
 ### **【Spring】目录下为Spring Cloud一些总结**
 
